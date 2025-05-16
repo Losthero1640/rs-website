@@ -947,15 +947,144 @@ const Team = () => {
       branch:'Electronics and Telecommunication Engineering',
       year:'3',
       bio: 'specializes in Arduino and Electronics',
-      image:'/prefinal/Himansu.jpg',
+      image:'/prefinal/Himanshu.jpg',
       github:'https://github.com/HIMANSUsekharBaral',
       linkedin:'https://www.linkedin.com/in/himansu-sekhar-baral-0674852aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram:''
     },
     
-    
+    {
+      id: 63,
+      name: 'Reetika Acharya',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Reetika.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/reetika-acharya-9a2012311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
 
-    
+    {
+      id: 64,
+      name: 'Suryakanta balabantaray ',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Bunty.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/suryakanta-balabantaray-90a941324',
+      instagram:''
+    },    
+
+    {
+      id: 65,
+      name: 'KOTHAKOTA VIDHYA SAI',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Vidya.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/vidhya-sai-kothakota-493a39229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 65,
+      name: 'Jateen Kumar Sahu',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Jateen.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/jateen-kumar-sahu-1b9710296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 66,
+      name: 'Sai Priyadarshini Swain ',
+      role: '',
+      branch:'Electrical Engineering ',
+      year:'3',
+      bio: 'specializes in Arduino and Structural',
+      image:'/prefinal/Sai.jpg',
+      github:'https://github.com/Saiiee12',
+      linkedin:'https://www.linkedin.com/in/sai-priyadarshini-swain-18490a311',
+      instagram:''
+    },
+
+    {
+      id: 67,
+      name: 'Ambika Prasad Dora',
+      role: '',
+      branch:'Electrical Engineering ',
+      year:'3',
+      bio: 'specializes in Arduino and Structural',
+      image:'/prefinal/Bunu.jpg',
+      github:'https://github.com/ambika-0007',
+      linkedin:'https://www.linkedin.com/in/ambika-prasad-dora-1557b028a',
+      instagram:''
+    },
+
+    {
+      id:68,
+      name:'P Rituparna Ram',
+      role: '',
+      branch:'Electrical Engineering ',
+      year:'3',
+      bio: 'specializes in Arduino and Python',
+      image:'/prefinal/Rituparna.jpg',
+      github:'',
+      linkedin:'',
+      instagram:''
+    },
+
+    {
+      id:69,
+      name:'Saswatee Satapathy',
+      role: '',
+      branch:'Mechanical Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and CAD',
+      image:'/prefinal/Saswatee.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/saswatee-satapathy-253873293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:70,
+      name:'Sourav Padhy',
+      role: '',
+      branch:'Civil Engineering ',
+      year:'3',
+      bio: 'specializes in Arduino and Python',
+      image:'/prefinal/Sourav.jpeg',
+      github:'https://github.com/souravpadhy',
+      linkedin:'https://www.linkedin.com/in/sourav-padhy-0b0515292/',
+      instagram:''
+    },
+
+
+    {
+      id:71,
+      name:'Gantyada vasudev ',
+      role: '',
+      branch:'Civil Engineering ',
+      year:'3',
+      bio: 'specializes in Arduino and Structural',
+      image:'/prefinal/Vasudev.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/vasudev-gantyada-4ab91a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+
     // Add more members with appropriate year tags: 'First Year', 'Second Year', etc.
   ];
 
