@@ -1,32 +1,51 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Team from './pages/Team';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import WorkshopDetail from './pages/WorkshopDetail.jsx';
-import './styles/global.css';
+import React from 'react'
+import { BrowserRouter as Router, useLocation } from 'react-router-dom'
 
-function App() {
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import LoaderScreen from './components/LoaderScreen.jsx'
+import PageRoutes from './components/PageRoutes.jsx'
+
+import usePageLoader from './hooks/usePageLoader'
+import './styles/global.css'
+
+const AppContent = () => {
+  const location = useLocation()
+  const { pathname } = location
+  const { isLoading, firstLoading, fadeOut } = usePageLoader(pathname)
+
+  const isNotFound = ![
+    '/',
+    '/team',
+    '/about',
+    '/contact',
+    '/workshops/:id',
+  ].includes(pathname)
+
   return (
-    <Router>
-      <div className="app">
-        <Navbar />
+    <>
+      {isLoading && <LoaderScreen fadeOut={fadeOut} />}
+
+      {!firstLoading && !isNotFound && <Navbar />}
+
+      <div
+        className={`page-content ${isLoading ? 'page-hidden' : 'page-animate'}`}
+      >
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-             <Route path="/workshops/:id" element={<WorkshopDetail />} />
-          </Routes>
+          <PageRoutes />
         </main>
-        <Footer />
+        {!isNotFound && <Footer />}
       </div>
-    </Router>
-  );
+    </>
+  )
 }
 
-export default App;
+const App = () => {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  )
+}
+
+export default App

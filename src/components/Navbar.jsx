@@ -1,26 +1,36 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.css';
+import React, { useState,useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import '../styles/Navbar.css'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
+  const { pathname } = location
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
 
   return (
     <nav className="navbar">
       <div className="container">
-      <Link to="/" className="logo">
-        <img src="/images/RS LOGO.png" alt="Robotics Society Logo" className="logo-img" />
-      </Link>
-        
+        <Link to="/" className="logo">
+          <img
+            src="/images/RS LOGO.png"
+            alt="Robotics Society Logo"
+            className="logo-img"
+          />
+        </Link>
+
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <Link to="/">Home</Link>
           <Link to="/team">Team</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
-        
-        <button 
-          className="hamburger" 
+
+        <button
+          className="hamburger"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
@@ -30,7 +40,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
