@@ -9,11 +9,10 @@ const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [activeFilter, setActiveFilter] = useState(null);
 
-  const yearFilters = ['Freshers', 'Sophomores', 'Pre Final Years', 'Final Years'];
+  const yearFilters = [ 'Sophomores', 'Pre Final Years', 'Final Years'];
 
   const getYearGroup = (filter) => {
     switch (filter) {
-      case 'Freshers': return ['First Year'];
       case 'Sophomores': return ['2'];
       case 'Pre Final Years': return [ '3'];
       case 'Final Years': return ['4'];
@@ -28,7 +27,7 @@ const Team = () => {
     {
       id: 1,
       name: 'Dibyaseni sethi',
-      role: 'Software Lead',
+      role: '',
       branch: 'Civil Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -43,7 +42,7 @@ const Team = () => {
     {
       id: 2,
       name: 'Peeyush Priyadarshan Rana ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Civil Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -58,7 +57,7 @@ const Team = () => {
     {
       id: 3,
       name: 'Abhay Kumar Sahani ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Civil Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -73,7 +72,7 @@ const Team = () => {
     {
       id: 4,
       name: 'Anushka Priyadarshini ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Civil Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -90,7 +89,7 @@ const Team = () => {
     {
       id: 5,
       name: 'Suman Dash',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: [],
@@ -105,7 +104,7 @@ const Team = () => {
     {
       id: 6,
       name: 'Aryan Rajguru',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -120,7 +119,7 @@ const Team = () => {
     {
       id: 7,
       name: 'Debidutta Sahoo',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -135,7 +134,7 @@ const Team = () => {
     {
       id: 8,
       name: 'Remit Kumar Patra',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -150,7 +149,7 @@ const Team = () => {
     {
       id: 9,
       name: 'Swagatika Bhairab Sahu ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -165,7 +164,7 @@ const Team = () => {
     {
       id: 10,
       name: 'Sayeda Saba Amtul Hallim',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -180,7 +179,7 @@ const Team = () => {
     {
       id: 11,
       name: 'Nityananda Giri',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -195,7 +194,7 @@ const Team = () => {
     {
       id: 12,
       name: 'Swaraj Soubhagya Khandai',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -210,7 +209,7 @@ const Team = () => {
     {
       id: 13,
       name: 'Pratyush Parida',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -225,7 +224,7 @@ const Team = () => {
     {
       id: 14,
       name: 'Chinnari Harsha Vardhan ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Computer Science and Engg.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -240,7 +239,7 @@ const Team = () => {
     {
       id: 15,
       name: 'Somya Tridarsini Dash',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -255,7 +254,7 @@ const Team = () => {
     {
       id: 16,
       name: 'Shradha Suman Mohapatra',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -270,7 +269,7 @@ const Team = () => {
     {
       id: 17,
       name: 'Suman Rath',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -285,7 +284,7 @@ const Team = () => {
     {
       id: 18,
       name: 'Anibes Mohanty',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -300,7 +299,7 @@ const Team = () => {
     {
       id: 19,
       name: 'Sunil Sahu',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -315,7 +314,7 @@ const Team = () => {
     {
       id: 20,
       name: 'Roshan Dang',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -330,7 +329,7 @@ const Team = () => {
     {
       id: 21,
       name: 'Anshik Meher',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical Engineering.',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -347,7 +346,7 @@ const Team = () => {
     {
       id: 22,
       name: 'Gayatrirani Samantaray ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -362,7 +361,7 @@ const Team = () => {
     {
       id: 23,
       name: 'Aryaman Singh ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -377,7 +376,7 @@ const Team = () => {
     {
       id: 24,
       name: 'Samagnya Dash ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -392,7 +391,7 @@ const Team = () => {
     {
       id: 25,
       name: 'Sriyanshu Sekhar Pradhan',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -407,7 +406,7 @@ const Team = () => {
     {
       id: 26,
       name: 'Bikash Barik',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -422,7 +421,7 @@ const Team = () => {
     {
       id: 27,
       name: 'Dibyajyoti Samal',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electrical and Electronics Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -438,7 +437,7 @@ const Team = () => {
     {
       id: 28,
       name: 'Aradhya Rath',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -453,7 +452,7 @@ const Team = () => {
      {
       id: 29,
       name: 'Suhani Sabat',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -468,7 +467,7 @@ const Team = () => {
      {
       id: 30,
       name: 'Arpita Majumdar',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -483,7 +482,7 @@ const Team = () => {
      {
       id: 31,
       name: 'Rudra Narayan Panda',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -498,7 +497,7 @@ const Team = () => {
      {
       id: 32,
       name: 'Abinash Dash',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -513,7 +512,7 @@ const Team = () => {
      {
       id: 33,
       name: 'Manas Babu',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -528,7 +527,7 @@ const Team = () => {
      {
       id: 34,
       name: 'Aditya Swarup Khuntia ',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -543,7 +542,7 @@ const Team = () => {
      {
       id: 35,
       name: 'Sai Satyaprakash Parida',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -558,7 +557,7 @@ const Team = () => {
      {
       id: 36,
       name: 'Pritam Swain',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -573,7 +572,7 @@ const Team = () => {
      {
       id: 37,
       name: 'Rounak Senapati',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -588,7 +587,7 @@ const Team = () => {
      {
       id: 38,
       name: 'Soumya Ranjan Behera',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -603,7 +602,7 @@ const Team = () => {
      {
       id: 39,
       name: 'Sidhartha Kumar Nayak',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -618,7 +617,7 @@ const Team = () => {
      {
       id: 40,
       name: 'Hari Shah',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -633,7 +632,7 @@ const Team = () => {
      {
       id: 41,
       name: 'Mahasangram Kar',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -648,7 +647,7 @@ const Team = () => {
      {
       id: 42,
       name: 'Mantosh Barik',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -663,7 +662,7 @@ const Team = () => {
      {
       id: 43,
       name: 'Shimadri Yashwant',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -678,7 +677,7 @@ const Team = () => {
      {
       id: 44,
       name: 'Kamal Muduli',
-      role: 'Software Lead',
+      role: '',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -694,7 +693,7 @@ const Team = () => {
     {
       id: 45,
       name: 'Ansika priyadarshini Mishra',
-      role: 'Software Lead',
+      role: '',
       branch: 'Mechanical Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -709,7 +708,7 @@ const Team = () => {
     {
       id: 46,
       name: 'Aditya Pradhan',
-      role: 'Software Lead',
+      role: '',
       branch: 'Mechanical Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -724,7 +723,7 @@ const Team = () => {
     {
       id: 47,
       name: 'Roshan Kumar',
-      role: 'Software Lead',
+      role: '',
       branch: 'Mechanical Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -740,7 +739,7 @@ const Team = () => {
     {
       id: 48,
       name: 'Supriya Patra',
-      role: 'Software Lead',
+      role: '',
       branch: 'MME',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -756,7 +755,7 @@ const Team = () => {
     {
       id: 49,
       name: 'Chandini Suhagini',
-      role: 'Software Lead',
+      role: '',
       branch: 'MME',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -772,7 +771,7 @@ const Team = () => {
     {
       id: 50,
       name: 'Stuti Agarwal',
-      role: 'Software Lead',
+      role: '',
       branch: 'Production Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -787,7 +786,7 @@ const Team = () => {
     {
       id: 51,
       name: 'Soumit Kumar Mohanta',
-      role: 'Software Lead',
+      role: '',
       branch: 'Production Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -802,7 +801,7 @@ const Team = () => {
     {
       id: 52,
       name: 'Santosh Panda',
-      role: 'Software Lead',
+      role: '',
       branch: 'Production Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -817,7 +816,7 @@ const Team = () => {
     {
       id: 53,
       name: 'Trisha Samal',
-      role: 'Software Lead',
+      role: '',
       branch: 'Production Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -833,7 +832,7 @@ const Team = () => {
      {
       id: 54,
       name: 'Ankita Priyadarsini Nayak',
-      role: 'Software Lead',
+      role: '',
       branch: 'Chemical Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -848,7 +847,7 @@ const Team = () => {
      {
       id: 55,
       name: 'Jyotiraditya Biswal',
-      role: 'Software Lead',
+      role: '',
       branch: 'Chemical Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -860,6 +859,103 @@ const Team = () => {
       instagram: ''
     },
 
+    //pre-final year
+    {
+      id: 56,
+      name: 'Prerana Priyadarsini Das',
+      role: 'Assistant Coordinator',
+      branch:'Information Technology',
+      year:'3',
+      projects: [],
+      skills: [],
+      bio: 'Specializes in Data Science and Data Analysis',
+      image:'/prefinal/prerana.jpg',
+      github:'https://github.com/preranadas2003',
+      linkedin:'https://www.linkedin.com/in/preranapriyadarsinidas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 57,
+      name: 'Pattanaik Ayushman Alok',
+      role: '',
+      branch:'Information Technology',
+      year:'3',
+      bio: 'specializes in Web Development and OpenCV',
+      image:'/prefinal/Ayushman.jpg',
+      github:'https://github.com/Losthero1640',
+      linkedin:'https://www.linkedin.com/in/pattanaik-ayushman-alok-b66a90273/',
+      instagram:'https://www.instagram.com/https://www.instagram.com/_.ayushman._00/'
+    },
+    
+    {
+      id: 58,
+      name: 'Biswajit Mallik',
+      role: '',
+      branch:'Information Technology',
+      year:'3',
+      bio: 'specializes in Python and OpenCV',
+      image:'/prefinal/Biswajit.jpg',
+      github:'https://github.com/Bit-Mik',
+      linkedin:'https://www.linkedin.com/in/biswajit-mallik-b4k?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 59,
+      name: 'Aditi Panda',
+      role: '',
+      branch:'Computer Science and Engineering',
+      year:'3',
+      bio: 'specializes in Data Science and Data Analysis',
+      image:'/prefinal/Aditi.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/aditi-panda-6987552ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 60,
+      name: 'Sumanta Kumar Dutta',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Sumanta.jpg',
+      github:'https://github.com/SumantaDutta5',
+      linkedin:'www.linkedin.com/in/sumanta-kumar-dutta-41a834293',
+      instagram:''
+    },
+
+    {
+      id: 61,
+      name: 'Arnav Nayak ',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Arnav.jpg',
+      github:'https://github.com/ImArnavNayak0',
+      linkedin:'https://www.linkedin.com/in/arnav-nayak-46b966319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id: 62,
+      name: 'Himansu Sekhar Baral',
+      role: '',
+      branch:'Electronics and Telecommunication Engineering',
+      year:'3',
+      bio: 'specializes in Arduino and Electronics',
+      image:'/prefinal/Himansu.jpg',
+      github:'https://github.com/HIMANSUsekharBaral',
+      linkedin:'https://www.linkedin.com/in/himansu-sekhar-baral-0674852aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+    
+    
+
+    
     // Add more members with appropriate year tags: 'First Year', 'Second Year', etc.
   ];
 
@@ -898,23 +994,7 @@ const Team = () => {
                 <p><strong>Year:</strong> {selectedMember.year}</p>
               </div>
 
-              <div className="detail-section">
-                <h3>Current Projects</h3>
-                <ul>
-                  {selectedMember.projects.map((project, index) => (
-                    <li key={index}>{project}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="detail-section">
-                <h3>Skills</h3>
-                <div className="skills">
-                  {selectedMember.skills.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
+              
 
               <div className="detail-section">
                 <h3>Connect</h3>
