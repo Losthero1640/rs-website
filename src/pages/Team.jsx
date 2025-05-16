@@ -1084,7 +1084,240 @@ const Team = () => {
       instagram:''
     },
 
+    //final year
+    {
+      id:72,
+      name:'T ACHYUTA PATRO ',
+      role: 'co-lead(MODELLING AND SIMULATION DOMAIN)',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
 
+    {
+      id:73,
+      name:'Debashish Budek',
+      role: 'co-lead(STRUCTURAL DOMAIN)',
+      branch:'Metallurgical and Materials Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Debasish.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/debashish-budek-0531b5290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:74,
+      name:'AKLANT KUMAR SAHU ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Aklant.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/aklant-sahu-3a0421257',
+      instagram:''
+    },
+
+    {
+      id:75,
+      name:'Sonalika Mohanty ',
+      role: '',
+      branch:'Mechanical Engineering',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Sonalika.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/sonalika-mohanty-664933258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:76,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:77,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:78,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:79,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:80,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:81,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:82,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:83,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:84,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:85,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:86,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:87,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:88,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
+
+    {
+      id:89,
+      name:'T ACHYUTA PATRO ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
     // Add more members with appropriate year tags: 'First Year', 'Second Year', etc.
   ];
 
