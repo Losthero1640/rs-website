@@ -1,22 +1,44 @@
 /* Hero Section */
 .hero {
+  position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('/images/hero-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+              /* url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover; */
   text-align: center;
   padding-top: 100px;
-  cursor: url('/images/Cursor3.cur') 3 4, auto;
+  /* cursor: url('/images/Cursor3.cur') 3 4, auto; */
+  overflow: hidden; /* Needed to contain particles */
+  z-index: 1;
+}
+
+.hero-particles {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.hero-particles canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative; /* To layer above particles */
+  z-index: 2;
 }
 
 .hero h1 {
@@ -38,7 +60,7 @@
 .hero .btn {
   animation: fadeInUp 1s ease 0.4s forwards;
   opacity: 0;
-  cursor: url('/images/Pointer.cur') 0.1 0.1, pointer;
+  /* cursor: url('/images/Pointer.cur') 0.1 0.1, pointer; */
 }
 
 /* Fade-in Animation */

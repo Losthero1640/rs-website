@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
 import '../styles/Home.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
 const Home = () => {
   const latestProjects = [
@@ -59,10 +62,118 @@ const Home = () => {
     }
   ];
 
+  // Initialize particles
+  const particlesInit = useCallback(async (engine) => {
+    await loadSlim(engine);
+  }, []);
+
   return (
     <div className="home">
       <section className="hero">
-        <div className="container">
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          className="hero-particles"
+          options={{
+            fullScreen: { enable: false },
+            background: { 
+              color: {
+                value: "transparent"
+              }
+            },
+            fpsLimit: 60,
+            particles: {
+              number: { 
+                value: 80,
+                density: {
+                  enable: true,
+                  value_area: 800
+                }
+              },
+              color: { value: ["#00ffcc", "#00b8ff", "#0066ff"] },
+              shape: { 
+                type: ["circle", "triangle", "square"],
+                stroke: { width: 1, color: "#00ffcc" }
+              },
+              opacity: {
+                value: 0.6,
+                random: true,
+                animation: {
+                  enable: true,
+                  speed: 1,
+                  minimumValue: 0.1,
+                  sync: false
+                }
+              },
+              size: {
+                value: 4,
+                random: true,
+                animation: {
+                  enable: true,
+                  speed: 2,
+                  minimumValue: 1,
+                  sync: false
+                }
+              },
+              links: {
+                enable: true,
+                distance: 150,
+                color: "#00ffcc",
+                opacity: 0.4,
+                width: 1,
+                triangles: {
+                  enable: true,
+                  opacity: 0.1
+                }
+              },
+              move: {
+                enable: true,
+                speed: 2,
+                direction: "none",
+                outModes: {
+                  default: "bounce",
+                },
+                attract: {
+                  enable: true,
+                  rotateX: 600,
+                  rotateY: 1200
+                }
+              },
+            },
+            interactivity: {
+              events: {
+                onHover: {
+                  enable: true,
+                  mode: ["grab", "bubble"],
+                },
+                onClick: {
+                  enable: true,
+                  mode: "push"
+                }
+              },
+              modes: {
+                grab: {
+                  distance: 200,
+                  links: {
+                    opacity: 0.8
+                  }
+                },
+                bubble: {
+                  distance: 200,
+                  size: 6,
+                  duration: 2,
+                  opacity: 0.8,
+                  speed: 3
+                },
+                push: {
+                  quantity: 4
+                }
+              }
+            },
+            detectRetina: true
+          }}
+        />
+        <div className="container hero-content">
           <h1>Innovating the Future of Robotics</h1>
           <p>Join us in building cutting-edge robotic solutions to real-world problems.</p>
           <Link to="/about" className="btn">

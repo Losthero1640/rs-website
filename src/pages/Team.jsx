@@ -1084,7 +1084,240 @@ const Team = () => {
       instagram:''
     },
 
+    //final year
+    {
+      id:72,
+      name:'T ACHYUTA PATRO ',
+      role: 'MODELLING AND SIMULATION DOMAIN(co-lead)',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Achyuta.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:'https://www.linkedin.com/in/tachyutapatro',
+      instagram:''
+    },
 
+    {
+      id:73,
+      name:'Debashish Budek',
+      role: 'STRUCTURAL DOMAIN(co-lead)',
+      branch:'Metallurgical and Materials Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Debasish.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/debashish-budek-0531b5290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:74,
+      name:'AKLANT KUMAR SAHU ',
+      role: '',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Aklant.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/aklant-sahu-3a0421257',
+      instagram:''
+    },
+
+    {
+      id:75,
+      name:'Sonalika Mohanty ',
+      role: 'Modelling and Simulation Domain(co-lead)',
+      branch:'Mechanical Engineering',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Sonalika.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/sonalika-mohanty-664933258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:76,
+      name:'Soham Dhal',
+      role: 'STRUCTURAL DOMAIN(co-lead)',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Soham.jpg',
+      github:'https://github.com/Sohamdhal',
+      linkedin:'https://www.linkedin.com/in/soham-dhal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:77,
+      name:'Indrajit Pani',
+      role: 'MANAGEMENT(CO-LEAD)',
+      branch:'Electrical and Electronics Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Indrajit.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/inm/indrajit-pani-3a5683249',
+      instagram:''
+    },
+
+    {
+      id:78,
+      name:'Soumyajit Pattanaik',
+      role: 'RESEARCH AND PLANNING',
+      branch:'Electrical Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Soumyajit.webp',
+      github:'GitHub.com/RockOnJeet',
+      linkedin:'https://www.linkedin.com/in/soumyajit-pattanaik',
+      instagram:''
+    },
+
+    {
+      id:79,
+      name:'Satyashree Dash',
+      role: 'GRAPHICS DESIGNING',
+      branch:'Electrical Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Satyashree.png',
+      github:'',
+      linkedin:'www.linkedin.com/in/satya71',
+      instagram:''
+    },
+
+    {
+      id:80,
+      name:'Amlan Ku. Sahu',
+      role: 'GRAPHICS DESIGNING',
+      branch:'Metallurgical and Materials Engineering',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Amlan.jpg',
+      github:'https://github.com/Amlan77',
+      linkedin:'https://www.linkedin.com/in/amlan-kumar-sahu-172121251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:81,
+      name:'Smruti Srabani Sahoo',
+      role: 'CONTENT WRITING',
+      branch:'Electrical Engineering  ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Smruti.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/smruti-srabani-sahoo-98120824a',
+      instagram:''
+    },
+
+    {
+      id:82,
+      name:'Tarini prasad Dash ',
+      role: 'CONTENT WRITING',
+      branch:'Electrical Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Tarini.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/tarini-prasad-dash-808629279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:83,
+      name:'Shreeti Mohapatra',
+      role: '',
+      branch:'Information Technology ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Shreeti.jpeg',
+      github:'https://github.com/shivah12',
+      linkedin:'https://www.linkedin.com/in/shreeti-mohapatra-ba8715252/',
+      instagram:''
+    },
+
+    {
+      id:84,
+      name:'CHINMAYA KUMAR BEHERA ',
+      role: 'MANAGEMENT(CO-LEAD)',
+      branch:'Information Technology ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Chinmay.jpg',
+      github:'https://github.com/Achyuta121',
+      linkedin:' https://www.linkedin.com/in/chinmaya-kumar-behera-736561276/?lipi=urn%3Ali%3Apage%3Ap_mwlite_my_network%3BuuomIc7nRsu1s9ZlfrXjAw%3D%3D',
+      instagram:''
+    },
+
+    {
+      id:85,
+      name:'Sibananda bishoyi ',
+      role: 'MANAGEMENT(CO-LEAD)',
+      branch:'Electrical and electronics engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Sibananda.jpg',
+      github:'',
+      linkedin:'https://www.linkedin.com/in/sibananda-bishoyi-b7688a309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      instagram:''
+    },
+
+    {
+      id:86,
+      name:'Ashutosh Panigrahi',
+      role: 'MANAGEMENT(CO-LEAD)',
+      branch:'Inforrmation Technology ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Asutosh.JPG',
+      github:'https://github.com/ashutosh1869',
+      linkedin:'https://www.linkedin.com/in/ashutosh-panigrahi-7701a01b2/',
+      instagram:''
+    },
+
+    {
+      id:87,
+      name:'Lipsamayee Mahanta',
+      role: '',
+      branch:'Information Technology',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Lipsamayee.jpg',
+      github:'https://github.com/Lipsa01',
+      linkedin:'https://www.linkedin.com/in/lipsa7mayee/',
+      instagram:''
+    },
+
+    {
+      id:88,
+      name:'Subham Mishra',
+      role: 'VIDEOGRAPHY',
+      branch:'Electronics And Telecommunication Engineering ',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Subham.JPG',
+      github:'https://github.com/subhamctc3007',
+      linkedin:'https://www.linkedin.com/in/subham-mishra-576b001b2/',
+      instagram:''
+    },
+
+    {
+      id:89,
+      name:'Shanti Sworup Biswal',
+      role: 'RESEARCH AND PLANNING',
+      branch:'Metallurgical and Materials Engineering',
+      year:'4',
+      // bio: 'specializes in Arduino and Structural',
+      image:'/Final/Shanti.jpg',
+      github:'https://github.com/Shantisworup07',
+      linkedin:'https://www.linkedin.com/in/shantisworup07/',
+      instagram:''
+    },
     // Add more members with appropriate year tags: 'First Year', 'Second Year', etc.
   ];
 
