@@ -1019,7 +1019,7 @@ const Team = () => {
                       <FaLinkedin size={24} />
                     </a>
                   )}
-                  {selectedMember.instagram && (
+                  {/* {selectedMember.instagram && (
                     <a 
                       href={selectedMember.instagram} 
                       target="_blank" 
@@ -1028,7 +1028,7 @@ const Team = () => {
                     >
                       <FaInstagram size={24} />
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
