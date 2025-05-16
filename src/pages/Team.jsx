@@ -993,7 +993,7 @@ const Team = () => {
     },
 
     {
-      id: 65,
+      id: 90,
       name: 'Jateen Kumar Sahu',
       role: '',
       branch:'Electronics and Telecommunication Engineering',
