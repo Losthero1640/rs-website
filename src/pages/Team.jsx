@@ -22,32 +22,11 @@ const Team = () => {
   };
 
   const teamMembers = [
-    {
-      id: 1,
-      name: 'Alex Johnson',
-      role: 'Team Lead',
-      branch: 'Mechanical Engineering',
-      year: '4',
-      projects: ['Autonomous Rover', 'Drone Navigation'],
-      skills: ['CAD Design', 'Project Management', 'Prototyping'],
-      bio: 'Passionate about autonomous systems and mechanical design.',
-      image: '/images/member1.jpg'
-    },
-    {
-      id: 2,
-      name: 'Sarah Chen',
-      role: 'Software Lead',
-      branch: 'Computer Science',
-      year: '3',
-      projects: ['Robotic Arm', 'AI Vision'],
-      skills: ['Python', 'ROS', 'Computer Vision'],
-      bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/images/member2.jpg'
-    },
+  
 
     //Sophomores
     {
-      id: 3,
+      id: 1,
       name: 'Dibyaseni sethi',
       role: 'Software Lead',
       branch: 'Civil Engineering',
@@ -62,7 +41,7 @@ const Team = () => {
     },
 
     {
-      id: 4,
+      id: 2,
       name: 'Peeyush Priyadarshan Rana ',
       role: 'Software Lead',
       branch: 'Civil Engineering',
@@ -77,7 +56,7 @@ const Team = () => {
     },
 
     {
-      id: 5,
+      id: 3,
       name: 'Abhay Kumar Sahani ',
       role: 'Software Lead',
       branch: 'Civil Engineering',
@@ -92,7 +71,7 @@ const Team = () => {
     },
 
     {
-      id: 6,
+      id: 4,
       name: 'Anushka Priyadarshini ',
       role: 'Software Lead',
       branch: 'Civil Engineering',
@@ -109,7 +88,7 @@ const Team = () => {
     //CSE
 
     {
-      id: 7,
+      id: 5,
       name: 'Suman Dash',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -124,7 +103,7 @@ const Team = () => {
     },
 
     {
-      id: 8,
+      id: 6,
       name: 'Aryan Rajguru',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -139,7 +118,7 @@ const Team = () => {
     },
 
     {
-      id: 9,
+      id: 7,
       name: 'Debidutta Sahoo',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -154,7 +133,7 @@ const Team = () => {
     },
 
     {
-      id: 10,
+      id: 8,
       name: 'Remit Kumar Patra',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -169,7 +148,7 @@ const Team = () => {
     },
 
     {
-      id: 11,
+      id: 9,
       name: 'Swagatika Bhairab Sahu ',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -184,7 +163,7 @@ const Team = () => {
     },
 
     {
-      id: 12,
+      id: 10,
       name: 'Sayeda Saba Amtul Hallim',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -199,7 +178,7 @@ const Team = () => {
     },
 
     {
-      id: 13,
+      id: 11,
       name: 'Nityananda Giri',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -214,7 +193,7 @@ const Team = () => {
     },
 
     {
-      id: 14,
+      id: 12,
       name: 'Swaraj Soubhagya Khandai',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -229,7 +208,7 @@ const Team = () => {
     },
 
     {
-      id: 15,
+      id: 13,
       name: 'Pratyush Parida',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -244,7 +223,7 @@ const Team = () => {
     },
 
     {
-      id: 16,
+      id: 14,
       name: 'Chinnari Harsha Vardhan ',
       role: 'Software Lead',
       branch: 'Computer Science and Engg.',
@@ -259,7 +238,7 @@ const Team = () => {
     },
 
     {
-      id: 17,
+      id: 15,
       name: 'Somya Tridarsini Dash',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -274,7 +253,7 @@ const Team = () => {
     },
 
     {
-      id: 18,
+      id: 16,
       name: 'Shradha Suman Mohapatra',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -289,7 +268,7 @@ const Team = () => {
     },
 
     {
-      id: 19,
+      id: 17,
       name: 'Suman Rath',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -304,7 +283,7 @@ const Team = () => {
     },
 
     {
-      id: 20,
+      id: 18,
       name: 'Anibes Mohanty',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -319,7 +298,7 @@ const Team = () => {
     },
 
     {
-      id: 21,
+      id: 19,
       name: 'Sunil Sahu',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -334,7 +313,7 @@ const Team = () => {
     },
 
     {
-      id: 22,
+      id: 20,
       name: 'Roshan Dang',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -349,7 +328,7 @@ const Team = () => {
     },
 
     {
-      id: 23,
+      id: 21,
       name: 'Anshik Meher',
       role: 'Software Lead',
       branch: 'Electrical Engineering.',
@@ -366,7 +345,7 @@ const Team = () => {
     //EEE
 
     {
-      id: 24,
+      id: 22,
       name: 'Gayatrirani Samantaray ',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -381,7 +360,7 @@ const Team = () => {
     },
 
     {
-      id: 25,
+      id: 23,
       name: 'Aryaman Singh ',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -396,7 +375,7 @@ const Team = () => {
     },
 
     {
-      id: 26,
+      id: 24,
       name: 'Samagnya Dash ',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -411,7 +390,7 @@ const Team = () => {
     },
 
     {
-      id: 27,
+      id: 25,
       name: 'Sriyanshu Sekhar Pradhan',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -426,7 +405,7 @@ const Team = () => {
     },
 
     {
-      id: 28,
+      id: 26,
       name: 'Bikash Barik',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -441,7 +420,7 @@ const Team = () => {
     },
 
     {
-      id: 29,
+      id: 27,
       name: 'Dibyajyoti Samal',
       role: 'Software Lead',
       branch: 'Electrical and Electronics Engineering',
@@ -457,7 +436,7 @@ const Team = () => {
 
     //ETC
     {
-      id: 30,
+      id: 28,
       name: 'Aradhya Rath',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -472,7 +451,7 @@ const Team = () => {
     },
 
      {
-      id: 31,
+      id: 29,
       name: 'Suhani Sabat',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -487,7 +466,7 @@ const Team = () => {
     },
 
      {
-      id: 32,
+      id: 30,
       name: 'Arpita Majumdar',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -502,7 +481,7 @@ const Team = () => {
     },
 
      {
-      id: 33,
+      id: 31,
       name: 'Rudra Narayan Panda',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -517,7 +496,7 @@ const Team = () => {
     },
 
      {
-      id: 34,
+      id: 32,
       name: 'Abinash Dash',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -532,7 +511,7 @@ const Team = () => {
     },
 
      {
-      id: 35,
+      id: 33,
       name: 'Manas Babu',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -547,7 +526,7 @@ const Team = () => {
     },
 
      {
-      id: 36,
+      id: 34,
       name: 'Aditya Swarup Khuntia ',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -562,7 +541,7 @@ const Team = () => {
     },
 
      {
-      id: 37,
+      id: 35,
       name: 'Sai Satyaprakash Parida',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -577,7 +556,7 @@ const Team = () => {
     },
 
      {
-      id: 38,
+      id: 36,
       name: 'Pritam Swain',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -592,7 +571,7 @@ const Team = () => {
     },
 
      {
-      id: 39,
+      id: 37,
       name: 'Rounak Senapati',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -607,7 +586,7 @@ const Team = () => {
     },
 
      {
-      id: 40,
+      id: 38,
       name: 'Soumya Ranjan Behera',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -622,7 +601,7 @@ const Team = () => {
     },
 
      {
-      id: 41,
+      id: 39,
       name: 'Sidhartha Kumar Nayak',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -637,7 +616,7 @@ const Team = () => {
     },
 
      {
-      id: 42,
+      id: 40,
       name: 'Hari Shah',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -652,7 +631,7 @@ const Team = () => {
     },
 
      {
-      id: 43,
+      id: 41,
       name: 'Mahasangram Kar',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -667,7 +646,7 @@ const Team = () => {
     },
 
      {
-      id: 44,
+      id: 42,
       name: 'Mantosh Barik',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -682,7 +661,7 @@ const Team = () => {
     },
 
      {
-      id: 45,
+      id: 43,
       name: 'Shimadri Yashwant',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -697,7 +676,7 @@ const Team = () => {
     },
 
      {
-      id: 46,
+      id: 44,
       name: 'Kamal Muduli',
       role: 'Software Lead',
       branch: 'Electronics and Telecommunication Engineering',
@@ -713,7 +692,7 @@ const Team = () => {
 
     //ME
     {
-      id: 47,
+      id: 45,
       name: 'Ansika priyadarshini Mishra',
       role: 'Software Lead',
       branch: 'Mechanical Engineering',
@@ -728,7 +707,7 @@ const Team = () => {
     },
 
     {
-      id: 48,
+      id: 46,
       name: 'Aditya Pradhan',
       role: 'Software Lead',
       branch: 'Mechanical Engineering',
@@ -743,7 +722,7 @@ const Team = () => {
     },
 
     {
-      id: 49,
+      id: 47,
       name: 'Roshan Kumar',
       role: 'Software Lead',
       branch: 'Mechanical Engineering',
@@ -759,7 +738,7 @@ const Team = () => {
 
     //MME
     {
-      id: 50,
+      id: 48,
       name: 'Supriya Patra',
       role: 'Software Lead',
       branch: 'MME',
@@ -775,7 +754,7 @@ const Team = () => {
 
 
     {
-      id: 51,
+      id: 49,
       name: 'Chandini Suhagini',
       role: 'Software Lead',
       branch: 'MME',
@@ -791,7 +770,7 @@ const Team = () => {
 
     //pe
     {
-      id: 52,
+      id: 50,
       name: 'Stuti Agarwal',
       role: 'Software Lead',
       branch: 'Production Engineering',
@@ -806,7 +785,7 @@ const Team = () => {
     },
 
     {
-      id: 53,
+      id: 51,
       name: 'Soumit Kumar Mohanta',
       role: 'Software Lead',
       branch: 'Production Engineering',
@@ -821,7 +800,7 @@ const Team = () => {
     },
 
     {
-      id: 54,
+      id: 52,
       name: 'Santosh Panda',
       role: 'Software Lead',
       branch: 'Production Engineering',
@@ -836,7 +815,7 @@ const Team = () => {
     },
 
     {
-      id: 56,
+      id: 53,
       name: 'Trisha Samal',
       role: 'Software Lead',
       branch: 'Production Engineering',
@@ -852,7 +831,7 @@ const Team = () => {
 
     //chem
      {
-      id: 57,
+      id: 54,
       name: 'Ankita Priyadarsini Nayak',
       role: 'Software Lead',
       branch: 'Chemical Engineering',
@@ -880,21 +859,6 @@ const Team = () => {
       linkedin: '',
       instagram: ''
     },
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
     // Add more members with appropriate year tags: 'First Year', 'Second Year', etc.
   ];
