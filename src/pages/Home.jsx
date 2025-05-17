@@ -34,14 +34,65 @@ const Home = () => {
       title: 'Robotics Bootcamp',
       date: '17 March 2025',
       description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
-      image: '/images/w1.jpg'
+      image: '/images/w1.jpg',
+      content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
+      gallery: [
+        '/images/w1.jpg',
+        '/images/w2.jpg',
+        '/images/w3.jpg'
+      ]
     },
     {
       id: 2,
       title: 'RoboXplore',
       date: '8 April 2025',
       description: 'Making of Line follower bot and sharing knowledge on Arduino',
-      image: '/images/w2.jpg'
+      image: '/images/w2.jpg',
+      content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
+      gallery: [
+        '/images/w2.jpg',
+        '/images/w1.jpg',
+        '/images/w3.jpg'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Robo Sumo',
+      date: '20 & 21 Feb 2025',
+      description: 'Introduction to Robot Operating System and its applications',
+      image: '/eventimages/sumo1.jpg',
+      content: 'A specialized workshop introducing participants to ROS (Robot Operating System). Covered topics included ROS architecture, nodes, topics, services, and practical implementation of basic robotics applications.',
+      gallery: [
+        '/eventimages/sumo1.jpg',
+        '/eventimages/w1.jpg',
+        '/eventimages/w2.jpg'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Death Race',
+      date: '22 June 2025',
+      description: 'Learn about drone assembly, programming, and flight control',
+      image: '/eventimages/race1.jpg',
+      content: 'Comprehensive workshop on drone technology covering assembly, programming, and flight control systems. Participants learned about drone components, flight dynamics, and basic programming for autonomous flight.',
+      gallery: [
+        '/images/w1.jpg',
+        '/images/w2.jpg',
+        '/images/w3.jpg'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Drone Dynamics',
+      date: '7 October 2023',
+      description: 'Introduction to computer vision and image processing for robotics',
+      image: '/eventimages/Drone1.png',
+      content: 'Workshop focused on computer vision applications in robotics. Topics included image processing, object detection, and integration with robotic systems using OpenCV and Python.',
+      gallery: [
+        '/eventimages/Drone2.jpg',
+        '/eventimages/Drone3.jpg',
+        '/eventimages/Drone4.jpg'
+      ]
     }
   ];
 
@@ -59,6 +110,27 @@ const Home = () => {
       year: '2024',
       achievement: 'Winner',
       image: '/images/comp1.jpg'
+    },
+    {
+      id: 3,
+      name: 'RosCon India',
+      year: '2024',
+      achievement: '',
+      image: '/compimages/roscon.jpg'
+    },
+    {
+      id: 4,
+      name: 'MIO Conclave',
+      year: '2023',
+      achievement: '',
+      image: '/compimages/mio.jpg'
+    },
+    {
+      id: 5,
+      name: 'RoboWars',
+      year: '2023',
+      achievement: 'Quarter Finalists',
+      image: '/images/comp2.jpg'
     }
   ];
 
@@ -216,6 +288,9 @@ const Home = () => {
               </div>
             ))}
           </Carousel>
+          <div className="view-all-container">
+            <Link to="/workshops" className="btn btn-primary">View All Events</Link>
+          </div>
         </div>
       </section>
 
