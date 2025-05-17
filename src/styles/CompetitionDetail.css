@@ -1,0 +1,318 @@
+.competition-detail {
+  padding: 80px 0;
+  background: var(--secondary-bg);
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.competition-detail .container {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.competition-detail h1 {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0 40px;
+}
+
+.competition-detail .year {
+  font-size: 1.2rem;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+}
+
+.competition-detail .achievement {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin: 0 auto 30px;
+  text-align: center;
+  font-weight: 600;
+  padding: 8px 20px;
+  background: rgba(var(--accent-rgb), 0.1);
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+}
+
+.competition-detail .description {
+  font-size: 1.2rem;
+  color: var(--secondary-text);
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  font-weight: 400;
+  padding: 0 40px;
+}
+
+.competition-detail .content {
+  font-size: 1.1rem;
+  color: var(--primary-text);
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: justify;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+/* Main Image Styles */
+.competition-detail .main-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.competition-detail .main-image {
+  width: 100%;
+  height: 50vh;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.competition-detail .main-image:hover {
+  transform: scale(1.02);
+}
+
+/* Image Gallery Styles */
+.competition-detail .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 40px;
+}
+
+.competition-detail .gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.competition-detail .gallery-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headers */
+.competition-detail .section-header {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin: 60px 0 30px;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1600px) {
+  .competition-detail .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+  }
+  
+  .competition-detail .main-image-container {
+    max-width: 1200px;
+  }
+  
+  .competition-detail .main-image {
+    height: 45vh;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .competition-detail h1 {
+    padding: 0 30px;
+  }
+  
+  .competition-detail .description {
+    padding: 0 30px;
+  }
+  
+  .competition-detail .content {
+    padding: 0 30px;
+  }
+  
+  .competition-detail .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 30px;
+  }
+  
+  .competition-detail .main-image-container {
+    max-width: 1000px;
+  }
+  
+  .competition-detail .main-image {
+    height: 40vh;
+    max-height: 450px;
+  }
+  
+  .competition-detail .section-header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .competition-detail {
+    padding: 60px 0;
+  }
+  
+  .competition-detail h1 {
+    font-size: 2.8rem;
+    padding: 0 25px;
+  }
+  
+  .competition-detail .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 25px;
+  }
+  
+  .competition-detail .main-image-container {
+    max-width: 800px;
+  }
+  
+  .competition-detail .main-image {
+    height: 35vh;
+    max-height: 400px;
+  }
+  
+  .competition-detail .gallery-image {
+    height: 250px;
+  }
+  
+  .competition-detail .content {
+    padding: 0 25px;
+  }
+  
+  .competition-detail .description {
+    padding: 0 25px;
+  }
+  
+  .competition-detail .section-header {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .competition-detail {
+    padding: 50px 0;
+  }
+  
+  .competition-detail h1 {
+    font-size: 2.4rem;
+    padding: 0 20px;
+  }
+  
+  .competition-detail .description {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  
+  .competition-detail .content {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
+  .competition-detail .main-image-container {
+    max-width: 600px;
+  }
+  
+  .competition-detail .main-image {
+    height: 30vh;
+    max-height: 350px;
+  }
+  
+  .competition-detail .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+  
+  .competition-detail .gallery-image {
+    height: 200px;
+  }
+  
+  .competition-detail .section-header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .competition-detail h1 {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+  
+  .competition-detail .achievement {
+    font-size: 1.1rem;
+    padding: 6px 15px;
+    min-width: 150px;
+  }
+  
+  .competition-detail .description {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  
+  .competition-detail .image-gallery {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .competition-detail .main-image-container {
+    max-width: 100%;
+    margin: 0 15px 40px;
+  }
+  
+  .competition-detail .main-image {
+    height: 25vh;
+    max-height: 300px;
+  }
+  
+  .competition-detail .gallery-image {
+    height: 250px;
+  }
+  
+  .competition-detail .section-header {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    padding: 0 15px;
+  }
+  
+  .competition-detail .content {
+    padding: 0 15px;
+  }
+} 
