@@ -853,7 +853,7 @@ const Team = () => {
     year: '3',
     bio: 'specializes in Arduino and Electronics',
     image: '/prefinal/Jateen.jpg',
-    github: '',
+    github: 'https://github.com/jateen2k3',
     linkedin: 'https://www.linkedin.com/in/jateen-kumar-sahu-1b9710296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     instagram: ''
   },
@@ -913,7 +913,7 @@ const Team = () => {
     year: '3',
     bio: 'specializes in Arduino and Electronics',
     image: '/prefinal/Reetika.jpg',
-    github: '',
+    github: 'https://github.com/Reetika-A',
     linkedin: 'https://www.linkedin.com/in/reetika-acharya-9a2012311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     instagram: ''
   },
