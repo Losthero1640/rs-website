@@ -8,6 +8,8 @@ import PageRoutes from './components/PageRoutes.jsx'
 
 import usePageLoader from './hooks/usePageLoader'
 import './styles/global.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const AppContent = () => {
   const location = useLocation()
