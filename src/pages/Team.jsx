@@ -1108,7 +1108,7 @@ const Team = () => {
     role: 'Coding Domain(Lead)',
     branch: 'Information Technology',
     year: '4',
-    image: '/Final/Saleena.jpg',
+    image: '/Final/saleena.jpg',
     github: '',
     linkedin: 'https://www.linkedin.com/in/saleena-das-a57866202/',
     instagram: ''
