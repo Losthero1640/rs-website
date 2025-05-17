@@ -6,21 +6,33 @@ const About = () => {
     <div className="about-page">
       <div className="container">
         <h1 className="section-title">About Us</h1>
-        
-        <section className="about-section">
-          <h2>Our Mission</h2>
-          <p>
-          Developing new ideas in the field of Robotics and Technology to enable students to learn new Technologies, assimilate appropriate skills creating innovations which solve real world problems and improve the quality of life by training them with strength of character, leadership and self-attainment.
-          </p>
+
+        <section className="about-section with-video">
+          <div className="text-content">
+            <h2>Our Mission</h2>
+            <p>
+              Developing new ideas in the field of Robotics and Technology to enable students to learn new technologies, assimilate appropriate skills, and create innovations that solve real-world problems. Our goal is to improve quality of life by training students with character, leadership, and self-attainment.
+            </p>
+
+            <h2>Our History</h2>
+            <p>
+              The Robotics Club is an OFFICIAL TECHNICAL club of VSSUT, Burla which encourages various technical activities and projects in the field of amateur as well as advanced robotics. The members are a bunch of budding technocrats driven by a strong zest for learning and applying theoretical knowledge to real-life robotic solutions.
+            </p>
+          </div>
+
+          <div className="video-container">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/RhroZl45nQo"
+              title="VSSUT ROBOTICS- The Confluence of Innovative Minds"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
         </section>
-        
-        <section className="about-section">
-          <h2>Our History</h2>
-          <p>
-          The Robotics Club is an OFFICIAL TECHNICAL club of VSSUT, Burla which encourages various technical activities and projects in the field of amateur as well as advanced Robotics, in the University. The members are a bunch of budding technocrats who are driven by an acute zest for learning technological advancements and happenings in the modern world, and endeavour in applying the theoretical learning into realistic projects.
-          </p>
-        </section>
-        
+
         <section className="about-section">
           <h2>What We Do</h2>
           <div className="activities">
