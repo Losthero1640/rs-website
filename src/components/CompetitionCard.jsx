@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/CompetitionCard.css';
 
 const CompetitionCard = ({ competition }) => {
@@ -19,7 +20,9 @@ const CompetitionCard = ({ competition }) => {
           {competition.details && (
             <p className="details">{competition.details}</p>
           )}
-          <button className="btn btn-outline">View Photos</button>
+          <Link to={`/competitions/${competition.id}`} className="btn btn-outline">
+            View Details
+          </Link>
         </div>
       </div>
     </div>

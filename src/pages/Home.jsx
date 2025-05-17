@@ -222,10 +222,28 @@ const Home = () => {
       <section className="competitions">
         <div className="container">
           <h2 className="section-title">Competitions Participated</h2>
-          <div className="card-grid">
+          <Carousel
+            showArrows={true}
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            className="competition-carousel"
+          >
             {competitions.map(competition => (
-              <CompetitionCard key={competition.id} competition={competition} />
+              <div key={competition.id}>
+                <Link to={`/competitions/${competition.id}`}>
+                  <img src={competition.image} alt={competition.name} />
+                  <div className="legend">
+                    <h3>{competition.name}</h3>
+                    <p>{competition.achievement}</p>
+                    <small>{competition.year}</small>
+                  </div>
+                </Link>
+              </div>
             ))}
+          </Carousel>
+          <div className="view-all-container">
+            <Link to="/competitions" className="btn btn-primary">View All Competitions</Link>
           </div>
         </div>
       </section>

@@ -1,0 +1,42 @@
+.competition-detail {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.competition-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.competition-detail .year {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.competition-detail .achievement {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.competition-detail .competition-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.competition-detail .description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.competition-detail .content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+} 
