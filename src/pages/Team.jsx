@@ -1059,6 +1059,17 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 91,
+    name: 'Divyanshu Gupta ',
+    role: 'CORDINATOR',
+    branch: 'ELECTRONICS AND TELECOMMUNICATION ENGINEERING',
+    year: '4',
+    image: '/Final/Divyanshu.jpg',
+    github: '',
+    linkedin: 'https://www.linkedin.com/in/divyanshu-gupta-a61188285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: ''
+  },
+  {
     id: 77,
     name: 'Indrajit Pani',
     role: 'MANAGEMENT(CO-LEAD)',
@@ -1070,6 +1081,17 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 93,
+    name: 'Parthasarathi Swain',
+    role: 'Technical Head',
+    branch: 'Electrical Engineering ',
+    year: '4',
+    image: '/Final/Partha.jpg',
+    github: '',
+    linkedin: '',
+    instagram: ''
+  },
+  {
     id: 87,
     name: 'Lipsamayee Mahanta',
     role: '',
@@ -1078,6 +1100,17 @@ const Team = () => {
     image: '/Final/Lipsamayee.jpg',
     github: 'https://github.com/Lipsa01',
     linkedin: 'https://www.linkedin.com/in/lipsa7mayee/',
+    instagram: ''
+  },
+  {
+    id: 92,
+    name: 'Saleena Das',
+    role: 'Coding Domain(Lead)',
+    branch: 'Information Technology',
+    year: '4',
+    image: '/Final/Saleena.jpg',
+    github: '',
+    linkedin: 'https://www.linkedin.com/in/saleena-das-a57866202/',
     instagram: ''
   },
   {
@@ -1201,7 +1234,9 @@ const Team = () => {
     linkedin: 'https://www.linkedin.com/in/tarini-prasad-dash-808629279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     instagram: ''
   },
-    // last id is 90 for anyone developing start from 91 next
+  
+  
+    // last id is 93 for anyone developing start from 94 next
   ];
 
   const filteredMembers = activeFilter
