@@ -21,6 +21,7 @@ const AppContent = () => {
     '/team',
     '/about',
     '/contact',
+    '/workshops',
     '/workshops/:id',
     '/competitions',
     '/competitions/:id',
