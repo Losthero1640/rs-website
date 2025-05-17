@@ -846,6 +846,30 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 71,
+    name: 'Gantyada vasudev ',
+    role: '',
+    branch: 'Civil Engineering ',
+    year: '3',
+    bio: 'specializes in Arduino and Structural',
+    image: '/prefinal/Vasudev.jpg',
+    github: '',
+    linkedin: 'https://www.linkedin.com/in/vasudev-gantyada-4ab91a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: ''
+  },
+  {
+    id: 62,
+    name: 'Himansu Sekhar Baral',
+    role: '',
+    branch: 'Electronics and Telecommunication Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Electronics',
+    image: '/prefinal/Himanshu.jpg',
+    github: 'https://github.com/HIMANSUsekharBaral',
+    linkedin: 'https://www.linkedin.com/in/himansu-sekhar-baral-0674852aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: ''
+  },
+  {
     id: 90,
     name: 'Jateen Kumar Sahu',
     role: '',
@@ -859,7 +883,7 @@ const Team = () => {
   },
   {
     id: 65,
-    name: 'KOTHAKOTA VIDHYA SAI',
+    name: 'Kothakota Vidhya Sai',
     role: '',
     branch: 'Electronics and Telecommunication Engineering',
     year: '3',
@@ -977,35 +1001,13 @@ const Team = () => {
     linkedin: 'https://www.linkedin.com/in/sourav-padhy-0b0515292/',
     instagram: ''
   },
-  {
-    id: 71,
-    name: 'Gantyada vasudev ',
-    role: '',
-    branch: 'Civil Engineering ',
-    year: '3',
-    bio: 'specializes in Arduino and Structural',
-    image: '/prefinal/Vasudev.jpg',
-    github: '',
-    linkedin: 'https://www.linkedin.com/in/vasudev-gantyada-4ab91a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    instagram: ''
-  },
-  {
-    id: 62,
-    name: 'Himansu Sekhar Baral',
-    role: '',
-    branch: 'Electronics and Telecommunication Engineering',
-    year: '3',
-    bio: 'specializes in Arduino and Electronics',
-    image: '/prefinal/Himanshu.jpg',
-    github: 'https://github.com/HIMANSUsekharBaral',
-    linkedin: 'https://www.linkedin.com/in/himansu-sekhar-baral-0674852aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    instagram: ''
-  },
+  
+  
 
     //final year
      {
     id: 74,
-    name: 'AKLANT KUMAR SAHU ',
+    name: 'Aklant Kumar Sahu',
     role: '',
     branch: 'Electronics And Telecommunication Engineering ',
     year: '4',
@@ -1038,7 +1040,7 @@ const Team = () => {
   },
   {
     id: 84,
-    name: 'CHINMAYA KUMAR BEHERA ',
+    name: 'Chinmaya Kumar Behera',
     role: 'MANAGEMENT(CO-LEAD)',
     branch: 'Information Technology ',
     year: '4',
@@ -1050,7 +1052,7 @@ const Team = () => {
   {
     id: 73,
     name: 'Debashish Budek',
-    role: 'STRUCTURAL DOMAIN(co-lead)',
+    role: 'STRUCTURAL DOMAIN(CO-LEAD)',
     branch: 'Metallurgical and Materials Engineering ',
     year: '4',
     image: '/Final/Debasish.jpg',
@@ -1061,7 +1063,7 @@ const Team = () => {
   {
     id: 91,
     name: 'Divyanshu Gupta ',
-    role: 'CORDINATOR',
+    role: 'COORDINATOR',
     branch: 'ELECTRONICS AND TELECOMMUNICATION ENGINEERING',
     year: '4',
     image: '/Final/Divyanshu.jpg',
@@ -1087,8 +1089,8 @@ const Team = () => {
     branch: 'Electrical Engineering ',
     year: '4',
     image: '/Final/Partha.jpg',
-    github: '',
-    linkedin: '',
+    github: 'https://github.com/Partha45677',
+    linkedin: 'https://www.linkedin.com/in/parthasarthi-swain-86b1862a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     instagram: ''
   },
   {
@@ -1105,7 +1107,7 @@ const Team = () => {
   {
     id: 92,
     name: 'Saleena Das',
-    role: 'Coding Domain(Lead)',
+    role: 'CODING DOMAIN(LEAD)',
     branch: 'Information Technology',
     year: '4',
     image: '/Final/saleena.jpg',
@@ -1148,9 +1150,9 @@ const Team = () => {
   },
   {
     id: 85,
-    name: 'Sibananda bishoyi ',
+    name: 'Sibananda Bishoyi ',
     role: 'MANAGEMENT(CO-LEAD)',
-    branch: 'Electrical and electronics engineering ',
+    branch: 'Electrical and Electronics Engineering ',
     year: '4',
     image: '/Final/Sibananda.jpg',
     github: '',
@@ -1171,7 +1173,7 @@ const Team = () => {
   {
     id: 76,
     name: 'Soham Dhal',
-    role: 'STRUCTURAL DOMAIN(co-lead)',
+    role: 'STRUCTURAL DOMAIN(CO-LEAD)',
     branch: 'Electronics And Telecommunication Engineering ',
     year: '4',
     image: '/Final/Soham.jpg',
@@ -1182,7 +1184,7 @@ const Team = () => {
   {
     id: 75,
     name: 'Sonalika Mohanty ',
-    role: 'Modelling and Simulation Domain(co-lead)',
+    role: 'MODELLING AND SIMULATION DOMAIN(CO-LEAD)',
     branch: 'Mechanical Engineering',
     year: '4',
     image: '/Final/Sonalika.jpg',
@@ -1215,7 +1217,7 @@ const Team = () => {
   {
     id: 72,
     name: 'T ACHYUTA PATRO ',
-    role: 'MODELLING AND SIMULATION DOMAIN(co-lead)',
+    role: 'MODELLING AND SIMULATION DOMAIN(CO-LEAD)',
     branch: 'Electronics And Telecommunication Engineering ',
     year: '4',
     image: '/Final/Achyuta.jpg',
