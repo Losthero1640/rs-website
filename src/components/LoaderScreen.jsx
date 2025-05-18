@@ -1,5 +1,5 @@
 import React from 'react'
-import Loader from './Loader'
+import Loader from './Loade.jsx'
 
 const LoaderScreen = ({ fadeOut }) => {
   return (

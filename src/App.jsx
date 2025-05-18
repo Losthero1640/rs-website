@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import LoaderScreen from './components/LoaderScreen.jsx'
 import PageRoutes from './components/PageRoutes.jsx'
 
-import usePageLoader from './hooks/usePageLoader'
+import usePageLoader from './hooks/usePageLoader.js'
 import './styles/global.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -21,7 +21,10 @@ const AppContent = () => {
     '/team',
     '/about',
     '/contact',
+    '/workshops',
     '/workshops/:id',
+    '/competitions',
+    '/competitions/:id',
   ].includes(pathname)
 
   return (

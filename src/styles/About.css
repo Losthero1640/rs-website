@@ -61,16 +61,45 @@
   margin-bottom: 0;
 }
 
+/* New Layout for Section with Video */
+.with-video {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1 1 55%;
+}
+
+.video-container {
+  width: 500px; /* same as default YouTube width */
+  height: 320px; /* increase this for more height, e.g., 400px */
+  max-width: 100%; /* responsive fallback */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
 /* Responsive About Section */
 @media (max-width: 1600px) {
   .about-section h2 {
     font-size: 2.3rem;
   }
-  
+
   .about-section p {
     font-size: 1.1rem;
   }
-  
+
   .activities {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -80,11 +109,11 @@
   .about-section {
     margin-bottom: 50px;
   }
-  
+
   .activity-card {
     padding: 30px;
   }
-  
+
   .activity-card h3 {
     font-size: 1.6rem;
   }
@@ -95,10 +124,18 @@
     font-size: 2.1rem;
     margin-bottom: 25px;
   }
-  
+
   .activities {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+  }
+
+  .with-video {
+    flex-direction: column;
+  }
+
+  .video-container iframe {
+    max-height: 350px;
   }
 }
 
@@ -106,11 +143,11 @@
   .about-section {
     margin-bottom: 40px;
   }
-  
+
   .about-section h2 {
     font-size: 2rem;
   }
-  
+
   .activities {
     grid-template-columns: 1fr;
     max-width: 600px;
@@ -123,12 +160,16 @@
   .about-section h2 {
     font-size: 1.8rem;
   }
-  
+
   .activity-card {
     padding: 25px;
   }
-  
+
   .activity-card h3 {
     font-size: 1.5rem;
+  }
+
+  .video-container iframe {
+    max-height: 250px;
   }
 }
