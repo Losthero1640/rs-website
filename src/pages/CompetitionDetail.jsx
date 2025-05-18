@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 import '../styles/CompetitionDetail.css';
 
 const competitions = [
@@ -86,46 +87,54 @@ const CompetitionDetail = () => {
   const competition = competitions.find(c => c.id === parseInt(id));
 
   if (!competition) {
-    return <div className="container"><h2>Competition Not Found</h2></div>;
+    return (
+      <>
+        <Navbar />
+        <div className="container"><h2>Competition Not Found</h2></div>
+      </>
+    );
   }
 
   return (
-    <div className="competition-detail">
-      <div className="container">
-        <h1>{competition.name}</h1>
-        <span className="year">{competition.year}</span>
-        {competition.achievement && <p className="achievement">{competition.achievement}</p>}
-        <p className="description">{competition.description}</p>
-        
-        <div className="main-image-container">
-          <img 
-            src={competition.image} 
-            alt={competition.name} 
-            className="main-image"
-          />
-        </div>
-        
-        <div className="content">
-          {competition.content}
-        </div>
+    <>
+      <Navbar />
+      <div className="competition-detail">
+        <div className="container">
+          <h1>{competition.name}</h1>
+          <span className="year">{competition.year}</span>
+          {competition.achievement && <p className="achievement">{competition.achievement}</p>}
+          <p className="description">{competition.description}</p>
+          
+          <div className="main-image-container">
+            <img 
+              src={competition.image} 
+              alt={competition.name} 
+              className="main-image"
+            />
+          </div>
+          
+          <div className="content">
+            {competition.content}
+          </div>
 
-        {competition.gallery && competition.gallery.length > 0 && (
-          <>
-            <h2 className="section-header">Gallery</h2>
-            <div className="image-gallery">
-              {competition.gallery.map((image, index) => (
-                <img 
-                  key={index}
-                  src={image} 
-                  alt={`${competition.name} - Image ${index + 1}`}
-                  className="gallery-image"
-                />
-              ))}
-            </div>
-          </>
-        )}
+          {competition.gallery && competition.gallery.length > 0 && (
+            <>
+              <h2 className="section-header">Gallery</h2>
+              <div className="image-gallery">
+                {competition.gallery.map((image, index) => (
+                  <img 
+                    key={index}
+                    src={image} 
+                    alt={`${competition.name} - Image ${index + 1}`}
+                    className="gallery-image"
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
