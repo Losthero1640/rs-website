@@ -56,10 +56,16 @@
   margin-bottom: 20px;
 }
 
+
 .activity-card p {
   font-size: 1.1rem;
   margin-bottom: 0;
 }
+.activity-card a {
+  margin-top: 15px;
+}
+
+
 
 /* New Layout for Section with Video */
 .with-video {
