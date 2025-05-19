@@ -6,12 +6,11 @@ import Team from '../pages/Team.jsx'
 import About from '../pages/About.jsx'
 import Contact from '../pages/Contact.jsx'
 import NotFound from '../pages/NotFound.jsx'
-import WorkshopsDetail from '../pages/WorkshopsDetail.jsx'
-import CompetitionDetail from '../pages/CompetitionDetail.jsx'
-import Competitions from '../pages/Competitions.jsx'
-import Workshops from '../pages/Workshops.jsx'
-import ProjectDetailPage from '../pages/ProjectDetail.jsx'
-
+import WorkshopsDetail from "../pages/WorkshopsDetail.jsx"
+import CompetitionDetail from "../pages/CompetitionDetail.jsx"
+import Competitions from "../pages/Competitions.jsx"
+import Workshops from "../pages/Workshops.jsx"
+import Achievements from "../pages/Achievements.jsx"
 // while adding routes also add the routes in the isNotFound variable in app.jsx
 const PageRoutes = () => {
   return (
@@ -27,6 +26,8 @@ const PageRoutes = () => {
       <Route path="/competitions/:id" element={<CompetitionDetail />} />
       <Route path="*" element={<NotFound />} /> //page Not found route should
       always be the last route
+      <Route path="/achievements" element={<Achievements />} />
+      <Route path="*" element={<NotFound />} />       //page Not found route should always be the last route
     </Routes>
   )
 }

@@ -120,6 +120,30 @@ const Home = () => {
     }
   ];
 
+  const achievements = [
+    {
+      id: 1,
+      title: "National Robotics Competition",
+      year: "2023",
+      description: "Secured 1st place in the National Robotics Competition, showcasing innovative automation solutions.",
+      category: "Competition"
+    },
+    {
+      id: 2,
+      title: "Research Publication",
+      year: "2023",
+      description: "Published research paper on 'Advanced Machine Learning Applications in Robotics' in IEEE Robotics Journal.",
+      category: "Research"
+    },
+    {
+      id: 3,
+      title: "Industry Collaboration",
+      year: "2022",
+      description: "Successfully completed a collaborative project with leading tech companies in robotics automation.",
+      category: "Industry"
+    }
+  ];
+
   // Initialize particles
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -312,6 +336,35 @@ const Home = () => {
             <Link to="/competitions" className="btn btn-primary">
               View All Competitions
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="achievements">
+        <div className="container">
+          <h2 className="section-title">Our Achievements</h2>
+          <Carousel
+            showArrows={true}
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            className="achievement-carousel"
+          >
+            {achievements.map((achievement) => (
+              <div key={achievement.id}>
+                <div className="achievement-content">
+                  <h3>{achievement.title}</h3>
+                  <p>{achievement.description}</p>
+                  <div className="achievement-meta">
+                    <span className="achievement-year">{achievement.year}</span>
+                    <span className="achievement-category">{achievement.category}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+          <div className="view-all-container">
+            <Link to="/achievements" className="btn btn-primary">View All Achievements</Link>
           </div>
         </div>
       </section>
