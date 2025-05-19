@@ -9,12 +9,12 @@ const Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
   const [activeFilter, setActiveFilter] = useState(null);
 
-  const yearFilters = [ 'Sophomores', 'Pre Final Years', 'Final Years'];
+  const yearFilters = ['Final Years', 'Pre Final Years', 'Sophomores'];
 
   const getYearGroup = (filter) => {
     switch (filter) {
       case 'Sophomores': return ['2'];
-      case 'Pre Final Years': return [ '3'];
+      case 'Pre Final Years': return ['3'];
       case 'Final Years': return ['4'];
       default: return [];
     }
