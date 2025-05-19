@@ -1,0 +1,102 @@
+.project-detail {
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.project-detail .container {
+  max-width: 80%;
+  width: 100%;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: 16px;
+  padding: 40px 30px;
+  animation: fadeIn 0.4s ease;
+  margin: auto;
+}
+
+
+
+.project-banner {
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 450px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-detail p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: var(--secondary-text);
+}
+
+.project-status {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 229, 255, 0.1);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.project-status[data-status='completed'] {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: #4caf50;
+  color: #4caf50;
+}
+.project-status[data-status='in progress'] {
+  background-color: rgba(0, 229, 255, 0.2);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-detail .container {
+    padding: 25px 20px;
+  }
+
+  .project-detail h2 {
+    font-size: 2rem;
+  }
+
+  .project-banner {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-detail p {
+    font-size: 1rem;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

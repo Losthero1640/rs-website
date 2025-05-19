@@ -9,24 +9,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import { projectsData } from '../data/projectsData.js'
 
 const Home = () => {
-  const latestProjects = [
-    {
-      id: 1,
-      title: 'Autonomous Rover',
-      description: 'Developing a Mars rover prototype with autonomous navigation capabilities.',
-      image: '/images/rover.jpg',
-      status: 'In Progress'
-    },
-    {
-      id: 2,
-      title: 'Robotic Arm',
-      description: '6-axis robotic arm with computer vision for object manipulation.',
-      image: '/images/robotic-arm.jpg',
-      status: 'Completed'
-    }
-  ];
+
 
   const workshops = [
     {
@@ -148,24 +134,24 @@ const Home = () => {
           className="hero-particles"
           options={{
             fullScreen: { enable: false },
-            background: { 
+            background: {
               color: {
-                value: "transparent"
-              }
+                value: 'transparent',
+              },
             },
             fpsLimit: 60,
             particles: {
-              number: { 
+              number: {
                 value: 80,
                 density: {
                   enable: true,
-                  value_area: 800
-                }
+                  value_area: 800,
+                },
               },
-              color: { value: ["#00ffcc", "#00b8ff", "#0066ff"] },
-              shape: { 
-                type: ["circle", "triangle", "square"],
-                stroke: { width: 1, color: "#00ffcc" }
+              color: { value: ['#00ffcc', '#00b8ff', '#0066ff'] },
+              shape: {
+                type: ['circle', 'triangle', 'square'],
+                stroke: { width: 1, color: '#00ffcc' },
               },
               opacity: {
                 value: 0.6,
@@ -174,8 +160,8 @@ const Home = () => {
                   enable: true,
                   speed: 1,
                   minimumValue: 0.1,
-                  sync: false
-                }
+                  sync: false,
+                },
               },
               size: {
                 value: 4,
@@ -184,70 +170,73 @@ const Home = () => {
                   enable: true,
                   speed: 2,
                   minimumValue: 1,
-                  sync: false
-                }
+                  sync: false,
+                },
               },
               links: {
                 enable: true,
                 distance: 150,
-                color: "#00ffcc",
+                color: '#00ffcc',
                 opacity: 0.4,
                 width: 1,
                 triangles: {
                   enable: true,
-                  opacity: 0.1
-                }
+                  opacity: 0.1,
+                },
               },
               move: {
                 enable: true,
                 speed: 2,
-                direction: "none",
+                direction: 'none',
                 outModes: {
-                  default: "bounce",
+                  default: 'bounce',
                 },
                 attract: {
                   enable: true,
                   rotateX: 600,
-                  rotateY: 1200
-                }
+                  rotateY: 1200,
+                },
               },
             },
             interactivity: {
               events: {
                 onHover: {
                   enable: true,
-                  mode: ["grab", "bubble"],
+                  mode: ['grab', 'bubble'],
                 },
                 onClick: {
                   enable: true,
-                  mode: "push"
-                }
+                  mode: 'push',
+                },
               },
               modes: {
                 grab: {
                   distance: 200,
                   links: {
-                    opacity: 0.8
-                  }
+                    opacity: 0.8,
+                  },
                 },
                 bubble: {
                   distance: 200,
                   size: 6,
                   duration: 2,
                   opacity: 0.8,
-                  speed: 3
+                  speed: 3,
                 },
                 push: {
-                  quantity: 4
-                }
-              }
+                  quantity: 4,
+                },
+              },
             },
-            detectRetina: true
+            detectRetina: true,
           }}
         />
         <div className="container hero-content">
           <h1>Innovating the Future of Robotics</h1>
-          <p>Join us in building cutting-edge robotic solutions to real-world problems.</p>
+          <p>
+            Join us in building cutting-edge robotic solutions to real-world
+            problems.
+          </p>
           <Link to="/about" className="btn">
             Learn More
           </Link>
@@ -258,7 +247,7 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Latest Projects</h2>
           <div className="projects-grid">
-            {latestProjects.map(project => (
+            {projectsData.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -275,7 +264,7 @@ const Home = () => {
             showThumbs={false}
             className="workshop-carousel"
           >
-            {workshops.map(workshop => (
+            {workshops.map((workshop) => (
               <div key={workshop.id}>
                 <Link to={`/workshops/${workshop.id}`}>
                   <img src={workshop.image} alt={workshop.title} />
@@ -289,7 +278,9 @@ const Home = () => {
             ))}
           </Carousel>
           <div className="view-all-container">
-            <Link to="/workshops" className="btn btn-primary">View All Events</Link>
+            <Link to="/workshops" className="btn btn-primary">
+              View All Events
+            </Link>
           </div>
         </div>
       </section>
@@ -304,7 +295,7 @@ const Home = () => {
             showThumbs={false}
             className="competition-carousel"
           >
-            {competitions.map(competition => (
+            {competitions.map((competition) => (
               <div key={competition.id}>
                 <Link to={`/competitions/${competition.id}`}>
                   <img src={competition.image} alt={competition.name} />
@@ -318,12 +309,14 @@ const Home = () => {
             ))}
           </Carousel>
           <div className="view-all-container">
-            <Link to="/competitions" className="btn btn-primary">View All Competitions</Link>
+            <Link to="/competitions" className="btn btn-primary">
+              View All Competitions
+            </Link>
           </div>
         </div>
       </section>
     </div>
-  );
+  )
 };
 
 export default Home;
