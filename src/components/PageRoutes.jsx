@@ -24,8 +24,6 @@ const PageRoutes = () => {
       <Route path="/workshops/:id" element={<WorkshopsDetail />} />
       <Route path="/competitions" element={<Competitions />} />
       <Route path="/competitions/:id" element={<CompetitionDetail />} />
-      <Route path="*" element={<NotFound />} /> //page Not found route should
-      always be the last route
       <Route path="/achievements" element={<Achievements />} />
       <Route path="*" element={<NotFound />} />       //page Not found route should always be the last route
     </Routes>

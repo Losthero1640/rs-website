@@ -26,6 +26,7 @@ const AppContent = () => {
     '/competitions',
     '/competitions/:id',
     '/achievements',
+    '/project/:id',
   ].includes(pathname)
 
   return (
