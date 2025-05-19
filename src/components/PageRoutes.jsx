@@ -11,6 +11,7 @@ import CompetitionDetail from "../pages/CompetitionDetail.jsx"
 import Competitions from "../pages/Competitions.jsx"
 import Workshops from "../pages/Workshops.jsx"
 import Achievements from "../pages/Achievements.jsx"
+import ProjectDetailPage from '../pages/ProjectDetail.jsx'
 // while adding routes also add the routes in the isNotFound variable in app.jsx
 const PageRoutes = () => {
   return (
