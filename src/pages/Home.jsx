@@ -305,10 +305,11 @@ const Home = () => {
           <h2 className="section-title">Latest Projects</h2>
           <div className="projects-grid">
             {latestProjects.map(project => (
-              <div key={project.id} className="project-card">
-                <img src={project.image} alt={project.title} />
-                <h3>{project.title}</h3>
-              </div>
+              // <div key={project.id} className="project-card">
+              //   <img src={project.image} alt={project.title} />
+              //   <h3>{project.title}</h3>
+              // </div>
+              <ProjectCard project={project} displayLearnMore = {false}/>
             ))}
           </div>
           <div className="view-all-container">
