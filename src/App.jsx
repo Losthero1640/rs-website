@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import LoaderScreen from './components/LoaderScreen.jsx'
 import PageRoutes from './components/PageRoutes.jsx'
+import AllProjects from './pages/AllProjects'
 
 import usePageLoader from './hooks/usePageLoader.js'
 import './styles/global.css'
@@ -26,6 +27,7 @@ const AppContent = () => {
     '/competitions',
     '/competitions/:id',
     '/achievements',
+    '/projects',
   ].includes(pathname)
 
   return (

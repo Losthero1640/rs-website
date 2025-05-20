@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
@@ -11,20 +11,30 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
 const Home = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   const latestProjects = [
     {
       id: 1,
-      title: 'Autonomous Rover',
+      title: 'AMR',
       description: 'Developing a Mars rover prototype with autonomous navigation capabilities.',
-      image: '/images/rover.jpg',
+      image: '/projects/amr.jpg',
       status: 'In Progress'
     },
     {
       id: 2,
-      title: 'Robotic Arm',
+      title: 'UAV',
       description: '6-axis robotic arm with computer vision for object manipulation.',
-      image: '/images/robotic-arm.jpg',
+      image: '/projects/uav.jpg',
       status: 'Completed'
+    },
+    {
+      id: 3,
+      title: 'Drone Navigation',
+      description: 'Autonomous drone navigation system using GPS and computer vision.',
+      image: '/projects/amr.jpg',
+      status: 'In Progress'
     }
   ];
 
@@ -158,6 +168,18 @@ const Home = () => {
     }
   ];
 
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleClosePopup = () => {
+    setSelectedProject(null);
+  };
+
+  const toggleShowAllProjects = () => {
+    setShowAllProjects(!showAllProjects);
+  };
+
   // Initialize particles
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -283,8 +305,14 @@ const Home = () => {
           <h2 className="section-title">Latest Projects</h2>
           <div className="projects-grid">
             {latestProjects.map(project => (
-              <ProjectCard key={project.id} project={project} />
+              <div key={project.id} className="project-card">
+                <img src={project.image} alt={project.title} />
+                <h3>{project.title}</h3>
+              </div>
             ))}
+          </div>
+          <div className="view-all-container">
+            <Link to="/projects" className="btn btn-primary">View All Projects</Link>
           </div>
         </div>
       </section>
@@ -375,6 +403,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {selectedProject && (
+        <ProjectPopup project={selectedProject} onClose={handleClosePopup} />
+      )}
     </div>
   );
 };
