@@ -19,18 +19,39 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-   emailjs.sendForm('service_dkdjytk', 'template_iv7pfgh', form.current, 'WpfGT8CzkvgnGTc_U')
-      .then((result) => {
-          alert('Message sent successfully!');
-          setFormData({ name: '', email: '', message: '' });
-      }, (error) => {
-  alert('Failed to send message. Please try again later.');
-  console.error('EmailJS Error:', error);
-}
-);
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//    emailjs.sendForm('service_dkdjytk', 'template_iv7pfgh', form.current, 'WpfGT8CzkvgnGTc_U')
+//       .then((result) => {
+//           alert('Message sent successfully!');
+//           setFormData({ name: '', email: '', message: '' });
+//       }, (error) => {
+//   alert('Failed to send message. Please try again later.');
+//   console.error('EmailJS Error:', error);
+// }
+// );
+//   };
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    form.current,
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  )
+  .then((result) => {
+    alert('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  }, (error) => {
+    alert('Failed to send message. Please try again later.');
+    console.error('EmailJS Error:', error?.text || error);
+  });
+};
+
+
+
 
   return (
     <div className="contact-page">
