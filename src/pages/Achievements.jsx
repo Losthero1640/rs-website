@@ -7,58 +7,465 @@ const Achievements = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const achievements = [
-    {
-      id: 1,
-      title: "National Robotics Competition",
-      year: "2023",
-      description: "Secured 1st place in the National Robotics Competition, showcasing innovative automation solutions.",
-      category: "Competition"
-    },
-    {
-      id: 2,
-      title: "Research Publication",
-      year: "2023",
-      description: "Published research paper on 'Advanced Machine Learning Applications in Robotics' in IEEE Robotics Journal.",
-      category: "Research"
-    },
-    {
-      id: 3,
-      title: "Industry Collaboration",
-      year: "2022",
-      description: "Successfully completed a collaborative project with leading tech companies in robotics automation.",
-      category: "Industry"
-    },
-    {
-      id: 4,
-      title: "International Conference",
-      year: "2022",
-      description: "Presented innovative robotics solutions at the International Robotics Conference in Tokyo.",
-      category: "Conference"
-    },
-    {
-      id: 5,
-      title: "Innovation Award",
-      year: "2021",
-      description: "Received the Innovation Award for developing a novel robotic control system.",
-      category: "Award"
-    }
-  ];
+  const achievementsByYear = {
+    "2025": [
+      {
+        id: 1,
+        title: "National Science Day",
+        description: "Winner – Science Exhibition, National Science Day, BRIC",
+        category: "Competition"
+      }
+    ],
+    "2024": [
+      {
+        id: 2,
+        title: "Smart India Hackathon",
+        description: "Grand Finalist – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 3,
+        title: "E-Yantra Robotics Competition",
+        description: "Finalist – E-Yantra Robotics Competition (IIT Bombay).",
+        category: "Competition"
+      },
+      {
+        id: 4,
+        title: "INNOVISION",
+        description: "Runners-Up – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      }
+    ],
+    "2023": [
+      {
+        id: 5,
+        title: "Smart India Hackathon",
+        description: "Grand Finalist – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 6,
+        title: "E-Yantra Robotics Competition",
+        description: "Finalist – E-Yantra Robotics Competition (IIT Bombay)",
+        category: "Competition"
+      },
+      {
+        id: 7,
+        title: "Robomania",
+        description: "1st Runner Up in Innovation Challenge - Robomania",
+        category: "Competition"
+      },
+      {
+        id: 8,
+        title: "START-UP MELA",
+        description: "Top 10 – INNOMINDS Hackathon (START-UP MELA)",
+        category: "Expo"
+      }
+    ],
+    "2022": [
+      {
+        id: 9,
+        title: "Smart India Hackathon",
+        description: "Grand Finalist – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 10,
+        title: "Innovation Design Competition",
+        description: "1st Prize – Innovation Design Competition, ISRO Satish Dhawan Space Centre",
+        category: "Competition"
+      },
+      {
+        id: 11,
+        title: "Smart India Hackathon",
+        description: "1st Runner Up – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 12,
+        title: "Smart India Hackathon",
+        description: "Finalists(2 Teams) – Smart India Hackathon",
+        category: "Competition"
+      }
+    ],
+    "2021": [
+      {
+        id: 13,
+        title: "DEEPTECH IDEATHON",
+        description: "Winner – DEEPTECH IDEATHON, Mouser Electronics",
+        category: "Competition"
+      },
+      {
+        id: 14,
+        title: "Pre Incubation Training Programme",
+        description: "Selected in Pre Incubation Training Programme, by CII, Utkal University",
+        category: "Award"
+      }
+    ],
+    "2020": [
+      {
+        id: 15,
+        title: "Smart India Hackathon",
+        description: "Winners – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 16,
+        title: "ABU ROBOCON",
+        description: "Shortlisted for Round 2(Video Presentation Round) for ABU ROBOCON 2020, Organised by Doordarshan India and IIT Delhi.",
+        category: "Competition"
+      },
+      {
+        id: 17,
+        title: "National Students' Space Challenge",
+        description: "AIR 1 in SONAROUS in National Students' Space Challenge, organised by ISRO and IIT Kharagpur.",
+        category: "Competition"
+      }
+    ],
+    "2019": [
+      {
+        id: 18,
+        title: "Tata Crucible Hackathon",
+        description: "Finalists(3 teams) – Tata Crucible Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 19,
+        title: "E-Yantra Robotics Competition",
+        description: "7 teams from Robotics Society VSSUT,Burla have qualified for the second stage of E-Yantra Robotics Competition.",
+        category: "Competition"
+      },
+      {
+        id: 20,
+        title: "ASME E-Fest Asia Pacific",
+        description: "Rank 4 – Student Designing competition, ASME E-Fest Asia Pacific",
+        category: "Competition"
+      },
+      {
+        id: 21,
+        title: "ASME E-Fest Asia Pacific",
+        description: "Rank 5 – Innovative Additive Manufacturing 3D challenge, ASME E-Fest Asia Pacific",
+        category: "Competition"
+      }
+    ],
+    "2018": [
+      {
+        id: 22,
+        title: "ROBOCON 2018",
+        description: "AIR-3 – MATLAB Innovation Award, ROBOCON 2018",
+        category: "Competition"
+      },
+      {
+        id: 23,
+        title: "E-Yantra Robotics Competition",
+        description: "AIR-2 – E-Yantra Robotics Competition by IIT Bombay and MHRD",
+        category: "Competition"
+      },
+      {
+        id: 24,
+        title: "Smart India Hackathon",
+        description: "Top 10 – Smart India Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 25,
+        title: "Smart Odisha Hackathon",
+        description: "2nd Prize – Smart Odisha Hackathon",
+        category: "Competition"
+      },
+      {
+        id: 26,
+        title: "DRUSE",
+        description: "Zonal Finalists – DRUSE, DRDO",
+        category: "Competition"
+      },
+      {
+        id: 27,
+        title: "Infosys Robotics Camp",
+        description: "1st Runners-Up – Infosys Robotics Camp",
+        category: "Competition"
+      },
+      {
+        id: 28,
+        title: "L&T Techgium",
+        description: "Finalists(2 teams) – National Final L&T Techgium",
+        category: "Competition"
+      },
+      {
+        id: 29,
+        title: "National Students' Space Challenge",
+        description: "AIR-1 – National Students' Space Challenge, ISRO and IIT-KGP",
+        category: "Competition"
+      },
+      {
+        id: 30,
+        title: "IIT Bombay TechFest",
+        description: "Rank-3 – Zonal Round, IIT Bombay TechFest",
+        category: "Competition"
+      },
+      {
+        id: 31,
+        title: "IIT Bhubaneswar",
+        description: "Winners – Maze Solver, IIT Bhubaneswar",
+        category: "Competition"
+      },
+      {
+        id: 32,
+        title: "Line Follower Event",
+        description: "Winners - Line Follower Event",
+        category: "Competition"
+      },
+      {
+        id: 33,
+        title: "Hoverpod Event",
+        description: "Winners - Hoverpod Event",
+        category: "Competition"
+      },
+      {
+        id: 34,
+        title: "Balance Bot Event",
+        description: "Winners - Balance Bot Event",
+        category: "Competition"
+      },
+      {
+        id: 35,
+        title: "Image Processing Event",
+        description: "Winners and 1st Runner-Up - Image Processing Event",
+        category: "Competition"
+      }
+    ],
+    "2017": [
+      {
+        id: 36,
+        title: "ROBOCON Nationals",
+        description: "AIR-6 – ROBOCON Nationals (MIT Pune)",
+        category: "Competition"
+      },
+      {
+        id: 37,
+        title: "E-Yantra Robotics Competition",
+        description: "AIR-2 – E-Yantra Robotics Competition (IIT Bombay)",
+        category: "Competition"
+      }
+    ],
+    "2016": [
+      {
+        id: 38,
+        title: "ROBOCON Nationals",
+        description: "AIR-20 – ROBOCON Nationals (MIT Pune)",
+        category: "Competition"
+      },
+      {
+        id: 39,
+        title: "MATLAB Innovation Award",
+        description: "AIR-3 – MATLAB Innovation Award (MathWorks)",
+        category: "Competition"
+      },
+      {
+        id: 40,
+        title: "E-Yantra",
+        description: "3 Teams Shortlisted – E-Yantra (MHRD Funded)",
+        category: "Competition"
+      }
+    ],
+    "2015": [
+      {
+        id: 41,
+        title: "ROBOCON Nationals",
+        description: "AIR-26 – ROBOCON Nationals (MIT Pune)",
+        category: "Competition"
+      },
+      {
+        id: 42,
+        title: "ROBOCON",
+        description: "AIR-27 – ROBOCON (Rank 1 in Odisha)",
+        category: "Competition"
+      },
+      {
+        id: 43,
+        title: "E-Yantra",
+        description: "AIR-7 – E-Yantra (MHRD Funded)",
+        category: "Competition"
+      },
+      {
+        id: 44,
+        title: "MathWorks Parrot Mini Drone Competition",
+        description: "3rd Prize – MathWorks Parrot Mini Drone Competition",
+        category: "Competition"
+      },
+      {
+        id: 45,
+        title: "TRED-O-QUEST",
+        description: "1st Prize – TRED-O-QUEST (INNOVISION, NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 46,
+        title: "INNOVISION",
+        description: "2nd Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 47,
+        title: "ROBOVENTURE",
+        description: "3rd Prize – ROBOVENTURE (INNOVISION, NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 48,
+        title: "NSSC Hoverpod",
+        description: "3rd Prize – NSSC Hoverpod (IIT Kharagpur, ISRO Funded)",
+        category: "Competition"
+      },
+      {
+        id: 49,
+        title: "Droid Blitz",
+        description: "Finalist – Droid Blitz (NSSC, IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 50,
+        title: "Minefield",
+        description: "Best Design Award – Minefield (IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 51,
+        title: "IIT Kharagpur",
+        description: "Best Design Bot – IIT Kharagpur",
+        category: "Competition"
+      },
+      {
+        id: 52,
+        title: "Robotryst",
+        description: "3rd Prize – Robotryst (IIT Delhi)",
+        category: "Competition"
+      }
+    ],
+    "2014": [
+      {
+        id: 53,
+        title: "Hoverpod",
+        description: "1st Prize – Hoverpod (IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 54,
+        title: "Aqua Robotics",
+        description: "2nd Prize – Aqua Robotics (IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 55,
+        title: "TRED-O-QUEST",
+        description: "1st Prize – TRED-O-QUEST (INNOVISION, NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 56,
+        title: "INNOVISION",
+        description: "2nd Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 57,
+        title: "ROBOVENTURE",
+        description: "3rd Prize – ROBOVENTURE (INNOVISION, NIT Rourkela)",
+        category: "Competition"
+      }
+    ],
+    "2013": [
+      {
+        id: 58,
+        title: "INNOVISION",
+        description: "2nd Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 59,
+        title: "INNOVISION",
+        description: "3rd Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      }
+    ],
+    "2012": [
+      {
+        id: 60,
+        title: "WASSEINAIR",
+        description: "1st Prize – WASSEINAIR, IIT Bhubaneswar",
+        category: "Competition"
+      },
+      {
+        id: 61,
+        title: "INNOVISION",
+        description: "1st Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 62,
+        title: "Hoverpod",
+        description: "1st Prize – Hoverpod (IIT Kharagpur)",
+        category: "Competition"
+      }
+    ],
+    "2011": [
+      {
+        id: 63,
+        title: "WASSEINAIR",
+        description: "1st Prize – WASSEINAIR, IIT Bhubaneswar",
+        category: "Competition"
+      },
+      {
+        id: 64,
+        title: "ROBOCON Nationals",
+        description: "AIR-4 – ROBOCON Nationals (MIT Pune) (Only college from Odisha to rank 4th in debut year)",
+        category: "Competition"
+      }
+    ],
+    "2008": [
+      {
+        id: 65,
+        title: "Kshitij",
+        description: "1st Prize – Kshitij (IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 66,
+        title: "Nexus",
+        description: "2nd Prize – Nexus (IIT Bombay)",
+        category: "Competition"
+      }
+    ]
+  };
+
+  // Sort years in reverse order
+  const sortedYears = Object.keys(achievementsByYear).sort((a, b) => b - a);
 
   return (
     <div className="achievements-page">
       <Navbar />
       <div className="achievements-container">
         <h1 className="achievements-title">Our Achievements</h1>
-        <div className="achievements-grid">
-          {achievements.map((achievement) => (
-            <div key={achievement.id} className="achievement-card">
-              <div className="achievement-header">
-                <h3>{achievement.title}</h3>
-                <span className="achievement-year">{achievement.year}</span>
+        <div className="achievements-timeline">
+          {sortedYears.map((year) => (
+            <div key={year} className="year-section">
+              <div className="year-header">
+                <h2 className="year-title">{year}</h2>
+                <div className="year-indicator"></div>
               </div>
-              <p className="achievement-description">{achievement.description}</p>
-              <span className="achievement-category">{achievement.category}</span>
+              <div className="achievements-grid">
+                {achievementsByYear[year].map((achievement) => (
+                  <div key={achievement.id} className="achievement-card">
+                    <div className="achievement-header">
+                      <h3>{achievement.title}</h3>
+                    </div>
+                    <p className="achievement-description">{achievement.description}</p>
+                    <div className="achievement-footer">
+                      <span className="achievement-category">{achievement.category}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
