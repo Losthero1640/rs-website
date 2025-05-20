@@ -49,7 +49,7 @@ const AllProjects = () => {
               className="project-popup-image"
             />
             <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
+            <p>{selectedProject.longdescription}</p>
             <div className="project-details">
               <p>
                 <strong>Status:</strong> {selectedProject.status}
