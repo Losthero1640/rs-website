@@ -1,6 +1,9 @@
 .about-page {
   background: var(--secondary-bg);
 }
+.section-title{
+  padding-top: 25px;
+}
 
 .about-section {
   margin-bottom: 60px;
