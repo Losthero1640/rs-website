@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
+import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -281,7 +282,12 @@ const Home = () => {
           }}
         />
         <div className="container hero-content">
-          <h1>Innovating the Future of Robotics</h1>
+          <h1>
+            <TypeWriter 
+              text="Innovating the Future of Robotics" 
+              speed={150}
+            />
+          </h1>
           <p>Join us in building cutting-edge robotic solutions to real-world problems.</p>
           <Link to="/about" className="btn">
             Learn More
