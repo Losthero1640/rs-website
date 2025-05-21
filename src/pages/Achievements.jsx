@@ -441,11 +441,79 @@ const Achievements = () => {
   // Sort years in reverse order
   const sortedYears = Object.keys(achievementsByYear).sort((a, b) => b - a);
 
+  // Timeline years data
+  const timelineYears = {
+    "2008": [
+      {
+        id: 65,
+        title: "Kshitij",
+        description: "1st Prize – Kshitij (IIT Kharagpur)",
+        category: "Competition"
+      },
+      {
+        id: 66,
+        title: "Nexus",
+        description: "2nd Prize – Nexus (IIT Bombay)",
+        category: "Competition"
+      }
+    ],
+    "2009": [],
+    "2010": [],
+    "2011": [
+      {
+        id: 63,
+        title: "WASSEINAIR",
+        description: "1st Prize – WASSEINAIR, IIT Bhubaneswar",
+        category: "Competition"
+      },
+      {
+        id: 64,
+        title: "ROBOCON Nationals",
+        description: "AIR-4 – ROBOCON Nationals (MIT Pune)",
+        category: "Competition"
+      }
+    ],
+    "2012": [
+      {
+        id: 60,
+        title: "WASSEINAIR",
+        description: "1st Prize – WASSEINAIR, IIT Bhubaneswar",
+        category: "Competition"
+      },
+      {
+        id: 61,
+        title: "INNOVISION",
+        description: "1st Prize – INNOVISION (NIT Rourkela)",
+        category: "Competition"
+      },
+      {
+        id: 62,
+        title: "Hoverpod",
+        description: "1st Prize – Hoverpod (IIT Kharagpur)",
+        category: "Competition"
+      }
+    ],
+    "2013": achievementsByYear["2013"],
+    "2014": achievementsByYear["2014"],
+    "2015": achievementsByYear["2015"],
+    "2016": achievementsByYear["2016"],
+    "2017": achievementsByYear["2017"],
+    "2018": achievementsByYear["2018"],
+    "2019": achievementsByYear["2019"],
+    "2020": achievementsByYear["2020"],
+    "2021": achievementsByYear["2021"],
+    "2022": achievementsByYear["2022"],
+    "2023": achievementsByYear["2023"],
+    "2024": achievementsByYear["2024"],
+    "2025": achievementsByYear["2025"]
+  };
+
   return (
     <div className="achievements-page">
       <Navbar />
       <div className="achievements-container">
         <h1 className="achievements-title">Our Achievements</h1>
+        
         <div className="achievements-timeline">
           {sortedYears.map((year) => (
             <div key={year} className="year-section">
@@ -468,6 +536,36 @@ const Achievements = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Timeline Section */}
+        <div className="timeline-section">
+          <h2 className="timeline-title">Our Journey</h2>
+          <div className="timeline-container">
+            <div className="timeline-line"></div>
+            <div className="timeline-points">
+              {Object.keys(timelineYears).sort((a, b) => a - b).map((year) => (
+                <div key={year} className="timeline-point">
+                  <div className="timeline-year">{year}</div>
+                  <div className="timeline-dot"></div>
+                  {timelineYears[year].length > 0 && (
+                    <div className="timeline-content">
+                      <div className="timeline-content-header">
+                        <h3>{year} Achievements</h3>
+                      </div>
+                      {timelineYears[year].map((achievement) => (
+                        <div key={achievement.id} className="timeline-achievement">
+                          <h4>{achievement.title}</h4>
+                          <p>{achievement.description}</p>
+                          <span className="timeline-category">{achievement.category}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

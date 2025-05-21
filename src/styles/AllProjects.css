@@ -1,3 +1,5 @@
+/* AllProjects.css */
+
 .all-projects-page {
   padding: 80px 0;
   background: var(--primary-bg);
@@ -9,6 +11,7 @@
   color: var(--accent-color);
   margin-bottom: 3rem;
   font-size: 2.5rem;
+  padding-top: 15px;
 }
 
 .projects-grid {
@@ -47,6 +50,7 @@
   font-size: 1.2rem;
 }
 
+/* Popup Overlay */
 .project-popup-overlay {
   position: fixed;
   top: 0;
@@ -59,8 +63,12 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
 }
 
+/* Popup Content */
 .project-popup-content {
   background: var(--primary-bg);
   padding: 2rem;
@@ -71,17 +79,6 @@
   overflow-y: auto;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--accent-color);
 }
 
 .project-popup-image {
@@ -113,6 +110,23 @@
   margin: 0.5rem 0;
 }
 
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+/* Disable body scroll when popup is open */
+body.popup-open {
+  overflow: hidden;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -130,4 +144,4 @@
   .project-popup-image {
     height: 200px;
   }
-} 
+}
