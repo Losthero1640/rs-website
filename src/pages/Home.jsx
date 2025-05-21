@@ -202,7 +202,7 @@ const Home = () => {
             fpsLimit: 60,
             particles: {
               number: { 
-                value: 80,
+                value: 55,
                 density: {
                   enable: true,
                   value_area: 800
@@ -214,11 +214,11 @@ const Home = () => {
                 stroke: { width: 1, color: "#00ffcc" }
               },
               opacity: {
-                value: 0.6,
+                value: 0.5,
                 random: true,
                 animation: {
                   enable: true,
-                  speed: 1,
+                  speed: 0.5,
                   minimumValue: 0.1,
                   sync: false
                 }
@@ -228,25 +228,25 @@ const Home = () => {
                 random: true,
                 animation: {
                   enable: true,
-                  speed: 2,
+                  speed: 1,
                   minimumValue: 1,
                   sync: false
                 }
               },
               links: {
                 enable: true,
-                distance: 150,
+                distance: 100,
                 color: "#00ffcc",
-                opacity: 0.4,
+                opacity: 0.2,
                 width: 1,
                 triangles: {
                   enable: true,
-                  opacity: 0.1
+                  opacity: 0.05
                 }
               },
               move: {
                 enable: true,
-                speed: 2,
+                speed: 1,
                 direction: "none",
                 outModes: {
                   default: "bounce",
@@ -262,29 +262,18 @@ const Home = () => {
               events: {
                 onHover: {
                   enable: true,
-                  mode: ["grab", "bubble"],
+                  mode: ["grab"],
                 },
                 onClick: {
-                  enable: true,
-                  mode: "push"
+                  enable: false
                 }
               },
               modes: {
                 grab: {
-                  distance: 200,
+                  distance: 180,
                   links: {
-                    opacity: 0.8
+                    opacity: 0.4
                   }
-                },
-                bubble: {
-                  distance: 200,
-                  size: 6,
-                  duration: 2,
-                  opacity: 0.8,
-                  speed: 3
-                },
-                push: {
-                  quantity: 4
                 }
               }
             },
