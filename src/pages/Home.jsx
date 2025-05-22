@@ -209,10 +209,10 @@ const Home = () => {
                   value_area: 800
                 }
               },
-              color: { value: ["#00ffcc", "#00b8ff", "#0066ff"] },
+              color: { value: ["#00ffcc", "#00ecfa", "#00cef1"] },
               shape: { 
                 type: ["circle", "triangle", "square"],
-                stroke: { width: 1, color: "#00ffcc" }
+                stroke: { width: 1, color: "#00ecfa" }
               },
               opacity: {
                 value: 0.5,
@@ -237,7 +237,7 @@ const Home = () => {
               links: {
                 enable: true,
                 distance: 100,
-                color: "#00ffcc",
+                color: "#00ecfa",
                 opacity: 0.2,
                 width: 1,
                 triangles: {

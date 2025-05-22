@@ -8,9 +8,9 @@ const workshops = [
     id: 1,
     title: 'Robotics Bootcamp',
     date: '17 March 2025',
-    description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
+    description: 'Kickstarting Tech Journey: Bootcamp 2025- Learning Before Launch',
     image: '/eventimages/boot1.jpg',
-    content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
+    content: 'The Robotics Society conducted a three-day bootcamp from 25th to 27th March 2025, prior to the induction program, offering students a comprehensive introduction to robotic structural coding and the Internet of Things (IoT). Through a series of informative sessions and interactive challenges, participants got to explore fundamental concepts, hands-on applications, and real-time problem-solving. The bootcamp provided an engaging platform for learners to deepen their understanding of emerging technologies in robotics and IoT.',
     gallery: [
       '/eventimages/bootcover.jpg',
       '/eventimages/boot2.jpg',
@@ -29,7 +29,7 @@ const workshops = [
     date: '8 April 2025',
     description: 'Making of Line follower bot and sharing knowledge on Arduino',
     image: '/eventimages/xplore1.jpg',
-    content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
+    content: 'The Robotics Society successfully organized Roboxplore, an orientation and workshop held on 8th and 9th February 2025 at the E-Learning Center. The event began with an engaging seminar on Line Following Bots, covering their working principles, essential components, and real-world applications. Following the session, participants were provided with bot kit, and they applied their learning by building their own bots and competing in an exciting track-based challenge. The workshop provided a hands-on learning experience and sparked great enthusiasm among budding robotics enthusiasts.',
     gallery: [
       '/eventimages/xplore2.jpg',
       '/eventimages/xplore3.jpg',
@@ -49,7 +49,7 @@ const workshops = [
     date: '20 & 21 Feb 2025',
     description: 'Introduction to Robot Operating System and its applications',
     image: '/eventimages/sumo1.jpg',
-    content: 'A specialized workshop introducing participants to ROS (Robot Operating System). Covered topics included ROS architecture, nodes, topics, services, and practical implementation of basic robotics applications.',
+    content: 'The Robotics Society organized a thrilling Robo Sumo competition during the annual technical fest Samavesh on 20th and 21st February 2025. In Robo Sumo, autonomous bots compete to push each other out of a circular arena. It is a test of speed, strength and strategy.Participants were guided by mentors and provided with essential components. They enthusiastically designed and built their own bots for the challenge. The event concluded with an exciting final round, where the top-performing teams were declared winners and felicitated.',
     gallery: [
       '/eventimages/sumo1.jpg',
       '/eventimages/sumo2.jpg',
@@ -65,7 +65,7 @@ const workshops = [
     date: '22 June 2025',
     description: 'Learn about drone assembly, programming, and flight control',
     image: '/eventimages/race1.jpg',
-    content: 'Comprehensive workshop on drone technology covering assembly, programming, and flight control systems. Participants learned about drone components, flight dynamics, and basic programming for autonomous flight.',
+    content: 'The Robotics Society conducted an electrifying Death Race competition as part of the annual technical fest Samavesh. In this event, bots raced on a dedicated track filled with unpredictable challenging hurdles and extream terrain at every step, testing both speed and stability. Participants, under mentor guidance and equipped with necessary components, built their bots strategically to overcome obstacles and reach the finish line. The competition ended with a gripping final run, where the fastest and most efficient bots emerged as winners and were awarded.',
     gallery: [
       '/eventimages/race2.jpg',
       '/eventimages/race3.jpg',
@@ -79,26 +79,26 @@ const workshops = [
     date: '7 October 2023',
     description: 'Introduction to computer vision and image processing for robotics',
     image: '/eventimages/Drone1.png',
-    content: 'Workshop focused on computer vision applications in robotics. Topics included image processing, object detection, and integration with robotic systems using OpenCV and Python.',
+    content: 'On 7th October 2023, VSSUT Robotics organized Drone Dynamics at the Sir Visvesvaraya Auditorium. The event featured a seminar by Mr. Jajati Mohanty, founder of Aerorovers, who spoke about the growing scope of drone technology. The evening also included a live drone show that  featured stunning aerial displays, showcasing the precision and capabilities of modern drones. From breathtaking formations to real-world applications, the demonstration captivated the audience and opened minds to the future of unmanned aerial systems. It was a fun and informative experience for all who attended.',
     gallery: [
       '/eventimages/Drone2.jpg',
       '/eventimages/Drone3.jpg',
       '/eventimages/Drone4.jpg'
     ]
-  },
-  {
-    id: 6,
-    title: 'Robotic Arm Workshop',
-    date: '5 August 2025',
-    description: 'Design and control of robotic arms for industrial applications',
-    image: '/images/w3.jpg',
-    content: 'Advanced workshop on robotic arm design and control. Participants learned about kinematics, inverse kinematics, and programming robotic arms for various industrial applications.',
-    gallery: [
-      '/images/w3.jpg',
-      '/images/w1.jpg',
-      '/images/w2.jpg'
-    ]
   }
+  // {
+  //   id: 6,
+  //   title: 'Robotic Arm Workshop',
+  //   date: '5 August 2025',
+  //   description: 'Design and control of robotic arms for industrial applications',
+  //   image: '/images/w3.jpg',
+  //   content: 'Advanced workshop on robotic arm design and control. Participants learned about kinematics, inverse kinematics, and programming robotic arms for various industrial applications.',
+  //   gallery: [
+  //     '/images/w3.jpg',
+  //     '/images/w1.jpg',
+  //     '/images/w2.jpg'
+  //   ]
+  // }
 ];
 
 const WorkshopsDetail = () => {

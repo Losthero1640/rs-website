@@ -7,44 +7,44 @@ const workshops = [
     id: 1,
     title: 'Robotics Bootcamp',
     date: '17 March 2025',
-    description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
+    description: 'Kickstarting Tech Journey: Bootcamp 2025- Learning Before Launch.',
     image: '/eventimages/bootcamp1.jpg'
   },
   {
     id: 2,
     title: 'RoboXplore',
     date: '8 April 2025',
-    description: 'Making of Line follower bot and sharing knowledge on Arduino',
+    description: 'Exploring Robotics Made Fun: Roboxplore 2025 - from basics to battle bots',
     image: '/eventimages/xplore1.jpg'
   },
   {
     id: 3,
     title: 'Robo Sumo',
     date: '15 May 2025',
-    description: 'Introduction to Robot Operating System and its applications',
+    description: 'Pushing the Limits: Robo Sumo 2025',
     image: '/eventimages/sumo1.jpg'
   },
   {
     id: 4,
     title: 'Death Race',
     date: '22 June 2025',
-    description: 'Learn about drone assembly, programming, and flight control',
+    description: 'Speed meets skill: Death Race Ignites Samavesh 2025',
     image: '/eventimages/race1.jpg'
   },
   {
     id: 5,
     title: 'Drone Dynamics',
     date: '29 July 2025',
-    description: 'Introduction to computer vision and image processing for robotics',
+    description: 'Drone Dynamics by VSSUT Robotics Society',
     image: '/eventimages/Drone1.png'
-  },
-  {
-    id: 6,
-    title: 'Bootcamp',
-    date: '5 August 2025',
-    description: 'Design and control of robotic arms for industrial applications',
-    image: '/images/w3.jpg'
   }
+  // {
+  //   id: 6,
+  //   title: 'Bootcamp',
+  //   date: '5 August 2025',
+  //   description: 'Design and control of robotic arms for industrial applications',
+  //   image: '/images/w3.jpg'
+  // }
 ];
 
 const Workshops = () => {
