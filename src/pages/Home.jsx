@@ -45,7 +45,7 @@ const Home = () => {
       title: 'Robotics Bootcamp',
       date: '17 March 2025',
       description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
-      image: '/images/w1.jpg',
+      image: '/images/w2.jpg',
       content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
       gallery: [
         '/images/w1.jpg',
@@ -58,7 +58,7 @@ const Home = () => {
       title: 'RoboXplore',
       date: '8 April 2025',
       description: 'Making of Line follower bot and sharing knowledge on Arduino',
-      image: '/images/w2.jpg',
+      image: '/images/w1.jpg',
       content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
       gallery: [
         '/images/w2.jpg',
