@@ -59,7 +59,7 @@
 .hero-content h1 span {
   display: inline-block;
   border-right: 2px solid var(--accent-color);
-  animation: blink 0.7s step-end infinite;
+  animation: blink 0.9s step-end 4, makeConstant 0.1s 5.3s forwards;
   padding-right: 2px;
   text-align: center;
 }
@@ -413,4 +413,8 @@
 @keyframes blink {
   from, to { border-color: transparent }
   50% { border-color: var(--accent-color) }
+}
+
+@keyframes makeConstant {
+  to { border-color: var(--accent-color) }
 }

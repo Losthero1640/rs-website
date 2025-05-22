@@ -130,11 +130,9 @@
   color: white;
 }
 
-/* Updated Media Queries for Better Mobile Responsiveness */
 @media (max-width: 1200px) {
   .achievements-title {
     font-size: 3rem;
-    margin-bottom: 40px;
   }
 
   .year-title {
@@ -143,27 +141,12 @@
 
   .achievements-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-
-  .timeline-points {
-    min-width: 100%;
-    padding: 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .achievements-page {
-    padding-top: 60px;
-  }
-
-  .achievements-container {
-    padding: 20px 15px;
-  }
-
   .achievements-title {
     font-size: 2.5rem;
-    margin-bottom: 30px;
   }
 
   .year-title {
@@ -171,13 +154,12 @@
   }
 
   .achievements-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 0 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
   }
 
   .achievement-card {
-    padding: 15px;
+    padding: 20px;
   }
 
   .achievement-header h3 {
@@ -187,67 +169,11 @@
   .achievement-description {
     font-size: 0.95rem;
   }
-
-  /* Timeline Section Mobile Styles */
-  .timeline-section {
-    margin-top: 60px;
-    padding: 30px 0;
-    border-radius: 15px;
-  }
-
-  .timeline-title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-  }
-
-  .timeline-container {
-    padding: 60px 10px;
-  }
-
-  .timeline-points {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .timeline-line {
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    transform: translateX(-50%);
-  }
-
-  .timeline-point {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .timeline-content {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    transform: none;
-    left: 0;
-  }
-
-  .timeline-point:hover .timeline-content {
-    transform: none;
-  }
 }
 
 @media (max-width: 480px) {
-  .achievements-page {
-    padding-top: 50px;
-  }
-
-  .achievements-container {
-    padding: 15px 10px;
-  }
-
   .achievements-title {
     font-size: 2rem;
-    margin-bottom: 25px;
   }
 
   .year-title {
@@ -255,11 +181,7 @@
   }
 
   .achievements-grid {
-    gap: 12px;
-  }
-
-  .achievement-card {
-    padding: 12px;
+    grid-template-columns: 1fr;
   }
 
   .achievement-header h3 {
@@ -272,290 +194,6 @@
 
   .achievement-category {
     font-size: 0.8rem;
-    padding: 4px 10px;
+    padding: 5px 12px;
   }
-
-  /* Timeline Section Small Mobile Styles */
-  .timeline-section {
-    margin-top: 40px;
-    padding: 20px 0;
-  }
-
-  .timeline-title {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-  }
-
-  .timeline-container {
-    padding: 40px 5px;
-  }
-
-  .timeline-point {
-    max-width: 280px;
-  }
-
-  .timeline-content {
-    max-width: 280px;
-    padding: 15px;
-  }
-
-  .timeline-year {
-    font-size: 1rem;
-    padding: 6px 12px;
-  }
-
-  .timeline-content-header h3 {
-    font-size: 1.2rem;
-  }
-
-  .timeline-achievement h4 {
-    font-size: 1rem;
-  }
-
-  .timeline-achievement p {
-    font-size: 0.9rem;
-  }
-
-  .timeline-category {
-    font-size: 0.8rem;
-    padding: 4px 10px;
-  }
-}
-
-/* Add styles for very small screens */
-@media (max-width: 320px) {
-  .achievements-title {
-    font-size: 1.8rem;
-  }
-
-  .year-title {
-    font-size: 1.3rem;
-  }
-
-  .achievement-card {
-    padding: 10px;
-  }
-
-  .timeline-point {
-    max-width: 250px;
-  }
-
-  .timeline-content {
-    max-width: 250px;
-    padding: 12px;
-  }
-}
-
-/* Timeline Section Styles */
-.timeline-section {
-  margin-top: 120px;
-  padding: 80px 0;
-  position: relative;
-  background: linear-gradient(to bottom, var(--card-bg), rgba(var(--accent-color-rgb), 0.05));
-  border-radius: 30px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-}
-
-.timeline-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
-  opacity: 0.3;
-}
-
-.timeline-title {
-  text-align: center;
-  color: var(--accent-color);
-  font-size: 2.8rem;
-  margin-bottom: 70px;
-  position: relative;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.timeline-title::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
-  border-radius: 2px;
-}
-
-.timeline-container {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px 20px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.timeline-container::-webkit-scrollbar {
-  display: none;
-}
-
-.timeline-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(to right, 
-    transparent,
-    var(--accent-color),
-    var(--accent-color),
-    transparent
-  );
-  opacity: 0.3;
-  transform: translateY(-50%);
-}
-
-.timeline-points {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  min-width: 1200px;
-  padding: 0 60px;
-}
-
-.timeline-point {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.timeline-year {
-  background: linear-gradient(135deg, var(--accent-color), rgba(var(--accent-color-rgb), 0.8));
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(var(--accent-color-rgb), 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.timeline-point:hover .timeline-year {
-  transform: scale(1.1) translateY(-5px);
-  box-shadow: 0 8px 25px rgba(var(--accent-color-rgb), 0.4);
-}
-
-.timeline-dot {
-  width: 20px;
-  height: 20px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  margin: 15px 0;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 20px rgba(var(--accent-color-rgb), 0.3);
-  border: 3px solid var(--primary-bg);
-}
-
-.timeline-point:hover .timeline-dot {
-  transform: scale(1.5);
-  box-shadow: 0 0 30px rgba(var(--accent-color-rgb), 0.5);
-}
-
-.timeline-content {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  background: var(--primary-bg);
-  padding: 30px;
-  border-radius: 20px;
-  width: 350px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border: 1px solid rgba(var(--accent-color-rgb), 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.timeline-point:hover .timeline-content {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(10px);
-}
-
-.timeline-content-header {
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid rgba(var(--accent-color-rgb), 0.1);
-}
-
-.timeline-content-header h3 {
-  color: var(--accent-color);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.timeline-achievement {
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.timeline-achievement:hover {
-  transform: translateX(5px);
-}
-
-.timeline-achievement:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-.timeline-achievement h4 {
-  color: var(--accent-color);
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.timeline-achievement p {
-  color: var(--secondary-text);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.timeline-category {
-  display: inline-block;
-  background: rgba(var(--accent-color-rgb), 0.1);
-  color: var(--accent-color);
-  padding: 6px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.timeline-achievement:hover .timeline-category {
-  background: var(--accent-color);
-  color: white;
 } 
