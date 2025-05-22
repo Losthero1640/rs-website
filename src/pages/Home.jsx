@@ -286,6 +286,7 @@ const Home = () => {
             <TypeWriter 
               text="Innovating the Future of Robotics" 
               speed={150}
+              hideCursor={true}
             />
           </h1>
           <p>Join us in building cutting-edge robotic solutions to real-world problems.</p>

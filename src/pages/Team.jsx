@@ -822,6 +822,17 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 98,
+    name: 'Anwesha Das',
+    role: '',
+    branch: 'Electronics and Telecommunication Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Electronics',
+    image: '/prefinal/Anwesha.jpg',
+    github: 'https://github.com/Anweshaadas',
+    linkedin: 'https://www.linkedin.com/in/anwesha-dash-b11a32284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
+  {
     id: 61,
     name: 'Arnav Nayak ',
     role: '',
@@ -834,6 +845,17 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 95,
+    name: 'Banishree Sharma',
+    role: '',
+    branch: 'Metallurgical and materials Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Structural',
+    image: '/prefinal/Banishree.jpg',
+    github: 'https://github.com/Bani39',
+    linkedin: 'www.linkedin.com/in/banishree-sharma-06554b308',
+  },
+  {
     id: 58,
     name: 'Biswajit Mallik',
     role: '',
@@ -844,6 +866,17 @@ const Team = () => {
     github: 'https://github.com/Bit-Mik',
     linkedin: 'https://www.linkedin.com/in/biswajit-mallik-b4k?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     instagram: ''
+  },
+  {
+    id: 96,
+    name: 'Dhiraj Agarwal',
+    role: '',
+    branch: 'Electrical Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Structural',
+    image: '/prefinal/Dhiraj.jpg',
+    github: 'https://github.com/Coder-Dhiraj',
+    linkedin: 'https://www.linkedin.com/in/dhiraj-agrawal-25b93530a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
     id: 71,
@@ -927,7 +960,18 @@ const Team = () => {
     image: '/prefinal/Ayushman.jpg',
     github: 'https://github.com/Losthero1640',
     linkedin: 'https://www.linkedin.com/in/pattanaik-ayushman-alok-b66a90273/',
-    instagram: 'https://www.instagram.com/https://www.instagram.com/_.ayushman._00/'
+    // instagram: 'https://www.instagram.com/https://www.instagram.com/_.ayushman._00/'
+  },
+  {
+    id: 94,
+    name: 'Rasabihari Meher',
+    role: '',
+    branch: 'Electrical Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Electronics',
+    image: '/prefinal/Rasabihari.jpg',
+    github: 'https://github.com/Rasabihari-Meher',
+    linkedin: 'www.linkedin.com/in/rasbihari-meher-3559aa2b3',
   },
   {
     id: 63,
@@ -964,6 +1008,17 @@ const Team = () => {
     github: 'https://github.com/Saiiee12',
     linkedin: 'https://www.linkedin.com/in/sai-priyadarshini-swain-18490a311',
     instagram: ''
+  },
+  {
+    id: 97,
+    name: 'Shreya Dash',
+    role: '',
+    branch: 'Chemical Engineering',
+    year: '3',
+    bio: 'specializes in Arduino and Electronics',
+    image: '/prefinal/Shreya.jpg',
+    github: 'https://github.com/Shreya-Dash',
+    linkedin: 'https://www.linkedin.com/in/shreya-dash-aab7b6340',
   },
   {
     id: 64,
@@ -1204,6 +1259,16 @@ const Team = () => {
     instagram: ''
   },
   {
+    id: 99,
+    name: 'Spandan Tripathy',
+    role: '',
+    branch: 'Electronics and Telecommunication Engineering',
+    year: '4',
+    image: '/Final/Spandan.jpg',
+    github: '',
+    linkedin: 'https://www.linkedin.com/in/spandan-tripathy-746a842a8/',
+  },
+  {
     id: 88,
     name: 'Subham Mishra',
     role: 'VIDEOGRAPHY',
@@ -1238,7 +1303,7 @@ const Team = () => {
   },
   
   
-    // last id is 93 for anyone developing start from 94 next
+    // last id is 99 for anyone developing start from 100 next
   ];
 
   const filteredMembers = activeFilter

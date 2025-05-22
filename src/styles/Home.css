@@ -15,7 +15,9 @@
   overflow: hidden; /* Needed to contain particles */
   z-index: 1;
 }
-
+/* .typewriter-cursor {
+  display: none;
+} */
 .hero-particles {
   position: absolute !important;
   top: 0;
