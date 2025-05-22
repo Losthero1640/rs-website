@@ -50,7 +50,7 @@ const About = () => {
                 We work on cutting-edge robotics projects ranging from
                 autonomous vehicles to robotic arms and AI-powered systems.
               </p>
-              <a class="btn btn-primary" href="/projects" data-discover="true">
+              <a className="btn btn-primary" href="/projects" data-discover="true">
                 Explore 
               </a>
             </div>
@@ -60,7 +60,7 @@ const About = () => {
                 Regular workshops on topics like ROS, CAD design, embedded
                 systems, and machine learning for robotics.
               </p>
-              <a class="btn btn-primary" href="/workshops" data-discover="true">
+              <a className="btn btn-primary" href="/workshops" data-discover="true">
                 Explore 
               </a>
             </div>
@@ -71,7 +71,7 @@ const About = () => {
                 competitions to test, challenge, and improve our skills against
                 the best.
               </p>
-              <a class="btn btn-primary" href="/competitions" data-discover="true">
+              <a className="btn btn-primary" href="/competitions" data-discover="true">
                 Explore 
               </a>
             </div>
