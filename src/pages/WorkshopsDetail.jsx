@@ -9,12 +9,17 @@ const workshops = [
     title: 'Robotics Bootcamp',
     date: '17 March 2025',
     description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
-    image: '/images/w1.jpg',
+    image: '/eventimages/bootcamp1.jpg',
     content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
     gallery: [
-      '/images/w1.jpg',
-      '/images/w2.jpg',
-      '/images/w3.jpg'
+      '/eventimages/boot2.jpg',
+      '/eventimages/boot3.jpg',
+      '/eventimages/boot4.jpg',
+      '/eventimages/boot8.jpg',
+      '/eventimages/boot5.jpg',
+      '/eventimages/boot6.jpg',
+      '/eventimages/boot7.jpg',
+
     ]
   },
   {
@@ -39,8 +44,11 @@ const workshops = [
     content: 'A specialized workshop introducing participants to ROS (Robot Operating System). Covered topics included ROS architecture, nodes, topics, services, and practical implementation of basic robotics applications.',
     gallery: [
       '/eventimages/sumo1.jpg',
-      '/eventimages/w1.jpg',
-      '/eventimages/w2.jpg'
+      '/eventimages/sumo2.jpg',
+      '/eventimages/sumo3.jpg',
+      '/eventimages/sumo4.jpg',
+      '/eventimages/sumo5.png'
+
     ]
   },
   {
@@ -51,9 +59,10 @@ const workshops = [
     image: '/eventimages/race1.jpg',
     content: 'Comprehensive workshop on drone technology covering assembly, programming, and flight control systems. Participants learned about drone components, flight dynamics, and basic programming for autonomous flight.',
     gallery: [
-      '/images/w1.jpg',
-      '/images/w2.jpg',
-      '/images/w3.jpg'
+      '/eventimages/race2.jpg',
+      '/eventimages/race3.jpg',
+      '/eventimages/race4.png',
+      '/eventimages/race5.png'
     ]
   },
   {
