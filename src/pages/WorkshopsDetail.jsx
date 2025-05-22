@@ -27,12 +27,19 @@ const workshops = [
     title: 'RoboXplore',
     date: '8 April 2025',
     description: 'Making of Line follower bot and sharing knowledge on Arduino',
-    image: '/images/w2.jpg',
+    image: '/eventimages/xplore1.jpg',
     content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
     gallery: [
-      '/images/w2.jpg',
-      '/images/w1.jpg',
-      '/images/w3.jpg'
+      '/eventimages/xplore2.jpg',
+      '/eventimages/xplore3.jpg',
+      '/eventimages/xplore5.jpg',
+      '/eventimages/xplore6.jpg',
+      '/eventimages/xplore7.jpg',
+      '/eventimages/xplore8.jpg',
+      '/eventimages/xplore4.jpg',
+      '/eventimages/xplore9.jpg',
+      '/eventimages/xplore10.jpg',
+      '/eventimages/xplore11.jpg'
     ]
   },
   {

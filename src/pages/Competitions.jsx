@@ -3,26 +3,9 @@ import { Link } from 'react-router-dom';
 import '../styles/Competitions.css';
 
 const competitions = [
-  {
-    id: 1,
-    name: 'Smart India Hackathon',
-    year: '2024',
-    achievement: 'Finalists',
-    image: '/images/comp2.jpg',
-    description: 'National level hackathon focused on solving real-world problems using technology.'
-  },
 
-  {
-    id: 2,
-    name: 'Innovision at NIT Rourkela',
-    year: '2024',
-    achievement: 'Winner',
-    image: '/images/comp1.jpg',
-    description: 'Technical fest competition showcasing innovative robotics projects.'
-  },
-  
-  {
-    id: 3,
+   {
+    id: 1,
     name: 'RosCon India',
     year: '2024',
     achievement: '',
@@ -39,6 +22,27 @@ const competitions = [
     description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025. "
   },
 
+  
+
+  {
+    id: 3,
+    name: 'Smart India Hackathon',
+    year: '2024',
+    achievement: 'Finalists',
+    image: '/images/comp2.jpg',
+    description: 'National level hackathon focused on solving real-world problems using technology.'
+  },
+
+  {
+    id: 2,
+    name: 'Innovision at NIT Rourkela',
+    year: '2024',
+    achievement: 'Winner',
+    image: '/images/comp1.jpg',
+    description: 'Technical fest competition showcasing innovative robotics projects.'
+  },
+  
+ 
   {
     id: 5,
     name: 'RoboWars',
@@ -53,7 +57,7 @@ const Competitions = () => {
   return (
     <div className="competitions-page">
       <div className="container">
-        <h1 className="page-title">Our Competitions</h1>
+        <h1 className="page-title">Competitions/Events Particpated</h1>
         <div className="competitions-grid">
           {competitions.map(competition => (
             <Link to={`/competitions/${competition.id}`} key={competition.id} className="competition-card-link">

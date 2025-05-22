@@ -148,24 +148,24 @@ const Home = () => {
   const achievements = [
     {
       id: 1,
-      title: "National Robotics Competition",
-      year: "2023",
-      description: "Secured 1st place in the National Robotics Competition, showcasing innovative automation solutions.",
+      title: "E-Yantra Robotics Competition",
+      year: "2024",
+      description: "Finalist – E-Yantra Robotics Competition (IIT Bombay).",
       category: "Competition"
     },
     {
       id: 2,
-      title: "Research Publication",
-      year: "2023",
-      description: "Published research paper on 'Advanced Machine Learning Applications in Robotics' in IEEE Robotics Journal.",
-      category: "Research"
+      title: "National Science Day",
+      year: "2025",
+      description: "Winner – Science Exhibition, National Science Day, BRIC",
+      category: "Competition"
     },
     {
       id: 3,
-      title: "Industry Collaboration",
-      year: "2022",
-      description: "Successfully completed a collaborative project with leading tech companies in robotics automation.",
-      category: "Industry"
+      title: "Patent for the Base Frame of our Autonomous Mobile Robot",
+      year: "2025",
+      description: " this patented base frame serves as a foundational platform — ideal for understanding the core working of autonomous mobile robots and their wide range of applications.",
+      category: "Research"
     }
   ];
 
