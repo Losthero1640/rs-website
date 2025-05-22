@@ -59,6 +59,10 @@ const Footer = () => {
           
           <div className="footer-bottom">
             <p>&copy; {new Date().getFullYear()} Robotics Society. All rights reserved.</p>
+            <div className="developer-credits">
+              <p>Lead Developer: Pattanaik Ayushman Alok</p>
+              <p>Junior Developers: Aryan Rajguru, Remit Patra and Rounak Senapati</p>
+            </div>
           </div>
       </div>
     </footer>
