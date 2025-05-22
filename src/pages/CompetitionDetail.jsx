@@ -10,7 +10,7 @@ const competitions = [
     name: 'RosCon India',
     year: '2024',
     achievement: '',
-    image: '/compimages/roscon.jpg',
+    image: '/compimages/roscon3.jpg',
     description: "ROSCon In'24 Bengaluru",
     content: 'Our team participated in ROSCon India 2024, showcasing our expertise in ROS (Robot Operating System) development.',
     gallery: [
@@ -82,7 +82,7 @@ const competitions = [
     name: 'RoboWars',
     year: '2023',
     achievement: 'Quarter Finalists',
-    image: '/images/comp2.jpg',
+    image: '/images/.jpg',
     description: 'Combat robotics competition featuring custom-built fighting robots.',
     content: 'Our combat robot showcased exceptional design and engineering in the RoboWars competition, reaching the quarter-finals.',
     gallery: [

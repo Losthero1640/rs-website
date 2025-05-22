@@ -74,18 +74,18 @@ const handleSubmit = (e) => {
             </p>
 
             <div className="info-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <span> IIC BUilding, Ground Floor</span>
+              <i className="fas fa-map-marker-alt mymarker"></i>
+              <span> Ground Floor, Innovation and Incubation Centre, VSSUT, Burla, Odisha</span>
             </div>
 
             <div className="info-item">
-              <i className="fas fa-envelope"></i>
-              <span>contact@roboticssociety.edu</span>
+              <i className="fas fa-envelope myenvelope"></i>
+              <span>vssut_robotics@vssut.ac.in</span>
             </div>
 
             <div className="info-item">
-              <i className="fas fa-phone"></i>
-              <span>7041789836</span>
+              <i className="fas fa-phone myphone"></i>
+              <span>8458083644(Co-ordinator)</span>
             </div>
 
             {/* Contact Form */}

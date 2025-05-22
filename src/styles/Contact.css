@@ -9,7 +9,18 @@
   gap: 100px;
   align-items: center;
 }
-
+.mymarker{
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.myenvelope{
+  padding-top: 7px;
+  padding-right: 8px;
+}
+.myphone{
+  padding-top: 7px;
+  padding-right: 8px;
+}
 /*Added*/
 .spline-wrapper {
   display: block;

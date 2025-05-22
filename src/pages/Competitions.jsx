@@ -48,7 +48,7 @@ const competitions = [
     name: 'RoboWars',
     year: '2023',
     achievement: 'Quarter Finalists',
-    image: '/images/comp2.jpg',
+    image: '/images/.jpg',
     description: 'Combat robotics competition featuring custom-built fighting robots.'
   }
 ];

@@ -127,7 +127,7 @@ const Home = () => {
       name: 'RosCon India',
       year: '2024',
       achievement: '',
-      image: '/compimages/roscon.jpg'
+      image: '/compimages/roscon3.jpg'
     },
     {
       id: 4,
@@ -141,7 +141,7 @@ const Home = () => {
       name: 'RoboWars',
       year: '2023',
       achievement: 'Quarter Finalists',
-      image: '/images/comp2.jpg'
+      image: '/images/.jpg'
     }
   ];
 
