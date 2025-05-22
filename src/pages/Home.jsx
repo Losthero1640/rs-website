@@ -136,13 +136,13 @@ const Home = () => {
       achievement: '',
       image: '/compimages/mio.jpg'
     },
-    {
-      id: 5,
-      name: 'RoboWars',
-      year: '2023',
-      achievement: 'Quarter Finalists',
-      image: '/images/.jpg'
-    }
+    // {
+    //   id: 5,
+    //   name: 'RoboWars',
+    //   year: '2023',
+    //   achievement: 'Quarter Finalists',
+    //   image: '/images/.jpg'
+    // }
   ];
 
   const achievements = [

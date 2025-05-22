@@ -6,7 +6,7 @@ import '../styles/CompetitionDetail.css';
 const competitions = [
 
   {
-    id: 1,
+    id: 3,
     name: 'RosCon India',
     year: '2024',
     achievement: '',
@@ -42,7 +42,7 @@ const competitions = [
   
 
   {
-    id: 3,
+    id: 1,
     name: 'Smart India Hackathon',
     year: '2024',
     achievement: 'Finalists',
