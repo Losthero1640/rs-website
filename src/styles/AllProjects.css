@@ -7,11 +7,12 @@
 }
 
 .page-title {
+  
   text-align: center;
   color: var(--accent-color);
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .projects-grid {
