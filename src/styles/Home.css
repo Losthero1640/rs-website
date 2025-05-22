@@ -77,9 +77,12 @@
 .hero .btn {
   animation: fadeInUp 1s ease 0.4s forwards;
   opacity: 0;
+  color: black;
   /* cursor: url('/images/Pointer.cur') 0.1 0.1, pointer; */
 }
-
+.hero .btn:hover {
+  background-color: var(--accent-color);
+}
 /* Fade-in Animation */
 @keyframes fadeInUp {
   from {
@@ -253,6 +256,7 @@
 
 .achievement-content:hover {
   transform: translateY(-5px);
+  
 }
 
 .achievement-content h3 {
@@ -399,6 +403,7 @@
 
 .view-all-container .btn:hover {
   background-color: var(--accent-color-hover);
+  
 }
 
 @media (max-width: 768px) {

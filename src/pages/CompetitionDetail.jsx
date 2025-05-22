@@ -71,7 +71,8 @@ const competitions = [
       '/compimages/inno4.jpg',
       '/compimages/inno5.jpg',
       '/compimages/inno6.jpg',
-      '/compimages/inno7.jpg'
+      '/compimages/inno7.jpg',
+      '/compimages/inno8.jpg',
       
     ]
   },
