@@ -11,9 +11,9 @@ const ProjectCard = ({ project, onClick, displayLearnMore }) => {
           alt={project.title}
           className="project-image"
         />
-        <p className="status" data-status={project.status.toLowerCase()}>
+        {/* <p className="status" data-status={project.status.toLowerCase()}>
           {project.status}
-        </p>
+        </p> */}
       </div>
 
       <div className="project-info">

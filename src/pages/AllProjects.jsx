@@ -21,11 +21,8 @@ const AllProjects = () => {
         <h1 className="page-title">Our Projects</h1>
         <div className="projects-grid">
           {projects.map((project) => (
-            // <div key={project.id} className="project-card" onClick={() => handleProjectClick(project)}>
-            //   <img src={project.image} alt={project.title} />
-            //   <h3>{project.title}</h3>
-            // </div>
             <ProjectCard
+              key={project.id}
               project={project}
               onClick={() => handleProjectClick(project)}
               displayLearnMore={true}
@@ -51,14 +48,31 @@ const AllProjects = () => {
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.longdescription}</p>
             <div className="project-details">
-              <p>
+              {/* <p>
                 <strong>Status:</strong> {selectedProject.status}
-              </p>
+              </p> */}
               <p>
                 <strong>Technologies:</strong>{' '}
                 {selectedProject.technologies.join(', ')}
               </p>
             </div>
+
+            {/* ✅ Project Gallery Section */}
+            {selectedProject.gallery && selectedProject.gallery.length > 0 && (
+              <div className="project-gallery">
+                <h3>Project Gallery</h3>
+                <div className="gallery-grid">
+                  {selectedProject.gallery.map((imgSrc, index) => (
+                    <img
+                      key={index}
+                      src={imgSrc}
+                      alt={`Gallery image ${index + 1}`}
+                      className="gallery-image"
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

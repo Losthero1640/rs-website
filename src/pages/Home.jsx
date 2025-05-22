@@ -21,21 +21,21 @@ const Home = () => {
       title: 'AMR',
       description: 'Developing a Mars rover prototype with autonomous navigation capabilities.',
       image: '/projects/amr.jpg',
-      status: 'In Progress'
+      // status: 'In Progress'
     },
     {
       id: 2,
       title: 'UAV',
       description: '6-axis robotic arm with computer vision for object manipulation.',
       image: '/projects/uav.jpg',
-      status: 'Completed'
+      // status: 'Completed'
     },
     {
       id: 3,
-      title: 'Drone Navigation',
-      description: 'Autonomous drone navigation system using GPS and computer vision.',
-      image: '/projects/amr.jpg',
-      status: 'In Progress'
+      title: 'SLV',
+      description: 'An autonomous water-surface vehicle designed for efficient seafloor mapping and remote operations using GPS and magnetometer guidance.',
+      image: '/projects/slv.jpg',
+      // status: 'In Progress'
     }
   ];
 
