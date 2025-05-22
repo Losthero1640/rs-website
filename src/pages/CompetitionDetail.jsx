@@ -4,8 +4,45 @@ import Navbar from '../components/Navbar';
 import '../styles/CompetitionDetail.css';
 
 const competitions = [
+
   {
     id: 1,
+    name: 'RosCon India',
+    year: '2024',
+    achievement: '',
+    image: '/compimages/roscon.jpg',
+    description: "ROSCon In'24 Bengaluru",
+    content: 'Our team participated in ROSCon India 2024, showcasing our expertise in ROS (Robot Operating System) development.',
+    gallery: [
+      '/compimages/roscon.jpg',
+      '/compimages/roscon2.jpg',
+      '/compimages/roscon3.jpg',
+      '/compimages/roscon4.jpg',
+      '/compimages/roscon5.jpg'
+    ]
+  },
+
+  {
+    id: 4,
+    name: 'MIO Conclave',
+    year: '2023',
+    achievement: '',
+    image: '/compimages/mio.jpg',
+    description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025.",
+    content: "a premier event celebrating technological innovation. We showcased three advanced projects: an Autonomous Mobile Robot with cutting-edge navigation, a robust Surface Level Vehicle designed for diverse terrains, and a state-of-the-art Hexacopter offering precision aerial capabilities. These projects underscored our commitment to pioneering research and technological excellence. Engaging with industry leaders and innovators, we reinforced VSSUT's dedication to advancing robotics and automation, setting the stage for future collaborative breakthroughs.",
+    gallery: [
+      '/compimages/mio.jpg',
+      '/compimages/mio2.jpg',
+      '/compimages/mio3.jpg',
+      '/compimages/mio4.jpg',
+      '/compimages/mio5.jpg',
+      '/compimages/mio6.jpg',
+    ]
+  },
+  
+
+  {
+    id: 3,
     name: 'Smart India Hackathon',
     year: '2024',
     achievement: 'Finalists',
@@ -18,6 +55,7 @@ const competitions = [
       '/compimages/roscon.jpg'
     ]
   },
+
   {
     id: 2,
     name: 'Innovision at NIT Rourkela',
@@ -37,36 +75,8 @@ const competitions = [
       
     ]
   },
-  {
-    id: 3,
-    name: 'RosCon India',
-    year: '2024',
-    achievement: '',
-    image: '/compimages/roscon.jpg',
-    description: "ROSCon In'24 Bengaluru",
-    content: 'Our team participated in ROSCon India 2024, showcasing our expertise in ROS (Robot Operating System) development.',
-    gallery: [
-      '/compimages/roscon.jpg',
-      '/images/comp1.jpg'
-    ]
-  },
-  {
-    id: 4,
-    name: 'MIO Conclave',
-    year: '2023',
-    achievement: '',
-    image: '/compimages/mio.jpg',
-    description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025.",
-    content: "a premier event celebrating technological innovation. We showcased three advanced projects: an Autonomous Mobile Robot with cutting-edge navigation, a robust Surface Level Vehicle designed for diverse terrains, and a state-of-the-art Hexacopter offering precision aerial capabilities. These projects underscored our commitment to pioneering research and technological excellence. Engaging with industry leaders and innovators, we reinforced VSSUT's dedication to advancing robotics and automation, setting the stage for future collaborative breakthroughs.",
-    gallery: [
-      '/compimages/mio.jpg',
-      '/compimages/mio2.jpg',
-      '/compimages/mio3.jpg',
-      '/compimages/mio4.jpg',
-      '/compimages/mio5.jpg',
-      '/compimages/mio6.jpg',
-    ]
-  },
+  
+  
   {
     id: 5,
     name: 'RoboWars',
