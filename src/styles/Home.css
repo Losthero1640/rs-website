@@ -420,3 +420,35 @@
 @keyframes makeConstant {
   to { border-color: var(--accent-color) }
 }
+
+/* Footer Styles */
+.home-footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  color: var(--secondary-text);
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+}
