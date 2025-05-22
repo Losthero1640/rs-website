@@ -23,8 +23,8 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3>Contact Us</h3>
-            <p>Email: contact@roboticssociety.edu</p>
-            <p>Phone: (123) 456-7890</p>
+            <p>Email: vssut_robotics@vssut.ac.in</p>
+            <p>Phone: 8458083644(Co-ordinator)</p>
             <div className="social-links">
               <a href="https://www.facebook.com/vssutrobotics/" aria-label="Facebook"><i className="fa-brands fa-meta"></i></a>
               <a href="https://x.com/societyrobotics" aria-label="Twitter"><i className="fa-brands fa-x-twitter"></i></a>
