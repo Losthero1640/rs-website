@@ -56,7 +56,9 @@
   line-height: 1.2;
   color: white;
   animation: fadeInUp 1s ease;
+  text-align: center;
 }
+
 
 .hero-content h1 span {
   display: inline-block;
@@ -168,9 +170,13 @@
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  white-space: normal; /* ✅ allow wrapping */
+  flex-direction: column;
+  max-width: 90vw;      /* ✅ prevent text from stretching too wide */
   }
+
 
   .hero p {
     font-size: 1.1rem;
@@ -195,8 +201,11 @@
 
 @media (max-width: 576px) {
   .hero-content h1 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
+  white-space: normal; /* ✅ allow wrapping */
+  max-width: 90vw;      /* ✅ constrain width for better wrapping */
   }
+
 
   .hero p {
     font-size: 1rem;
