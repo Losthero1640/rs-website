@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import LoaderScreen from './components/LoaderScreen.jsx'
 import PageRoutes from './components/PageRoutes.jsx'
 import AllProjects from './pages/AllProjects'
+import ScrollToTop from './components/ScrollToTop.jsx'  
 
 import usePageLoader from './hooks/usePageLoader.js'
 import './styles/global.css'
@@ -32,6 +33,7 @@ const AppContent = () => {
 
   return (
     <>
+      <ScrollToTop />
       {isLoading && <LoaderScreen fadeOut={fadeOut} />}
 
       {!firstLoading && !isNotFound && <Navbar />}

@@ -8,14 +8,15 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
-
 .page-title {
+  padding-top: 30px;
   font-size: 3rem;
   color: var(--accent-color);
   text-align: center;
   margin-bottom: 50px;
   position: relative;
 }
+
 
 .page-title::after {
   content: '';
