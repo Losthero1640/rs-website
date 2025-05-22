@@ -9,9 +9,10 @@ const workshops = [
     title: 'Robotics Bootcamp',
     date: '17 March 2025',
     description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
-    image: '/eventimages/bootcamp1.jpg',
+    image: '/eventimages/boot1.jpg',
     content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
     gallery: [
+      '/eventimages/bootcover.jpg',
       '/eventimages/boot2.jpg',
       '/eventimages/boot3.jpg',
       '/eventimages/boot4.jpg',

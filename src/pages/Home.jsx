@@ -45,7 +45,7 @@ const Home = () => {
       title: 'Robotics Bootcamp',
       date: '17 March 2025',
       description: 'Hands-on Bootcamp on different domains of Robotics for the purpose of Induction.',
-      image: '/images/w2.jpg',
+      image: '/eventimages/bootcover.jpg',
       content: 'A comprehensive bootcamp covering various aspects of robotics including mechanical design, electronics, and programming. Participants learned about different types of robots, their applications, and got hands-on experience with building basic robots.',
       gallery: [
         '/images/w1.jpg',
@@ -58,7 +58,7 @@ const Home = () => {
       title: 'RoboXplore',
       date: '8 April 2025',
       description: 'Making of Line follower bot and sharing knowledge on Arduino',
-      image: '/images/w1.jpg',
+      image: '/eventimages/xplorecover.jpg',
       content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
       gallery: [
         '/images/w2.jpg',
@@ -71,7 +71,7 @@ const Home = () => {
       title: 'Robo Sumo',
       date: '20 & 21 Feb 2025',
       description: 'Introduction to Robot Operating System and its applications',
-      image: '/eventimages/sumo1.jpg',
+      image: '/eventimages/sumocover.jpg',
       content: 'A specialized workshop introducing participants to ROS (Robot Operating System). Covered topics included ROS architecture, nodes, topics, services, and practical implementation of basic robotics applications.',
       gallery: [
         '/eventimages/sumo1.jpg',
@@ -84,7 +84,7 @@ const Home = () => {
       title: 'Death Race',
       date: '22 June 2025',
       description: 'Learn about drone assembly, programming, and flight control',
-      image: '/eventimages/race1.jpg',
+      image: '/eventimages/racecover.jpg',
       content: 'Comprehensive workshop on drone technology covering assembly, programming, and flight control systems. Participants learned about drone components, flight dynamics, and basic programming for autonomous flight.',
       gallery: [
         '/images/w1.jpg',
