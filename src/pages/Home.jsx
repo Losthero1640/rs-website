@@ -345,7 +345,7 @@ const Home = () => {
 
       <section className="competitions">
         <div className="container">
-          <h2 className="section-title">Competitions/Events Participated</h2>
+          <h2 className="section-title">Competitions/ Events Participated</h2>
           <Carousel
             showArrows={true}
             autoPlay
