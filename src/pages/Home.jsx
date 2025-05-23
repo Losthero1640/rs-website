@@ -109,7 +109,7 @@ const Home = () => {
 
   const competitions = [
     {
-      id: 1,
+      id: 3,
       name: 'Smart India Hackathon',
       year: '2024',
       achievement: 'Finalists',
@@ -123,7 +123,7 @@ const Home = () => {
       image: '/images/comp1.jpg'
     },
     {
-      id: 3,
+      id: 1,
       name: 'RosCon India',
       year: '2024',
       achievement: '',
