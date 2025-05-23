@@ -45,10 +45,10 @@ const competitions = [
  
   {
     id: 5,
-    name: 'RoboWars',
+    name: 'Innovision 2023 NIT-R',
     year: '2023',
-    achievement: 'Quarter Finalists',
-    image: '/images/.jpg',
+    achievement: 'Finalists',
+    image: '/compimages/inno23.1.png',
     description: 'Combat robotics competition featuring custom-built fighting robots.'
   }
 ];

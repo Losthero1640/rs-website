@@ -85,20 +85,35 @@ const workshops = [
       '/eventimages/Drone3.jpg',
       '/eventimages/Drone4.jpg'
     ]
+  },
+  {
+    id: 6,
+    title: 'Tread-O-Quest',
+    date: '4 March 2023',
+    description: 'Design and control of robotic arms for industrial applications',
+    image: '/eventimages/toq1.jpg',
+    content: 'Advanced workshop on robotic arm design and control. Participants learned about kinematics, inverse kinematics, and programming robotic arms for various industrial applications.',
+    gallery: [
+      '/eventimages/toq2.jpg',
+      '/eventimages/toq3.jpg',
+      '/eventimages/toq4.jpg',
+      '/eventimages/toq5.jpg',
+      // '/images/w2.jpg'
+    ]
+  },
+  {
+    id: 7,
+    title: 'Aeroflix',
+    date: '6 March 2023',
+    description: 'Design and control of robotic arms for industrial applications',
+    image: '/eventimages/aero1.jpg',
+    content: 'Aeroflix is an event in which we showcase our drones performance. Drone shows are held to present various acrobatics performed with drones and to demonstrate how we can capture cinematics shot with drone cameras.',
+    gallery: [
+      '/eventimages/aero2.jpg',
+      '/eventimages/toq3.jpg'
+      // '/images/w2.jpg'
+    ]
   }
-  // {
-  //   id: 6,
-  //   title: 'Robotic Arm Workshop',
-  //   date: '5 August 2025',
-  //   description: 'Design and control of robotic arms for industrial applications',
-  //   image: '/images/w3.jpg',
-  //   content: 'Advanced workshop on robotic arm design and control. Participants learned about kinematics, inverse kinematics, and programming robotic arms for various industrial applications.',
-  //   gallery: [
-  //     '/images/w3.jpg',
-  //     '/images/w1.jpg',
-  //     '/images/w2.jpg'
-  //   ]
-  // }
 ];
 
 const WorkshopsDetail = () => {

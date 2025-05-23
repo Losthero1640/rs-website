@@ -13,38 +13,45 @@ const workshops = [
   {
     id: 2,
     title: 'RoboXplore',
-    date: '8 April 2025',
+    date: '8 February 2025',
     description: 'Exploring Robotics Made Fun: Roboxplore 2025 - from basics to battle bots',
     image: '/eventimages/xplore1.jpg'
   },
   {
     id: 3,
     title: 'Robo Sumo',
-    date: '15 May 2025',
+    date: '20 & 21 February 2025',
     description: 'Pushing the Limits: Robo Sumo 2025',
     image: '/eventimages/sumo1.jpg'
   },
   {
     id: 4,
     title: 'Death Race',
-    date: '22 June 2025',
+    date: '21 & 22 February 2025',
     description: 'Speed meets skill: Death Race Ignites Samavesh 2025',
     image: '/eventimages/race1.jpg'
   },
   {
     id: 5,
     title: 'Drone Dynamics',
-    date: '29 July 2025',
+    date: '7 October 2023',
     description: 'Drone Dynamics by VSSUT Robotics Society',
     image: '/eventimages/Drone1.png'
+  },
+  {
+    id: 6,
+    title: 'Tread-O-quest',
+    date: '4 March 2023',
+    description: 'Design and control of robotic arms for industrial applications',
+    image: '/eventimages/toq1.jpg'
+  },
+  {
+    id: 7,
+    title: 'Aeroflix',
+    date: '6 March 2023',
+    description: 'Design and control of robotic arms for industrial applications',
+    image: '/eventimages/aero1.jpg'
   }
-  // {
-  //   id: 6,
-  //   title: 'Bootcamp',
-  //   date: '5 August 2025',
-  //   description: 'Design and control of robotic arms for industrial applications',
-  //   image: '/images/w3.jpg'
-  // }
 ];
 
 const Workshops = () => {
