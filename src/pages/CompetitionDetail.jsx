@@ -12,13 +12,15 @@ const competitions = [
     achievement: '',
     image: '/compimages/roscon3.jpg',
     description: "ROSCon In'24 Bengaluru",
-    content: 'Our team participated in ROSCon India 2024, showcasing our expertise in ROS (Robot Operating System) development.',
+    content: "The members of the Robotics Society of VSSUT, Burla, participated in the distinguished ROSCon India 2024, held at the Indian Institute of Science (IISc) Bengaluru, where they had the honor of listening to the distinguished speeches by Geoffrey Biggs, CTO of Open Robotics, and Angelo Corsaro, CEO of ZettaScale Technology.The 2-day exhibition highlighted lots of opportunities for meaningful networking as well as workshops featuring NVIDIA, along with 15+ companies, displaying all the newest innovations made in the field of Robotics and Technology.",
     gallery: [
       '/compimages/roscon.jpg',
       '/compimages/roscon2.jpg',
       '/compimages/roscon3.jpg',
       '/compimages/roscon4.jpg',
-      '/compimages/roscon5.jpg'
+      '/compimages/roscon5.jpg',
+       '/compimages/roscon6.jpg',
+        '/compimages/roscon7.jpg'
     ]
   },
 
@@ -29,7 +31,7 @@ const competitions = [
     achievement: '',
     image: '/compimages/mio.jpg',
     description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025.",
-    content: "a premier event celebrating technological innovation. We showcased three advanced projects: an Autonomous Mobile Robot with cutting-edge navigation, a robust Surface Level Vehicle designed for diverse terrains, and a state-of-the-art Hexacopter offering precision aerial capabilities. These projects underscored our commitment to pioneering research and technological excellence. Engaging with industry leaders and innovators, we reinforced VSSUT's dedication to advancing robotics and automation, setting the stage for future collaborative breakthroughs.",
+    content: "The Robotics Society of VSSUT, Burla, participated in Make in Odisha Conclave – Utkarsh 2025, showcasing three cutting-edge projects: an Autonomous Mobile Robot with excellent navigation, a Surface Level Vehicle designed for diverse terrains, and a Hexacopter with precise aerial capabilities. The event highlighted the society's commitment to innovation and technological excellence, fostering connections with industry leaders and reinforcing VSSUT's dedication to robotics and automation.",
     gallery: [
       '/compimages/mio.jpg',
       '/compimages/mio2.jpg',
@@ -46,13 +48,14 @@ const competitions = [
     name: 'Smart India Hackathon',
     year: '2024',
     achievement: 'Finalists',
-    image: '/images/comp2.jpg',
+    image: '/compimages/sih.jpg',
     description: 'National level hackathon focused on solving real-world problems using technology.',
-    content: 'Our team participated in the Smart India Hackathon 2024, where we developed innovative solutions for real-world challenges. The competition brought together the brightest minds from across the country.',
+    content: "Team 'Anusandhan' of the Robotics Society, VSSUT, Burla, successfully reached the grand finale of the Smart India Hackathon 2024, with their innovative project, 'Student Innovation', showcasing India's rich cultural heritage and traditions.",
     gallery: [
-      '/images/comp2.jpg',
-      '/images/comp1.jpg',
-      '/compimages/roscon.jpg'
+       '/compimages/sih1.jpg',
+      '/compimages/sih2.jpg',
+      '/compimages/sih3.jpg',
+      '/compimages/sih4.jpg'
     ]
   },
 
@@ -63,7 +66,7 @@ const competitions = [
     achievement: 'Winner',
     image: '/images/comp1.jpg',
     description: 'Technical fest competition showcasing innovative robotics projects.',
-    content: 'We emerged victorious at Innovision 2024 with our groundbreaking robotics project. The competition tested our technical skills and innovation capabilities.',
+    content: 'Team "Dheera" of the Robotics Society, VSSUT, Burla, successfully accomplished the position of Runners-Up in the Robo Sumo Competition at NIT Rourkela, at their annual techno-management fest, Innovision 2024.',
     gallery: [
       '/compimages/inno1.jpg',
       '/compimages/inno2.jpg',

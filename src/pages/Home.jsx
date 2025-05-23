@@ -57,7 +57,7 @@ const Home = () => {
       id: 2,
       title: 'RoboXplore',
       date: '8 April 2025',
-      description: 'Making of Line follower bot and sharing knowledge on Arduino',
+      description: 'Exploring Robotics Made Fun: Roboxplore 2025 - from basics to battle bots',
       image: '/eventimages/xplorecover.jpg',
       content: 'An intensive workshop focused on line follower robots and Arduino programming. Participants built their own line follower robots and learned about sensor integration, motor control, and basic programming concepts.',
       gallery: [
@@ -70,8 +70,8 @@ const Home = () => {
       id: 3,
       title: 'Robo Sumo',
       date: '20 & 21 Feb 2025',
-      description: 'Introduction to Robot Operating System and its applications',
-      image: '/eventimages/sumocover.jpg',
+      description: 'Pushing the Limits: Robo Sumo 2025',
+      image: '/eventimages/sumo3.jpg',
       content: 'A specialized workshop introducing participants to ROS (Robot Operating System). Covered topics included ROS architecture, nodes, topics, services, and practical implementation of basic robotics applications.',
       gallery: [
         '/eventimages/sumo1.jpg',
@@ -83,7 +83,7 @@ const Home = () => {
       id: 4,
       title: 'Death Race',
       date: '22 June 2025',
-      description: 'Learn about drone assembly, programming, and flight control',
+      description: 'Speed meets skill: Death Race Ignites Samavesh 2025',
       image: '/eventimages/racecover.jpg',
       content: 'Comprehensive workshop on drone technology covering assembly, programming, and flight control systems. Participants learned about drone components, flight dynamics, and basic programming for autonomous flight.',
       gallery: [
@@ -96,7 +96,7 @@ const Home = () => {
       id: 5,
       title: 'Drone Dynamics',
       date: '7 October 2023',
-      description: 'Introduction to computer vision and image processing for robotics',
+      description: 'Drone Dynamics by VSSUT Robotics Society',
       image: '/eventimages/Drone1.png',
       content: 'Workshop focused on computer vision applications in robotics. Topics included image processing, object detection, and integration with robotic systems using OpenCV and Python.',
       gallery: [
@@ -113,7 +113,7 @@ const Home = () => {
       name: 'Smart India Hackathon',
       year: '2024',
       achievement: 'Finalists',
-      image: '/images/comp2.jpg'
+      image:  '/compimages/sih.jpg'
     },
     {
       id: 2,

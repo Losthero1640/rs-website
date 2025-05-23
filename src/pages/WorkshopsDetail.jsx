@@ -27,7 +27,7 @@ const workshops = [
     id: 2,
     title: 'RoboXplore',
     date: '8 April 2025',
-    description: 'Making of Line follower bot and sharing knowledge on Arduino',
+    description: 'Exploring Robotics Made Fun: Roboxplore 2025 - from basics to battle bots',
     image: '/eventimages/xplore1.jpg',
     content: 'The Robotics Society successfully organized Roboxplore, an orientation and workshop held on 8th and 9th February 2025 at the E-Learning Center. The event began with an engaging seminar on Line Following Bots, covering their working principles, essential components, and real-world applications. Following the session, participants were provided with bot kit, and they applied their learning by building their own bots and competing in an exciting track-based challenge. The workshop provided a hands-on learning experience and sparked great enthusiasm among budding robotics enthusiasts.',
     gallery: [
@@ -47,7 +47,7 @@ const workshops = [
     id: 3,
     title: 'Robo Sumo',
     date: '20 & 21 Feb 2025',
-    description: 'Introduction to Robot Operating System and its applications',
+    description: 'Pushing the Limits: Robo Sumo 2025',
     image: '/eventimages/sumo1.jpg',
     content: 'The Robotics Society organized a thrilling Robo Sumo competition during the annual technical fest Samavesh on 20th and 21st February 2025. In Robo Sumo, autonomous bots compete to push each other out of a circular arena. It is a test of speed, strength and strategy.Participants were guided by mentors and provided with essential components. They enthusiastically designed and built their own bots for the challenge. The event concluded with an exciting final round, where the top-performing teams were declared winners and felicitated.',
     gallery: [
@@ -63,7 +63,7 @@ const workshops = [
     id: 4,
     title: 'Death Race',
     date: '22 June 2025',
-    description: 'Learn about drone assembly, programming, and flight control',
+    description: 'Speed meets skill: Death Race Ignites Samavesh 2025',
     image: '/eventimages/race1.jpg',
     content: 'The Robotics Society conducted an electrifying Death Race competition as part of the annual technical fest Samavesh. In this event, bots raced on a dedicated track filled with unpredictable challenging hurdles and extream terrain at every step, testing both speed and stability. Participants, under mentor guidance and equipped with necessary components, built their bots strategically to overcome obstacles and reach the finish line. The competition ended with a gripping final run, where the fastest and most efficient bots emerged as winners and were awarded.',
     gallery: [
@@ -77,7 +77,7 @@ const workshops = [
     id: 5,
     title: 'Drone Dynamics',
     date: '7 October 2023',
-    description: 'Introduction to computer vision and image processing for robotics',
+    description: 'Drone Dynamics by VSSUT Robotics Society',
     image: '/eventimages/Drone1.png',
     content: 'On 7th October 2023, VSSUT Robotics organized Drone Dynamics at the Sir Visvesvaraya Auditorium. The event featured a seminar by Mr. Jajati Mohanty, founder of Aerorovers, who spoke about the growing scope of drone technology. The evening also included a live drone show that  featured stunning aerial displays, showcasing the precision and capabilities of modern drones. From breathtaking formations to real-world applications, the demonstration captivated the audience and opened minds to the future of unmanned aerial systems. It was a fun and informative experience for all who attended.',
     gallery: [
