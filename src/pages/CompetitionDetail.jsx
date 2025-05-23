@@ -55,7 +55,16 @@ const competitions = [
        '/compimages/sih1.jpg',
       '/compimages/sih2.jpg',
       '/compimages/sih3.jpg',
-      '/compimages/sih4.jpg'
+      '/compimages/sih4.jpg',
+      '/compimages/sih5.jpg',
+      '/compimages/sih6.jpg',
+      '/compimages/sih7.jpg',
+      '/compimages/sih8.jpg',
+      '/compimages/sih9.jpg',
+      '/compimages/sih10.jpg',
+      '/compimages/sih11.jpg',
+      '/compimages/sih12.jpg',
+      '/compimages/sih13.jpg'
     ]
   },
 
@@ -83,15 +92,19 @@ const competitions = [
   
   {
     id: 5,
-    name: 'RoboWars',
+    name: 'Innovision 2K23',
     year: '2023',
-    achievement: 'Quarter Finalists',
-    image: '/images/.jpg',
+    achievement: 'Finalists',
+    image: '/compimages/inno23.1.png',
     description: 'Combat robotics competition featuring custom-built fighting robots.',
     content: 'Our combat robot showcased exceptional design and engineering in the RoboWars competition, reaching the quarter-finals.',
     gallery: [
-      '/images/comp2.jpg',
-      '/images/comp1.jpg'
+      '/compimages/inno23.2.jpg',
+     '/compimages/inno23.3.jpg',
+     '/compimages/inno23.4.jpg',
+     '/compimages/inno23.5.jpg',
+     '/compimages/inno23.6.jpg',
+     '/compimages/inno23.7.png'
     ]
   }
 ];
