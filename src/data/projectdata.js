@@ -92,6 +92,14 @@ const projects = [
     gallery:[],
     technologies: ['Arduino Uno', 'GPS Navigation', 'Laser Sensor', 'Robotic Arm', 'Gripper'],
   },
+  {
+    id: 10,
+    title: 'Photogrammetry Tool',
+    description: 'A photogrammetry tool for 3D scanning and modeling of architectural structures.',
+    longdescription:
+    'The Photogrammetry Tool is a compact, low-cost device designed to automate the process of capturing multiple images of a physical object from various angles for the purpose of generating accurate 3D digital models. The system features a rotating subject plate and a vertically adjustable camera mount, operated by a lead screw mechanism, allowing for thorough image acquisition from multiple heights and perspectives. Designed for ease of use and replicability, the device utilizes 3D-printed components and standard electronic hardware, and integrates with open-source photogrammetry software. It is ideal for applications in product design, education, cultural preservation, 3D printing, and digital content creation. ',
+    image: 'projects/photogrammetry.jpg',
+  }
   
 ]
 

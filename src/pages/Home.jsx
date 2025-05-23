@@ -113,7 +113,7 @@ const Home = () => {
       name: 'Smart India Hackathon',
       year: '2024',
       achievement: 'Finalists',
-      image:  '/compimages/sih.jpg'
+      image:  '/compimages/sih3.jpg'
     },
     {
       id: 2,
