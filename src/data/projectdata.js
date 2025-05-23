@@ -71,7 +71,28 @@ const projects = [
     image: 'projects/stabpid.jpg',
     gallery:[],
     technologies: ['Arduino Nano', 'Sharp IR Sensor', 'RDS3225 Servo Motors', 'Custom PCB & Li-ion Battery','CAD Frame'],
-  }
+  },
+  {
+    id: 8,
+    title: 'Robominton',
+    description: 'A robotic badminton player that autonomously plays and trains users using advanced sensors and control systems.',
+    longdescription:
+    'Robominton is an autonomous badminton-playing robot developed for Robocon 2015, engineered around a pneumatic mobility system that enables smooth gliding across the arena. Designed to perform shuttle strikes and strategic movements, the bot was programmed with precise control algorithms to autonomously participate in a game of badminton, showcasing advanced integration of motion control and game logic. Built for speed, accuracy, and coordination, ROBOMINTON not only demonstrated engineering excellence but also highlighted the potential of robotics in simulating real-world sports dynamics. It proved to be a significant milestone for the VSSUT Robotics Society by earning national recognition—All India Rank 26 at Robocon Nationals (MIT Pune) and AIR 27 overall, proudly holding the Rank 1 position in Odisha.',
+    image: 'projects/robominton.jpg',
+    gallery:[],
+    technologies: ['ATmega2560', 'Pneumatic System', 'Compressor & Air Tank', 'Solenoid Valves'],
+  },
+  {
+    id: 9,
+    title: 'Hybrid Pole Climbing Bot',
+    description: 'A robotic climbing bot that navigates and balances on a pole using a combination of sensors and actuators.',
+    longdescription:
+    'Hybrid Pole Climbing Bot is a specialized vertical mobility robot developed for Robocon 2016, designed to climb upright poles or vertical surfaces using a pneumatic actuation mechanism. Engineered to work in tandem with its counterpart, the eco-bot, this robot showcases an innovative solution for tackling gravity-driven challenges without external support. Its gripping and climbing capabilities make it suitable for industrial applications such as maintenance of wind turbines, inspection of vertical pipelines, and electrical pole servicing. The robot exemplifies robust engineering and automation potential in hard-to-reach environments. Its performance was nationally recognized with an All India Rank 20 at Robocon Nationals (MIT Pune), reinforcing VSSUT Robotics Society’s position as a frontrunner in competitive robotics innovation.',
+    image: 'projects/hybridpole.jpg',
+    gallery:[],
+    technologies: ['Arduino Uno', 'GPS Navigation', 'Laser Sensor', 'Robotic Arm', 'Gripper'],
+  },
+  
 ]
 
 export default projects
