@@ -1,0 +1,77 @@
+.faculty-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: #111;
+  padding: 1rem 0;
+}
+
+.faculty-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollLeft 25s linear infinite;
+  width: max-content;
+}
+
+.faculty-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #222;
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for infinite scrolling */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .faculty-card {
+    width: 180px;
+    padding: 0.8rem;
+  }
+
+  .faculty-card h3 {
+    font-size: 1rem;
+  }
+
+  .faculty-card p,
+  .faculty-card a {
+    font-size: 0.85rem;
+  }
+
+  .faculty-track {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faculty-card {
+    width: 140px;
+    padding: 0.6rem;
+  }
+
+  .faculty-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .faculty-card p,
+  .faculty-card a {
+    font-size: 0.75rem;
+  }
+}

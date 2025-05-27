@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
+import FacultyCard from '../components/FacultyCard';
+
 import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -14,6 +16,28 @@ import { loadSlim } from "tsparticles-slim";
 const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const facultyMembers = [
+  {
+    name: "Dr. A. K. Mishra",
+    email: "akmishra@vssut.ac.in",
+    designation: "Head of Robotics Dept.",
+    photo: "/faculty/mishra.jpg"
+  },
+  {
+    name: "Prof. S. Das",
+    email: "sdas@vssut.ac.in",
+    designation: "Senior Faculty",
+    photo: "/faculty/das.jpg"
+  },
+  {
+    name: "Dr. N. Mohanty",
+    email: "nmohanty@vssut.ac.in",
+    designation: "Assistant Professor",
+    photo: "/faculty/mohanty.jpg"
+  }
+];
+
 
   const latestProjects = [
     {
@@ -284,7 +308,7 @@ const Home = () => {
         <div className="container hero-content">
           <h1>
             <TypeWriter 
-              text="Innovating the Future of Robotics" 
+              text="Where Imagination meets Innovation" 
               speed={150}
               hideCursor={true}
             />
@@ -295,6 +319,20 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+
+<section className="faculty-section">
+  <div className="faculty-marquee">
+    <div className="faculty-track">
+      {[...facultyMembers, ...facultyMembers].map((faculty, index) => (
+        <FacultyCard key={index} faculty={faculty} />
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 
       <section className="latest-projects">
         <div className="container">
