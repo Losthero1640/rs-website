@@ -90,9 +90,9 @@ const workshops = [
     id: 6,
     title: 'Tread-O-Quest',
     date: '4 March 2023',
-    description: 'Design and control of robotic arms for industrial applications',
+    description: 'The Maze Awaits: A Robotic Adventure',
     image: '/eventimages/toq1.jpg',
-    content: 'Advanced workshop on robotic arm design and control. Participants learned about kinematics, inverse kinematics, and programming robotic arms for various industrial applications.',
+    content: 'The Robotics Society of VSSUT, Burla, hosted their flagship event, "Tread-O-Quest", in which the participating teams build and program a bot that navigates through a spiralling maze autonomously and is put to the test of reaching the end within a set period of time. The team whose bot successfully exits the maze in the shortest time possible ultimately takes the top position and wins the competition.',
     gallery: [
       '/eventimages/toq2.jpg',
       '/eventimages/toq3.jpg',

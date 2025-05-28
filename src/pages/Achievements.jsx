@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/Navbar';
+import YearSlideshow from '../components/YearSlideshow';
+import SEO from '../components/SEO';
+import { generateImageMetadata, optimizeImageUrl } from '../utils/imageOptimization';
 import '../styles/Achievements.css';
 
 const Achievements = () => {
@@ -7,8 +11,48 @@ const Achievements = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Sample images and videos for the 2025 slideshow
+  const slideshowImages = [
+    {
+      src: '/images/achievement1.jpg',
+      alt: 'VSSUT Robotics Society achievement showcase 1',
+      width: 800,
+      height: 600
+    },
+    {
+      src: '/images/achievement2.jpg',
+      alt: 'VSSUT Robotics Society achievement showcase 2',
+      width: 800,
+      height: 600
+    },
+    {
+      src: '/images/achievement5.jpg',
+      alt: 'VSSUT Robotics Society achievement showcase 3',
+      width: 800,
+      height: 600
+    },
+    {
+      src: '/images/achievement4.jpg',
+      alt: 'VSSUT Robotics Society achievement showcase 4',
+      width: 800,
+      height: 600
+    }
+  ];
+
+  const slideshowVideos = [
+    // '/videos/achievement1.mp4',
+    // '/videos/achievement2.mp4'
+  ];
+
   const achievementsByYear = {
     "2025": [
+      {
+        id: 67,
+        title: "Patent for the Base Frame of our Autonomous Mobile Robot",
+        year: "2025",
+        description: " this patented base frame serves as a foundational platform — ideal for understanding the core working of autonomous mobile robots and their wide range of applications.",
+        category: "Research"
+      },
       {
         id: 1,
         title: "National Science Day",
@@ -441,36 +485,117 @@ const Achievements = () => {
   // Sort years in reverse order
   const sortedYears = Object.keys(achievementsByYear).sort((a, b) => b - a);
 
+  // Generate meta description from achievements
+  const metaDescription = `Explore VSSUT Robotics Society's achievements from ${sortedYears[sortedYears.length - 1]} to ${sortedYears[0]}, including competition wins, research patents, and innovative projects.`;
+
+  // Generate structured data for achievements
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VSSUT Robotics Society",
+    "url": "https://vssut-robotics-society.com",
+    "description": metaDescription,
+    "award": sortedYears.map(year => 
+      achievementsByYear[year].map(achievement => ({
+        "@type": "Award",
+        "name": achievement.title,
+        "description": achievement.description,
+        "awardedFor": achievement.category,
+        "dateReceived": year
+      }))
+    ).flat()
+  };
+
+  const imageData = generateImageMetadata(
+    '/images/achievement1.jpg',
+    'VSSUT Robotics Society Achievement',
+    800,
+    600
+  );
+
   return (
-    <div className="achievements-page">
-      <Navbar />
-      <div className="achievements-container">
-        <h1 className="achievements-title">Our Achievements</h1>
-        <div className="achievements-timeline">
-          {sortedYears.map((year) => (
-            <div key={year} className="year-section">
-              <div className="year-header">
-                <h2 className="year-title">{year}</h2>
-                <div className="year-indicator"></div>
-              </div>
-              <div className="achievements-grid">
-                {achievementsByYear[year].map((achievement) => (
-                  <div key={achievement.id} className="achievement-card">
-                    <div className="achievement-header">
-                      <h3>{achievement.title}</h3>
+    <>
+      <SEO 
+        title="Our Achievements"
+        description={metaDescription}
+        url="https://vssut-robotics-society.com/achievements"
+      />
+      <Helmet>
+        <title>Our Achievements | VSSUT Robotics Society</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content="VSSUT Robotics Society, achievements, robotics competitions, research patents, innovation awards, robotics research, student achievements" />
+        <meta property="og:title" content="Our Achievements | VSSUT Robotics Society" />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/achievement1.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Achievements | VSSUT Robotics Society" />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content="/images/achievement1.jpg" />
+        <link rel="canonical" href="https://vssut-robotics-society.com/achievements" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <div className="achievements-page" role="main">
+        <Navbar />
+        <div className="achievements-container">
+          <header>
+            <h1 className="achievements-title">Our Achievements</h1>
+            <h2 className="achievements-subtitle">TOP HIGHLIGHTS</h2>
+          </header>
+          
+          <section className="achievements-timeline" aria-label="Achievements timeline">
+            {sortedYears.map((year) => (
+              <article key={year} className="year-section">
+                {year === "2025" && (
+                  <YearSlideshow 
+                    images={slideshowImages} 
+                    videos={slideshowVideos}
+                    aria-label="2025 achievements slideshow"
+                  />
+                )}
+                <div className="year-header">
+                  <h2 className="year-title">{year}</h2>
+                  <div className="year-indicator" aria-hidden="true"></div>
+                </div>
+                <div className="achievements-grid" role="list">
+                  {achievementsByYear[year].map((achievement) => (
+                    <div 
+                      key={achievement.id} 
+                      className="achievement-card"
+                      role="listitem"
+                      itemScope
+                      itemType="https://schema.org/Award"
+                    >
+                      <div className="achievement-header">
+                        <h3 itemProp="name">{achievement.title}</h3>
+                      </div>
+                      <p className="achievement-description" itemProp="description">
+                        {achievement.description}
+                      </p>
+                      <div className="achievement-footer">
+                        <span 
+                          className="achievement-category"
+                          aria-label={`Category: ${achievement.category}`}
+                          itemProp="awardedFor"
+                        >
+                          {achievement.category}
+                        </span>
+                        <meta itemProp="dateReceived" content={year} />
+                      </div>
                     </div>
-                    <p className="achievement-description">{achievement.description}</p>
-                    <div className="achievement-footer">
-                      <span className="achievement-category">{achievement.category}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                  ))}
+                </div>
+              </article>
+            ))}
+          </section>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
