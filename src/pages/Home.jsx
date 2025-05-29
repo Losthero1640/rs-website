@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
-// import FacultyCard from '../components/FacultyCard';
-
 import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -17,49 +15,24 @@ const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-//   const facultyMembers = [
-//   {
-//     name: "Dr. A. K. Mishra",
-//     email: "akmishra@vssut.ac.in",
-//     designation: "Head of Robotics Dept.",
-//     photo: "/faculty/mishra.jpg"
-//   },
-//   {
-//     name: "Prof. S. Das",
-//     email: "sdas@vssut.ac.in",
-//     designation: "Senior Faculty",
-//     photo: "/faculty/das.jpg"
-//   },
-//   {
-//     name: "Dr. N. Mohanty",
-//     email: "nmohanty@vssut.ac.in",
-//     designation: "Assistant Professor",
-//     photo: "/faculty/mohanty.jpg"
-//   }
-// ];
-
-
   const latestProjects = [
     {
       id: 1,
       title: 'AMR',
       description: 'Developing a Mars rover prototype with autonomous navigation capabilities.',
       image: '/projects/amr.jpg',
-      // status: 'In Progress'
     },
     {
       id: 2,
       title: 'UAV',
       description: '6-axis robotic arm with computer vision for object manipulation.',
       image: '/projects/uav.jpg',
-      // status: 'Completed'
     },
     {
       id: 3,
       title: 'SLV',
       description: 'An autonomous water-surface vehicle designed for efficient seafloor mapping and remote operations using GPS and magnetometer guidance.',
       image: '/projects/slv.jpg',
-      // status: 'In Progress'
     }
   ];
 
@@ -159,14 +132,7 @@ const Home = () => {
       year: '2023',
       achievement: '',
       image: '/compimages/mio.jpg'
-    },
-    // {
-    //   id: 5,
-    //   name: 'RoboWars',
-    //   year: '2023',
-    //   achievement: 'Quarter Finalists',
-    //   image: '/images/.jpg'
-    // }
+    }
   ];
 
   const achievements = [
@@ -319,30 +285,11 @@ const Home = () => {
           </Link>
         </div>
       </section>
-
-
-{/* <section className="faculty-section">
-  <div className="faculty-marquee">
-    <div className="faculty-track">
-      {[...facultyMembers, ...facultyMembers].map((faculty, index) => (
-        <FacultyCard key={index} faculty={faculty} />
-      ))}
-    </div>
-  </div>
-</section> */}
-
-
-
-
       <section className="latest-projects">
         <div className="container">
           <h2 className="section-title">Latest Projects</h2>
           <div className="projects-grid">
             {latestProjects.map(project => (
-              // <div key={project.id} className="project-card">
-              //   <img src={project.image} alt={project.title} />
-              //   <h3>{project.title}</h3>
-              // </div>
               <ProjectCard project={project} displayLearnMore = {false}/>
             ))}
           </div>
