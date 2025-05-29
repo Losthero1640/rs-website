@@ -5,6 +5,7 @@ import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
 import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
+import '../styles/FacultySection.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -14,6 +15,15 @@ import { loadSlim } from "tsparticles-slim";
 const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const facultyList = [
+  { name: 'Dr. Alice Smith', designation: 'Professor of Computer Science', email: 'alice.smith@example.com' },
+  { name: 'Dr. Bob Johnson', designation: 'Associate Professor of Electrical Engineering', email: 'bob.johnson@example.com' },
+  { name: 'Dr. Carol White', designation: 'Assistant Professor of Mechanical Engineering', email: 'carol.white@example.com' },
+  { name: 'Dr. David Green', designation: 'Lecturer in Civil Engineering', email: 'david.green@example.com' },
+  { name: 'Dr. Emily Brown', designation: 'Professor of Physics', email: 'emily.brown@example.com' },
+  { name: 'Dr. Frank Black', designation: 'Associate Professor of Chemistry', email: 'frank.black@example.com' },
+];
 
   const latestProjects = [
     {
@@ -285,6 +295,31 @@ const Home = () => {
           </Link>
         </div>
       </section>
+      
+    <section className="faculty-section">
+      <h2 className="section-title">Meet Our Faculty</h2>
+      <div className="faculty-slider-wrapper">
+        <div className="faculty-slider">
+          {facultyList.map((faculty, index) => (
+            <div className="faculty-card" key={index}>
+              <h3>{faculty.name}</h3>
+              <p>{faculty.designation}</p>
+              <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
+            </div>
+          ))}
+          
+          {facultyList.map((faculty, index) => (
+            <div className="faculty-card duplicate" key={`dup-${index}`}>
+              <h3>{faculty.name}</h3>
+              <p>{faculty.designation}</p>
+              <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
       <section className="latest-projects">
         <div className="container">
           <h2 className="section-title">Latest Projects</h2>
