@@ -17,13 +17,43 @@ const Home = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const facultyList = [
-  { name: 'Dr. Alice Smith', designation: 'Professor of Computer Science', email: 'alice.smith@example.com' },
-  { name: 'Dr. Bob Johnson', designation: 'Associate Professor of Electrical Engineering', email: 'bob.johnson@example.com' },
-  { name: 'Dr. Carol White', designation: 'Assistant Professor of Mechanical Engineering', email: 'carol.white@example.com' },
-  { name: 'Dr. David Green', designation: 'Lecturer in Civil Engineering', email: 'david.green@example.com' },
-  { name: 'Dr. Emily Brown', designation: 'Professor of Physics', email: 'emily.brown@example.com' },
-  { name: 'Dr. Frank Black', designation: 'Associate Professor of Chemistry', email: 'frank.black@example.com' },
-];
+    { 
+      name: 'Dr. Alice Smith', 
+      designation: 'Professor of Computer Science', 
+      email: 'alice.smith@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+    { 
+      name: 'Dr. Bob Johnson', 
+      designation: 'Asso. Professor of Electrical Engineering', 
+      email: 'bob.johnson@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+    { 
+      name: 'Dr. Carol White', 
+      designation: 'Asst. of Mechanical Engineering', 
+      email: 'carol.white@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+    { 
+      name: 'Dr. David Green', 
+      designation: 'Lecturer in Civil Engineering', 
+      email: 'david.green@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+    { 
+      name: 'Dr. Emily Brown', 
+      designation: 'Professor of Physics', 
+      email: 'emily.brown@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+    { 
+      name: 'Dr. Frank Black', 
+      designation: 'Associate Professor of Chemistry', 
+      email: 'frank.black@example.com',
+      image: '/faculty/placeholder.jpg'
+    },
+  ];
 
   const latestProjects = [
     {
@@ -297,24 +327,50 @@ const Home = () => {
       </section>
       
     <section className="faculty-section">
-      <h2 className="section-title">Meet Our Faculty</h2>
-      <div className="faculty-slider-wrapper">
-        <div className="faculty-slider">
-          {facultyList.map((faculty, index) => (
-            <div className="faculty-card" key={index}>
-              <h3>{faculty.name}</h3>
-              <p>{faculty.designation}</p>
-              <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
-            </div>
-          ))}
-          
-          {facultyList.map((faculty, index) => (
-            <div className="faculty-card duplicate" key={`dup-${index}`}>
-              <h3>{faculty.name}</h3>
-              <p>{faculty.designation}</p>
-              <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
-            </div>
-          ))}
+      <div className="container">
+        <h2 className="section-title">Meet Our Faculty</h2>
+        <div className="faculty-carousel-container">
+          <Carousel
+            showArrows={true}
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            className="faculty-carousel"
+            centerMode={true}
+            centerSlidePercentage={80}
+            emulateTouch={true}
+            swipeable={true}
+            dynamicHeight={true}
+            renderIndicator={(onClickHandler, isSelected, index, label) => {
+              return (
+                <li
+                  className={`dot ${isSelected ? 'selected' : ''}`}
+                  onClick={onClickHandler}
+                  onKeyDown={onClickHandler}
+                  value={index}
+                  key={index}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${label} ${index + 1}`}
+                />
+              );
+            }}
+          >
+            {facultyList.map((faculty, index) => (
+              <div key={index} className="faculty-slide">
+                <div className="faculty-card">
+                  <div className="faculty-image">
+                    <img src={faculty.image} alt={faculty.name} />
+                  </div>
+                  <div className="faculty-info">
+                    <h3>{faculty.name}</h3>
+                    <p>{faculty.designation}</p>
+                    <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>
