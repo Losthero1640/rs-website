@@ -18,10 +18,10 @@ const Home = () => {
 
   const facultyList = [
     { 
-      name: 'Dr. Alice Smith', 
+      name: 'SUDHANSU RANJAN DAS', 
       designation: 'Professor of Computer Science', 
-      email: 'alice.smith@example.com',
-      image: '/faculty/placeholder.jpg'
+      email: 'srdas_pe@vssut.ac.in',
+      image: '/faculties/srdas.jpg'
     },
     { 
       name: 'Dr. Bob Johnson', 
@@ -33,24 +33,6 @@ const Home = () => {
       name: 'Dr. Carol White', 
       designation: 'Asst. of Mechanical Engineering', 
       email: 'carol.white@example.com',
-      image: '/faculty/placeholder.jpg'
-    },
-    { 
-      name: 'Dr. David Green', 
-      designation: 'Lecturer in Civil Engineering', 
-      email: 'david.green@example.com',
-      image: '/faculty/placeholder.jpg'
-    },
-    { 
-      name: 'Dr. Emily Brown', 
-      designation: 'Professor of Physics', 
-      email: 'emily.brown@example.com',
-      image: '/faculty/placeholder.jpg'
-    },
-    { 
-      name: 'Dr. Frank Black', 
-      designation: 'Associate Professor of Chemistry', 
-      email: 'frank.black@example.com',
       image: '/faculty/placeholder.jpg'
     },
   ];
