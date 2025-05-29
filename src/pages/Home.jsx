@@ -21,19 +21,19 @@ const Home = () => {
       name: 'SUDHANSU RANJAN DAS', 
       designation: 'Professor of Computer Science', 
       email: 'srdas_pe@vssut.ac.in',
-      image: '/faculties/srdas.jpg'
+      image: '/faculties/srda.jpg'
     },
     { 
-      name: 'Dr. Bob Johnson', 
-      designation: 'Asso. Professor of Electrical Engineering', 
-      email: 'bob.johnson@example.com',
-      image: '/faculty/placeholder.jpg'
+      name: 'Ms. Debidasi Mohanty', 
+      designation: 'Faculty Advisor', 
+      email: 'ddmohanty_ee@vssut.ac.in',
+      image: '/faculties/debidasi.jpg'
     },
     { 
       name: 'Dr. Carol White', 
       designation: 'Asst. of Mechanical Engineering', 
       email: 'carol.white@example.com',
-      image: '/faculty/placeholder.jpg'
+      image: '/faculties/sksahu.jpg'
     },
   ];
 
