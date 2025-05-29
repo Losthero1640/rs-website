@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import MemberCard from '../components/MemberCard';
 import CompetitionCard from '../components/CompetitionCard';
-import FacultyCard from '../components/FacultyCard';
+// import FacultyCard from '../components/FacultyCard';
 
 import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
@@ -17,26 +17,26 @@ const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-  const facultyMembers = [
-  {
-    name: "Dr. A. K. Mishra",
-    email: "akmishra@vssut.ac.in",
-    designation: "Head of Robotics Dept.",
-    photo: "/faculty/mishra.jpg"
-  },
-  {
-    name: "Prof. S. Das",
-    email: "sdas@vssut.ac.in",
-    designation: "Senior Faculty",
-    photo: "/faculty/das.jpg"
-  },
-  {
-    name: "Dr. N. Mohanty",
-    email: "nmohanty@vssut.ac.in",
-    designation: "Assistant Professor",
-    photo: "/faculty/mohanty.jpg"
-  }
-];
+//   const facultyMembers = [
+//   {
+//     name: "Dr. A. K. Mishra",
+//     email: "akmishra@vssut.ac.in",
+//     designation: "Head of Robotics Dept.",
+//     photo: "/faculty/mishra.jpg"
+//   },
+//   {
+//     name: "Prof. S. Das",
+//     email: "sdas@vssut.ac.in",
+//     designation: "Senior Faculty",
+//     photo: "/faculty/das.jpg"
+//   },
+//   {
+//     name: "Dr. N. Mohanty",
+//     email: "nmohanty@vssut.ac.in",
+//     designation: "Assistant Professor",
+//     photo: "/faculty/mohanty.jpg"
+//   }
+// ];
 
 
   const latestProjects = [
@@ -321,7 +321,7 @@ const Home = () => {
       </section>
 
 
-<section className="faculty-section">
+{/* <section className="faculty-section">
   <div className="faculty-marquee">
     <div className="faculty-track">
       {[...facultyMembers, ...facultyMembers].map((faculty, index) => (
@@ -329,7 +329,7 @@ const Home = () => {
       ))}
     </div>
   </div>
-</section>
+</section> */}
 
 
 
