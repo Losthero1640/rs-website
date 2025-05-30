@@ -19,7 +19,7 @@ const Home = () => {
   const facultyList = [
     { 
       name: 'SUDHANSU RANJAN DAS', 
-      designation: 'Professor of Computer Science', 
+      designation: 'Vice president , Technical Society', 
       email: 'srdas_pe@vssut.ac.in',
       image: '/faculties/srdas.jpg'
     },
