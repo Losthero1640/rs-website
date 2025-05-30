@@ -21,7 +21,7 @@ const Home = () => {
       name: 'SUDHANSU RANJAN DAS', 
       designation: 'Professor of Computer Science', 
       email: 'srdas_pe@vssut.ac.in',
-      image: '/faculties/srda.jpg'
+      image: '/faculties/srdas.jpg'
     },
     { 
       name: 'Ms. Debidasi Mohanty', 
@@ -30,9 +30,9 @@ const Home = () => {
       image: '/faculties/debidasi.jpg'
     },
     { 
-      name: 'Dr. Carol White', 
-      designation: 'Asst. of Mechanical Engineering', 
-      email: 'carol.white@example.com',
+      name: 'Dr. S.K. Sahu', 
+      designation: 'Assistant Professor of Mechanical Engineering', 
+      email: 'sksahu_me@vssut.ac.in',
       image: '/faculties/sksahu.jpg'
     },
   ];
@@ -311,48 +311,21 @@ const Home = () => {
     <section className="faculty-section">
       <div className="container">
         <h2 className="section-title">Meet Our Faculty</h2>
-        <div className="faculty-carousel-container">
-          <Carousel
-            showArrows={true}
-            autoPlay
-            infiniteLoop
-            showThumbs={false}
-            className="faculty-carousel"
-            centerMode={true}
-            centerSlidePercentage={80}
-            emulateTouch={true}
-            swipeable={true}
-            dynamicHeight={true}
-            renderIndicator={(onClickHandler, isSelected, index, label) => {
-              return (
-                <li
-                  className={`dot ${isSelected ? 'selected' : ''}`}
-                  onClick={onClickHandler}
-                  onKeyDown={onClickHandler}
-                  value={index}
-                  key={index}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`${label} ${index + 1}`}
-                />
-              );
-            }}
-          >
-            {facultyList.map((faculty, index) => (
-              <div key={index} className="faculty-slide">
-                <div className="faculty-card">
-                  <div className="faculty-image">
-                    <img src={faculty.image} alt={faculty.name} />
-                  </div>
-                  <div className="faculty-info">
-                    <h3>{faculty.name}</h3>
-                    <p>{faculty.designation}</p>
-                    <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
-                  </div>
+        <div className="faculty-scroll-container">
+          <div className="faculty-scroll">
+            {[...facultyList, ...facultyList].map((faculty, index) => (
+              <div key={index} className="faculty-card">
+                <div className="faculty-image">
+                  <img src={faculty.image} alt={faculty.name} />
+                </div>
+                <div className="faculty-info">
+                  <h3>{faculty.name}</h3>
+                  <p>{faculty.designation}</p>
+                  <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
                 </div>
               </div>
             ))}
-          </Carousel>
+          </div>
         </div>
       </div>
     </section>

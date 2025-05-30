@@ -3,6 +3,7 @@
   padding: 4rem 0;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .section-title {
@@ -24,28 +25,31 @@
   border-radius: 2px;
 }
 
-.faculty-carousel-container {
+.faculty-scroll-container {
+  width: 100%;
+  overflow: hidden;
   position: relative;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
 }
 
-.faculty-carousel {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.faculty-carousel .carousel .slide {
-  background: transparent;
-  padding: 1rem;
+.faculty-scroll {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  gap: 2rem;
+  animation: scroll 30s linear infinite;
+  width: max-content;
 }
 
-.faculty-slide {
-  padding: 0 10px;
-  height: 100%
+.faculty-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .faculty-card {
@@ -59,8 +63,8 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  max-width: 320px;
-  margin: 0 auto;
+  width: 320px;
+  flex-shrink: 0;
 }
 
 .faculty-card:hover {
@@ -80,7 +84,6 @@
 .faculty-image img {
   width: 100%;
   height: 100%;
-  /* max-height: 00px; */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -126,54 +129,10 @@
   text-decoration: underline;
 }
 
-/* Carousel Navigation Styles */
-.faculty-carousel .carousel .control-arrow {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.faculty-carousel .carousel .control-arrow:hover {
-  background: rgba(0, 246, 255, 0.2);
-}
-
-.faculty-carousel .carousel .control-arrow:before {
-  border-width: 8px;
-}
-
-/* Carousel Dots Styles */
-.faculty-carousel .carousel .control-dots {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-}
-
-.faculty-carousel .carousel .control-dots .dot {
-  background: #00f6ff;
-  box-shadow: 0 0 5px rgba(0, 246, 255, 0.5);
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
-.faculty-carousel .carousel .control-dots .dot.selected {
-  background: #00f6ff;
-  box-shadow: 0 0 8px rgba(0, 246, 255, 0.8);
-  transform: scale(1.2);
-}
-
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .faculty-carousel {
-    max-width: 900px;
+  .faculty-card {
+    width: 300px;
   }
   
   .section-title {
@@ -182,8 +141,8 @@
 }
 
 @media (max-width: 992px) {
-  .faculty-carousel {
-    max-width: 700px;
+  .faculty-card {
+    width: 280px;
   }
   
   .section-title {
@@ -200,8 +159,8 @@
     padding: 3rem 0;
   }
   
-  .faculty-carousel {
-    max-width: 500px;
+  .faculty-card {
+    width: 260px;
   }
   
   .section-title {
@@ -230,9 +189,8 @@
     padding: 2rem 0;
   }
   
-  .faculty-carousel {
-    max-width: 100%;
-    padding: 0 0.5rem;
+  .faculty-card {
+    width: 240px;
   }
   
   .section-title {
@@ -241,9 +199,5 @@
   
   .faculty-info {
     padding: 0.8rem;
-  }
-  
-  .faculty-slide {
-    padding: 0 5px;
   }
 }
