@@ -31,7 +31,7 @@ const Home = () => {
     },
     { 
       name: 'Dr. S.K. Sahu', 
-      designation: 'Assistant Professor of Mechanical Engineering', 
+      designation: 'Faculty Advisor', 
       email: 'sksahu_me@vssut.ac.in',
       image: '/faculties/sksahu.jpg'
     },
