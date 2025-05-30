@@ -18,13 +18,20 @@ const Home = () => {
 
   const facultyList = [
     { 
-      name: 'SUDHANSU RANJAN DAS', 
+      name: 'Prof.(Dr.) Dipak Kumar Sahoo', 
+      extraDesignation: 'Vice Chancellor',
+      designation: 'President , Technical Society', 
+      email: 'vc@vssut.ac.in',
+      image: '/faculties/dipakkumar.jpg'
+    },
+    { 
+      name: 'Dr. SUDHANSU RANJAN DAS', 
       designation: 'Vice president , Technical Society', 
       email: 'srdas_pe@vssut.ac.in',
       image: '/faculties/srdas.jpg'
     },
     { 
-      name: 'Ms. Debidasi Mohanty', 
+      name: 'Dr. Debidasi Mohanty', 
       designation: 'Faculty Advisor', 
       email: 'ddmohanty_ee@vssut.ac.in',
       image: '/faculties/debidasi.jpg'
@@ -320,6 +327,7 @@ const Home = () => {
                 </div>
                 <div className="faculty-info">
                   <h3>{faculty.name}</h3>
+                  {faculty.extraDesignation && <p>{faculty.extraDesignation}</p>}
                   <p>{faculty.designation}</p>
                   <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
                 </div>
