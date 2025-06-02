@@ -44,7 +44,7 @@ const competitions = [
     id: 4,
     name: 'MIO Conclave',
     year: '2023',
-    achievement: 'First Runner Up',
+    achievement: '',
     image: '/compimages/mio2.jpg',
     description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025. "
   },
@@ -53,7 +53,7 @@ const competitions = [
     id: 3,
     name: 'Smart India Hackathon',
     year: '2024',
-    achievement: 'Finalists',
+    achievement: '',
     image: '/compimages/sih1.jpg',
     description: 'National level hackathon focused on solving real-world problems using technology.'
   },
@@ -62,7 +62,7 @@ const competitions = [
     id: 2,
     name: 'Innovision at NIT Rourkela',
     year: '2024',
-    achievement: 'Winner',
+    achievement: '',
     image: '/compimages/inno7.jpg',
     description: 'Technical fest competition showcasing innovative robotics projects.'
   },
@@ -72,7 +72,7 @@ const competitions = [
   //   id: 5,
   //   name: 'Innovision 2023 NIT-R',
   //   year: '2024',
-  //   achievement: 'Finalists',
+  //   achievement: '',
   //   image: '/compimages/inno23.1.png',
   //   description: 'Combat robotics competition featuring custom-built fighting robots.'
   // },
@@ -81,7 +81,7 @@ const competitions = [
     id: 6,
     name: 'E-yantra',
     year: '2024',
-    achievement: 'AIR-7',
+    achievement: '',
     image: '/compimages/eyantra.jpg',
     description: "E-yantra is a robotics competition that aims to promote innovation and creativity in robotics. The competition features a variety of robotic challenges, including designing and building a robot that can navigate through a maze, designing a robot that can climb stairs, and designing a robot that can play a game of soccer. The competition also includes a team-building activity where teams are required to work together to solve a problem."
   }
