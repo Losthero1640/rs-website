@@ -51,7 +51,22 @@ const competitions = [
     achievement: 'Finalists',
     image: '/compimages/sih.jpg',
     description: 'National level hackathon focused on solving real-world problems using technology.',
-    content: "Team 'Anusandhan' of the Robotics Society, VSSUT, Burla, successfully reached the grand finale of the Smart India Hackathon 2024, with their innovative project, 'Student Innovation', showcasing India's rich cultural heritage and traditions.",
+    content: ["Smart India Hackathon (SIH) is a prestigious nationwide innovation challenge initiated by the Government of India. It invites students from across the country to develop solutions for real-world problems posed by various ministries, industries, and government bodies. SIH encourages technological innovation, teamwork, and problem-solving under time-bound conditions.",
+      "Team 'Anusandhan' of the Robotics Society, VSSUT, Burla, successfully reached the grand finale of the Smart India Hackathon 2024, with their innovative project, 'Student Innovation', showcasing India's rich cultural heritage and traditions.",
+      
+      "SIH 2024 – Grand Finalists",
+          "Sustained our national-level presence, reaffirming our commitment to excellence and problem-solving.",
+
+      "SIH 2023 – Grand Finalists",
+          "Continued our legacy of innovation with impactful solutions to real-world problems.",
+      
+      "SIH 2022 – Grand Finalists",
+          "Demonstrated consistent performance by securing a position among the top teams in the country.",
+
+       "SIH 2020 – Winners",
+          "Marking a significant milestone, our team emerged as winners at the national level, showcasing innovative thinking and technical excellence.",
+
+       ],
     gallery: [
        '/compimages/sih1.jpg',
       '/compimages/sih2.jpg',
@@ -107,7 +122,53 @@ const competitions = [
      '/compimages/inno23.6.jpg',
      '/compimages/inno23.7.png'
     ]
-  }
+  },
+
+  {
+    id: 6,
+    name: 'E-Yantra',
+    year: '2024',
+    achievement: 'Finalists',
+    image: '/compimages/eyantra.jpg',
+    description: 'National level hackathon focused on solving real-world problems using technology.',
+    content: ["e-Yantra, an initiative by IIT Bombay under the Ministry of Education, is a national-level robotics competition that fosters innovation in embedded systems and real-world problem solving. It provides a project-based learning platform, guiding students through complex challenges in automation, robotics, and AI.",
+      
+      
+      "eYRC 2024 – AIR 7 (IIT Bombay & MHRD Funded)",
+          "Achieved All India Rank 7 in the 2024 edition, reflecting advanced technical proficiency and innovative problem-solving in robotics.",
+
+      "eYRC 2023 – National Finalists",
+          "Successfully qualified for the national finals, showcasing excellence in robotic systems design and task automation.",
+      
+      "eYRC 2022 – Theme Track Completers",
+          "Accomplished complete execution of the assigned theme track, reflecting strong problem-solving skills and project implementation capabilities.",
+
+       "Top Performers in Embedded Systems Innovation",
+          "Recognized among the top-performing institutions for outstanding contributions in embedded systems and robotics-based innovation challenges.",
+
+        "eYRC 2019 – Stage 2 Qualifiers",
+        "7 teams from the Robotics Society, VSSUT Burla, successfully qualified for the second stage of E-Yantra 2023, showcasing strong teamwork and technical excellence.",
+
+        "eYRC 2018 – AIR 2 (IIT Bombay & MHRD Funded)",
+        "Secured All India Rank 2 in the E-Yantra Robotics Competition 2023, exhibiting exceptional skills in robotic systems design, embedded systems, and automation.",
+
+        "eYRC 2017 – AIR 2 (IIT Bombay)",
+        "Achieved All India Rank 2 in the 2017 edition of the E-Yantra Robotics Competition, showcasing innovative problem-solving and technical proficiency in robotics.",
+
+        "eYRC 2016 – Team Shortlisting (MHRD Funded)",
+        "3 teams shortlisted in the MHRD-funded E-Yantra 2022 competition, recognizing impactful contributions and commitment to robotics innovation.",
+
+        "eYRC 2015 – AIR 7 (MHRD Funded)",
+        "Achieved All India Rank 7 in the MHRD-funded E-Yantra Robotics Competition 2015, highlighting innovation and strong technical capabilities in embedded systems and robotics.",
+
+
+
+       ],
+    gallery: [
+       '/compimages/eyantra 1.jpg',
+       '/compimages/eyantra.jpg',
+    ]
+  },
 ];
 
 const roboconEvents = [
@@ -177,8 +238,15 @@ const CompetitionDetail = () => {
           </div>
           
           <div className="content">
-            {competition.content}
+            {Array.isArray(competition.content) ? (
+              competition.content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))
+            ) : (
+              <p>{competition.content}</p>
+            )}
           </div>
+
 
           {competition.gallery && competition.gallery.length > 0 && (
             <>

@@ -14,6 +14,11 @@
   padding: 0;
 }
 
+.competition-detail .content p {
+  margin-bottom: 1.5rem; /* Adjust spacing as needed */
+  line-height: 1.6;
+}
+
 .competition-detail h1 {
   font-size: 3.5rem;
   color: var(--accent-color);
