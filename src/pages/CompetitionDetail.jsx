@@ -30,7 +30,7 @@ const competitions = [
     name: 'MIO Conclave',
     year: '2023',
     achievement: '',
-    image: '/compimages/mio.jpg',
+    image: '/compimages/mio2.jpg',
     description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025.",
     content: "The Robotics Society of VSSUT, Burla, participated in Make in Odisha Conclave – Utkarsh 2025, showcasing three cutting-edge projects: an Autonomous Mobile Robot with excellent navigation, a Surface Level Vehicle designed for diverse terrains, and a Hexacopter with precise aerial capabilities. The event highlighted the society's commitment to innovation and technological excellence, fostering connections with industry leaders and reinforcing VSSUT's dedication to robotics and automation.",
     gallery: [

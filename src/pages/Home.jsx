@@ -25,7 +25,7 @@ const Home = () => {
       image: '/faculties/dipakkumar.jpg'
     },
     { 
-      name: 'Dr. SUDHANSU RANJAN DAS', 
+      name: 'Dr. Sudhansu Sekhar Das', 
       designation: 'Vice president , Technical Society', 
       email: 'srdas_pe@vssut.ac.in',
       image: '/faculties/srdas.jpg'
@@ -37,7 +37,7 @@ const Home = () => {
       image: '/faculties/debidasi.jpg'
     },
     { 
-      name: 'Dr. S.K. Sahu', 
+      name: 'Dr. Santosh Kumar Sahu', 
       designation: 'Faculty Advisor', 
       email: 'sksahu_me@vssut.ac.in',
       image: '/faculties/sksahu.jpg'
@@ -160,7 +160,7 @@ const Home = () => {
       name: 'MIO Conclave',
       year: '2023',
       achievement: '',
-      image: '/compimages/mio.jpg'
+      image: '/compimages/mio2.jpg'
     }
   ];
 

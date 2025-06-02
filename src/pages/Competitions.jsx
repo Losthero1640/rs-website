@@ -45,7 +45,7 @@ const competitions = [
     name: 'MIO Conclave',
     year: '2023',
     achievement: 'First Runner Up',
-    image: '/compimages/mio.jpg',
+    image: '/compimages/mio2.jpg',
     description: "VSSUT Robotics Society has participated in Make in Odisha Conclave - Utkarsh 2025. "
   },
 
