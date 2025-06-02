@@ -55,16 +55,16 @@ const competitions = [
       "Team 'Anusandhan' of the Robotics Society, VSSUT, Burla, successfully reached the grand finale of the Smart India Hackathon 2024, with their innovative project, 'Student Innovation', showcasing India's rich cultural heritage and traditions.",
       
       "SIH 2024 – Grand Finalists",
-          "Sustained our national-level presence, reaffirming our commitment to excellence and problem-solving.",
+          "• Sustained our national-level presence, reaffirming our commitment to excellence and problem-solving.",
 
       "SIH 2023 – Grand Finalists",
-          "Continued our legacy of innovation with impactful solutions to real-world problems.",
+          "• Continued our legacy of innovation with impactful solutions to real-world problems.",
       
       "SIH 2022 – Grand Finalists",
-          "Demonstrated consistent performance by securing a position among the top teams in the country.",
+          "• Demonstrated consistent performance by securing a position among the top teams in the country.",
 
        "SIH 2020 – Winners",
-          "Marking a significant milestone, our team emerged as winners at the national level, showcasing innovative thinking and technical excellence.",
+          "• Marking a significant milestone, our team emerged as winners at the national level, showcasing innovative thinking and technical excellence.",
 
        ],
     gallery: [
@@ -89,9 +89,39 @@ const competitions = [
     name: 'Innovision at NIT Rourkela',
     year: '2024',
     achievement: 'Winner',
-    image: '/images/comp1.jpg',
+    image: '/compimages/inno7.jpg',
     description: 'Technical fest competition showcasing innovative robotics projects.',
-    content: 'Team "Dheera" of the Robotics Society, VSSUT, Burla, successfully accomplished the position of Runners-Up in the Robo Sumo Competition at NIT Rourkela, at their annual techno-management fest, Innovision 2024.',
+    content: ['2024',
+      'Runners-Up – INNOVISION',
+
+
+      '2018',
+      '• 1st prize in Line following event',
+      '• 1st prize in Hoverpod',
+      '• 1st prize in Balance Bot event',
+      '• 1st prize in Image Processing event',
+      '• 2nd prize again in the Image Processing event.',
+
+      '2015',
+      '• 1st Prize – TRED-O-QUEST (INNOVISION, NIT Rourkela)',
+      '• 2nd Prize – INNOVISION (NIT Rourkela)',
+      '• 3rd Prize – ROBOVENTURE (INNOVISION, NIT Rourkela)',
+
+      '2014',
+      '• 1st Prize – TRED-O-QUEST (INNOVISION, NIT Rourkela)',
+      '• 2nd Prize – INNOVISION (NIT Rourkela)',
+      '• 3rd Prize – ROBOVENTURE (INNOVISION, NIT Rourkela)',
+
+      '2013',
+      '• 2nd Prize – INNOVISION (NIT Rourkela)',
+      '• 3rd Prize – INNOVISION (NIT Rourkela)',
+
+      '2012',
+      '• 1st Prize – INNOVISION (NIT Rourkela)',
+
+
+
+    ],
     gallery: [
       '/compimages/inno1.jpg',
       '/compimages/inno2.jpg',
@@ -106,23 +136,23 @@ const competitions = [
   },
   
   
-  {
-    id: 5,
-    name: 'Innovision 2K23',
-    year: '2023',
-    achievement: 'Finalists',
-    image: '/compimages/inno23.1.png',
-    description: 'Combat robotics competition featuring custom-built fighting robots.',
-    content: 'Our combat robot showcased exceptional design and engineering in the RoboWars competition, reaching the quarter-finals.',
-    gallery: [
-      '/compimages/inno23.2.jpg',
-     '/compimages/inno23.3.jpg',
-     '/compimages/inno23.4.jpg',
-     '/compimages/inno23.5.jpg',
-     '/compimages/inno23.6.jpg',
-     '/compimages/inno23.7.png'
-    ]
-  },
+  // {
+  //   id: 5,
+  //   name: 'Innovision 2K23',
+  //   year: '2023',
+  //   achievement: 'Finalists',
+  //   image: '/compimages/inno23.1.png',
+  //   description: 'Combat robotics competition featuring custom-built fighting robots.',
+  //   content: 'Our combat robot showcased exceptional design and engineering in the RoboWars competition, reaching the quarter-finals.',
+  //   gallery: [
+  //     '/compimages/inno23.2.jpg',
+  //    '/compimages/inno23.3.jpg',
+  //    '/compimages/inno23.4.jpg',
+  //    '/compimages/inno23.5.jpg',
+  //    '/compimages/inno23.6.jpg',
+  //    '/compimages/inno23.7.png'
+  //   ]
+  // },
 
   {
     id: 6,
@@ -135,31 +165,31 @@ const competitions = [
       
       
       "eYRC 2024 – AIR 7 (IIT Bombay & MHRD Funded)",
-          "Achieved All India Rank 7 in the 2024 edition, reflecting advanced technical proficiency and innovative problem-solving in robotics.",
+          "• Achieved All India Rank 7 in the 2024 edition, reflecting advanced technical proficiency and innovative problem-solving in robotics.",
 
       "eYRC 2023 – National Finalists",
-          "Successfully qualified for the national finals, showcasing excellence in robotic systems design and task automation.",
+          "• Successfully qualified for the national finals, showcasing excellence in robotic systems design and task automation.",
       
       "eYRC 2022 – Theme Track Completers",
-          "Accomplished complete execution of the assigned theme track, reflecting strong problem-solving skills and project implementation capabilities.",
+          "• Accomplished complete execution of the assigned theme track, reflecting strong problem-solving skills and project implementation capabilities.",
 
        "Top Performers in Embedded Systems Innovation",
-          "Recognized among the top-performing institutions for outstanding contributions in embedded systems and robotics-based innovation challenges.",
+          "• Recognized among the top-performing institutions for outstanding contributions in embedded systems and robotics-based innovation challenges.",
 
         "eYRC 2019 – Stage 2 Qualifiers",
-        "7 teams from the Robotics Society, VSSUT Burla, successfully qualified for the second stage of E-Yantra 2023, showcasing strong teamwork and technical excellence.",
+        "• 7 teams from the Robotics Society, VSSUT Burla, successfully qualified for the second stage of E-Yantra 2023, showcasing strong teamwork and technical excellence.",
 
         "eYRC 2018 – AIR 2 (IIT Bombay & MHRD Funded)",
-        "Secured All India Rank 2 in the E-Yantra Robotics Competition 2023, exhibiting exceptional skills in robotic systems design, embedded systems, and automation.",
+        "• Secured All India Rank 2 in the E-Yantra Robotics Competition 2023, exhibiting exceptional skills in robotic systems design, embedded systems, and automation.",
 
         "eYRC 2017 – AIR 2 (IIT Bombay)",
-        "Achieved All India Rank 2 in the 2017 edition of the E-Yantra Robotics Competition, showcasing innovative problem-solving and technical proficiency in robotics.",
+        "• Achieved All India Rank 2 in the 2017 edition of the E-Yantra Robotics Competition, showcasing innovative problem-solving and technical proficiency in robotics.",
 
         "eYRC 2016 – Team Shortlisting (MHRD Funded)",
-        "3 teams shortlisted in the MHRD-funded E-Yantra 2022 competition, recognizing impactful contributions and commitment to robotics innovation.",
+        "• 3 teams shortlisted in the MHRD-funded E-Yantra 2022 competition, recognizing impactful contributions and commitment to robotics innovation.",
 
         "eYRC 2015 – AIR 7 (MHRD Funded)",
-        "Achieved All India Rank 7 in the MHRD-funded E-Yantra Robotics Competition 2015, highlighting innovation and strong technical capabilities in embedded systems and robotics.",
+        "• Achieved All India Rank 7 in the MHRD-funded E-Yantra Robotics Competition 2015, highlighting innovation and strong technical capabilities in embedded systems and robotics.",
 
 
 

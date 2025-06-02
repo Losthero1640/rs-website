@@ -68,14 +68,14 @@ const competitions = [
   },
   
  
-  {
-    id: 5,
-    name: 'Innovision 2023 NIT-R',
-    year: '2024',
-    achievement: 'Finalists',
-    image: '/compimages/inno23.1.png',
-    description: 'Combat robotics competition featuring custom-built fighting robots.'
-  },
+  // {
+  //   id: 5,
+  //   name: 'Innovision 2023 NIT-R',
+  //   year: '2024',
+  //   achievement: 'Finalists',
+  //   image: '/compimages/inno23.1.png',
+  //   description: 'Combat robotics competition featuring custom-built fighting robots.'
+  // },
 
   {
     id: 6,
