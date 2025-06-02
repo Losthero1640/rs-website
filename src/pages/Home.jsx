@@ -138,15 +138,15 @@ const Home = () => {
       id: 3,
       name: 'Smart India Hackathon',
       year: '2024',
-      achievement: 'Finalists',
+      achievement: '',
       image:  '/compimages/sih3.jpg'
     },
     {
       id: 2,
       name: 'Innovision at NIT Rourkela',
       year: '2024',
-      achievement: 'Winner',
-      image: '/images/comp1.jpg'
+      achievement: '',
+      image: '/compimages/inno7.jpg'
     },
     {
       id: 1,
