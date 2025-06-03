@@ -25,7 +25,7 @@ const Home = () => {
       image: '/faculties/dipakkumar.jpg'
     },
     { 
-      name: 'Dr. Sudhansu Sekhar Das', 
+      name: 'Dr. Sudhansu Ranjan Das', 
       designation: 'Vice president , Technical Society', 
       email: 'srdas_pe@vssut.ac.in',
       image: '/faculties/srdas.jpg'
