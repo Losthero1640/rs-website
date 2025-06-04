@@ -27,6 +27,14 @@ const roboconEvents = [
     achievement: 'AIR-6',
     image: '/roboconimages/robocon17.jpg',
     description: "Project: Aerodisc – A disc-launching robot designed for the Robocon 2017 competition. Engineered with holonomic motion and real-time sensing capabilities, it featured pneumatic launchers, aluminium chassis, and autonomous navigation using Kinect, IMU, and color sensors."
+  },
+  {
+    id: 104,
+    name: 'Robocon 2014',
+    year: '2014',
+    achievement: '',
+    image: '/roboconimages/robocon14.jpg',
+    description: "."
   }
 ];
 

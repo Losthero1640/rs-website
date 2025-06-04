@@ -231,6 +231,16 @@ const roboconEvents = [
     description: "Project: Aerodisc – A disc-launching robot designed for the Robocon 2017 competition.",
     content: "For Robocon 2017, the VSSUT Robotics Society developed a lightweight, holonomic-motion robot with advanced disc-launching capabilities and precise navigation. Built with aluminium channels and powered by planetary motors, pneumatics, and a 32-bit microcontroller, it featured real-time sensing through Kinect, IMU, and color sensors. The bot’s high performance earned it an impressive AIR 6 at the Robocon Nationals.",
     gallery: ['/compimages/robocon8.jpg']
+  },
+  {
+    id: 104,
+    name: 'Robocon 2014',
+    year: '2014',
+    achievement: '',
+    image: '/roboconimages/robocon14.jpg',
+    description: "",
+    content: "",
+    gallery: []
   }
 ];
 
