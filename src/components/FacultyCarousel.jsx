@@ -175,7 +175,7 @@ if (container.scrollLeft >= singleSetWidth.current) {
         >
           
           <div className="faculty-scroll" style={{ display: 'flex', minWidth: '100%' }}>
-            {[...facultyList, ...facultyList].map((faculty, index) => (
+            {[...facultyList, ...facultyList, ...facultyList].map((faculty, index) => (
               <div key={index} className="faculty-card">
                 <div className="faculty-image">
                   <img src={ faculty.image} alt={faculty.name} draggable="false" />
