@@ -67,8 +67,10 @@ const FacultyCarousel = () => {
     const container = scrollContainerRef.current;
     if (!isDragging && !isHovering && container && singleSetWidth.current > 0) {
       container.scrollLeft += AUTO_SCROLL_SPEED;
-      if (scrollContainerRef.current.scrollLeft >= singleSetWidth.current) {
-  container.scrollLeft = container.scrollLeft % singleSetWidth.current;
+if (container.scrollLeft >= singleSetWidth.current) {
+  container.scrollLeft -= singleSetWidth.current;
+} else if (container.scrollLeft <= 0) {
+  container.scrollLeft += singleSetWidth.current;
 }
     }
     animationFrameId.current = requestAnimationFrame(autoScroll);
