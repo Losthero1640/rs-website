@@ -1,203 +1,128 @@
+/* Add/Modify these in your CSS file */
+
 .faculty-section {
-  background: #0a0a0a;
-  padding: 4rem 0;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
+  padding: 60px 20px; /* Increased padding */
+  background-color: #0a0a0a; /* Dark background for the section */
+  color: #e0e0e0; /* Default light text color for the section */
 }
 
 .section-title {
   text-align: center;
-  color: #00f6ff;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background-color: #00f6ff;
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
+  margin-bottom: 40px; /* Increased margin */
+  font-size: 2.8rem;  /* Slightly larger */
+  color: #ffffff;    /* White title */
+  font-weight: 600;
 }
 
 .faculty-scroll-container {
-  width: 100%;
   overflow: hidden;
+  cursor: grab;
   position: relative;
-  padding: 1rem 0;
+  max-width: 1200px; /* Or your desired max width */
+  margin: 0 auto; /* Center the container */
+  padding: 10px 0; /* Add some padding if cards have hover effects that expand */
+}
+
+.faculty-scroll-container:active {
+  cursor: grabbing;
 }
 
 .faculty-scroll {
   display: flex;
-  gap: 2rem;
-  animation: scroll 30s linear infinite;
-  width: max-content;
+  width: fit-content;
+  animation: scrollFaculty 60s linear infinite; /* Adjust time as needed */
+  /* animation-play-state will be controlled by JS */
 }
 
-.faculty-scroll:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
+@keyframes scrollFaculty {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Scroll by half since list is doubled */
   }
 }
 
 .faculty-card {
-  background-color: #111;
-  border-radius: 1rem;
-  border: 2px solid #00f6ff;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 246, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 420px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  width: 320px;
   flex-shrink: 0;
+  width: 300px; /* Adjust to your card's desired width */
+  margin-right: 25px; /* Increased margin */
+  background-color: #1e1e1e; /* Darker card background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Adjusted shadow for dark theme */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333; /* Subtle border */
 }
 
 .faculty-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 246, 255, 0.2);
+  transform: translateY(-8px); /* More pronounced hover effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
 }
 
 .faculty-image {
   width: 100%;
-  max-height: 250px;
-  aspect-ratio: 1/1;
-  margin-bottom: 15px; 
+  height: 280px;
   overflow: hidden;
-  position: relative;
 }
 
 .faculty-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  object-position: top center;
+  transition: transform 0.4s ease; /* Smooth zoom on image hover */
 }
 
 .faculty-card:hover .faculty-image img {
-  transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom on card hover */
 }
 
 .faculty-info {
-  padding: 1.2rem;
+  padding: 25px 20px; /* Increased padding */
   text-align: center;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .faculty-info h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  color: #00f6ff;
+  font-size: 1.5rem; /* Slightly larger name */
+  margin-bottom: 10px;
+  color: #ffffff; /* White name */
+  font-weight: 500;
 }
 
-.faculty-info p {
-  margin: 0 0 0.8rem;
-  font-size: 0.9rem;
-  color: #ccc;
+.faculty-info p { /* General paragraph style in info */
+  font-size: 1rem;
+  color: #b0b0b0; /* Light gray for designations */
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
+
+.faculty-info p.extra-designation { /* Specific style for extra designation if needed */
+  font-weight: 600;
+  color: #cccccc; /* Slightly brighter */
+}
+
+.faculty-info p.designation { /* Specific style for designation */
+  color: #a0a0a0;
+}
+
 
 .faculty-info a {
-  display: inline-block;
-  color: #00c2ff;
+  font-size: 0.95rem;
+  color: #61dafb; /* A bright accent color for email, e.g., React blue */
   text-decoration: none;
-  font-size: 0.85rem;
+  word-break: break-all;
   transition: color 0.3s ease;
-  word-break: break-word;
 }
 
 .faculty-info a:hover {
-  color: #00f6ff;
+  color: #82e9ff; /* Lighter shade on hover */
   text-decoration: underline;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .faculty-card {
-    width: 300px;
-  }
-  
-  .section-title {
-    font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .faculty-card {
-    width: 280px;
-  }
-  
-  .section-title {
-    font-size: 2.1rem;
-  }
-  
-  .faculty-info h3 {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .faculty-section {
-    padding: 3rem 0;
-  }
-  
-  .faculty-card {
-    width: 260px;
-  }
-  
-  .section-title {
-    font-size: 1.9rem;
-  }
-  
-  .faculty-info {
-    padding: 1rem;
-  }
-  
-  .faculty-info h3 {
-    font-size: 1rem;
-  }
-  
-  .faculty-info p {
-    font-size: 0.85rem;
-  }
-  
-  .faculty-info a {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .faculty-section {
-    padding: 2rem 0;
-  }
-  
-  .faculty-card {
-    width: 240px;
-  }
-  
-  .section-title {
-    font-size: 1.7rem;
-  }
-  
-  .faculty-info {
-    padding: 0.8rem;
-  }
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }

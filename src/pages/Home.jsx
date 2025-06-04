@@ -1,14 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
-import MemberCard from '../components/MemberCard';
-import CompetitionCard from '../components/CompetitionCard';
+import FacultyCarousel from '../components/FacultyCarousel';
 import TypeWriter from '../components/TypeWriter';
 import '../styles/Home.css';
 import '../styles/FacultySection.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-
+import LatestProjectsSection from '../components/LatestProjectSection';
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
@@ -16,54 +15,7 @@ const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-  const facultyList = [
-    { 
-      name: 'Prof.(Dr.) Dipak Kumar Sahoo', 
-      extraDesignation: 'Vice Chancellor',
-      designation: 'President , Technical Society', 
-      email: 'vc@vssut.ac.in',
-      image: '/faculties/dipakkumar.jpg'
-    },
-    { 
-      name: 'Dr. Sudhansu Ranjan Das', 
-      designation: 'Vice president , Technical Society', 
-      email: 'srdas_pe@vssut.ac.in',
-      image: '/faculties/srdas.jpg'
-    },
-    { 
-      name: 'Dr. Debidasi Mohanty', 
-      designation: 'Faculty Advisor', 
-      email: 'ddmohanty_ee@vssut.ac.in',
-      image: '/faculties/debidasi.jpg'
-    },
-    { 
-      name: 'Dr. Santosh Kumar Sahu', 
-      designation: 'Faculty Advisor', 
-      email: 'sksahu_me@vssut.ac.in',
-      image: '/faculties/sksahu.jpg'
-    },
-  ];
 
-  const latestProjects = [
-    {
-      id: 1,
-      title: 'AMR',
-      description: 'Developing a Mars rover prototype with autonomous navigation capabilities.',
-      image: '/projects/amr.jpg',
-    },
-    {
-      id: 2,
-      title: 'UAV',
-      description: '6-axis robotic arm with computer vision for object manipulation.',
-      image: '/projects/uav.jpg',
-    },
-    {
-      id: 3,
-      title: 'SLV',
-      description: 'An autonomous water-surface vehicle designed for efficient seafloor mapping and remote operations using GPS and magnetometer guidance.',
-      image: '/projects/slv.jpg',
-    }
-  ];
 
   const workshops = [
     {
@@ -314,44 +266,11 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      
-    <section className="faculty-section">
-      <div className="container">
-        <h2 className="section-title">Meet Our Faculty</h2>
-        <div className="faculty-scroll-container">
-          <div className="faculty-scroll">
-            {[...facultyList, ...facultyList].map((faculty, index) => (
-              <div key={index} className="faculty-card">
-                <div className="faculty-image">
-                  <img src={faculty.image} alt={faculty.name} />
-                </div>
-                <div className="faculty-info">
-                  <h3>{faculty.name}</h3>
-                  {faculty.extraDesignation && <p>{faculty.extraDesignation}</p>}
-                  <p>{faculty.designation}</p>
-                  <a href={`mailto:${faculty.email}`}>{faculty.email}</a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+
+      <FacultyCarousel />
 
 
-      <section className="latest-projects">
-        <div className="container">
-          <h2 className="section-title">Latest Projects</h2>
-          <div className="projects-grid">
-            {latestProjects.map(project => (
-              <ProjectCard project={project} displayLearnMore = {false}/>
-            ))}
-          </div>
-          <div className="view-all-container">
-            <Link to="/projects" className="btn btn-primary">View All Projects</Link>
-          </div>
-        </div>
-      </section>
+      <LatestProjectsSection onProjectClick={handleProjectClick} />
 
       <section className="workshops">
         <div className="container">
