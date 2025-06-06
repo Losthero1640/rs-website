@@ -72,6 +72,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .year-slideshow {
+    width: calc(100vw - 60px);
     height: 350px;
   }
   
