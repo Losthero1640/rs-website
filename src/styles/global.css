@@ -124,7 +124,17 @@ section {
   }
   
   .container {
-    padding: 0 15px;
+    padding: 0 3px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 3px;
   }
 }
 .loading-overlay {
