@@ -1,7 +1,7 @@
 /* AllProjects.css */
 
 .all-projects-page {
-  padding: 80px 0;
+  padding: 80px 20px;
   background: var(--primary-bg);
   min-height: 100vh;
 }
@@ -129,8 +129,12 @@ body.popup-open {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .all-projects-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr; 
     gap: 1.5rem;
   }
 
@@ -144,5 +148,11 @@ body.popup-open {
 
   .project-popup-image {
     height: 200px;
+  }
+}
+@media (max-width: 360px) {
+  .all-projects-page {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -22,7 +22,15 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+/* Add this to the TOP of index.css or your main global stylesheet */
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 .container {
   width: 90vw;
   max-width: 1400px;
