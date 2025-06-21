@@ -4,6 +4,7 @@
   padding: 80px 20px;
   background: var(--primary-bg);
   min-height: 100vh;
+  width: 100%;
 }
 
 .page-title {
@@ -19,7 +20,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 0 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -130,8 +130,7 @@ body.popup-open {
 /* Responsive Design */
 @media (max-width: 768px) {
   .all-projects-page {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 60px 15px;
   }
   .projects-grid {
     grid-template-columns: 1fr; 
