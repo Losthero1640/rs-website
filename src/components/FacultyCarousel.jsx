@@ -22,10 +22,10 @@ const facultyList = [
     image: "/faculties/trmahapatra.jpg",
   },
   {
-    name: "Dr. (Mrs.) Santi Behera",
+    name: "Mr. Dharamvir Kumar",
     designation: "Faculty Advisor",
-    email: "db.santibehera@gmail.com",
-    image: "/faculties/-mrs.santi-behera.jpg",
+    email: "dharma.kumar009@gmail.com",
+    image: "/faculties/dharamvir-kumar.jpg",
   },
   {
     name: "Dr. Lopamudra Ghadei",
